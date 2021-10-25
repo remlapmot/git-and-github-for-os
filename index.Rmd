@@ -33,6 +33,9 @@ The following is intended as a set of tips for people learning how to use Git an
 - It is better described as a content tracking software
 - Git was written to allow developers work on the source code of the Linux kernel
 
+### Git grammar
+
+- Follow the tidyverse recommendations about commit messages from [here](https://style.tidyverse.org/gitgithub.html)
 
 ### GitHub intro
 
