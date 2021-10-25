@@ -1,0 +1,43 @@
+---
+title: "Tips for using Git and GitHub"
+author: "Tom Palmer"
+date: "`r format(Sys.time(), '%d %B %Y')`"
+output:
+  html_document:
+    # toc: true
+    # toc_float:
+    #   collapsed: false
+    #   smooth_scroll: false
+    # toc_depth: 2
+    code_download: true
+    code_folding: show
+    anchor_sections: true
+---
+
+```{r setup, include=FALSE}
+# require("Hmisc")
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+<!-- `r Hmisc::hidingTOC(levels = 2)` -->
+
+## Introduction
+
+The following is intended as a set of tips for people learning how to use Git and GitHub.
+
+## Tips {.tabset .tabset-pills .tabset-fade}
+
+### Git
+
+- Git is commonly referred to as version control software
+- It is better described as a content tracking software
+- Git was written to allow developers work on the source code of the Linux kernel
+
+
+### GitHub intro
+
+
+### Workflow
+
+
+
