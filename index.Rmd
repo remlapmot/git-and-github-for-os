@@ -39,6 +39,14 @@ The following is intended as a set of tips for people learning how to use Git an
 
 ### GitHub intro
 
+### GitHub PAT for R
+
+- To create a GitHub PAT to be allowed more downloads from GitHub per hour run in R  
+```{r, echo=TRUE, eval=FALSE}
+install.packages("usethis")
+library(usethis)
+create_github_token()
+```
 
 ### Workflow
 
