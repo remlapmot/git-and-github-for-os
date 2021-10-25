@@ -37,6 +37,15 @@ The following is intended as a set of tips for people learning how to use Git an
 
 - Follow the tidyverse recommendations about commit messages from [here](https://style.tidyverse.org/gitgithub.html)
 
+### Installing Git
+
+- Windows
+- macOS comes with an out-dated version of Git, so use the Homebrew version instead by installing Homebrew, see instructions [here](https://brew.sh/), then running in Terminal  
+```
+brew upgrade
+brew install git
+```
+
 ### GitHub intro
 
 ### GitHub PAT for R
