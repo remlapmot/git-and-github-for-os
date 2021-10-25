@@ -32,6 +32,7 @@ The following is intended as a set of tips for people learning how to use Git an
 - Git is commonly referred to as version control software
 - It is better described as a content tracking software
 - Git was written to allow developers work on the source code of the Linux kernel
+- `.git` folder
 
 ### Git grammar
 
