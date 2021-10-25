@@ -47,6 +47,14 @@ brew upgrade
 brew install git
 ```
 
+### Files to ignore
+
+- You should not commit all files into your repo
+- The `.gitignore` file is a list of files and folders for Git to ignore
+- Common files to ignore are
+  - `.Rhistory`
+  - `.DS_Store`
+
 ### GitHub intro
 
 ### GitHub PAT for R
