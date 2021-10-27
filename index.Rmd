@@ -27,7 +27,7 @@ The following is intended as a set of tips for people learning how to use Git an
 
 ## Tips {.tabset .tabset-pills .tabset-fade}
 
-### Git
+### Git intro
 
 - Git is commonly referred to as version control software
 - It is better described as a content tracking software
