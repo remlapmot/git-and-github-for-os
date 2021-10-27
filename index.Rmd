@@ -79,6 +79,15 @@ create_github_token()
 
 ### GitHub Desktop
 
+- Use a visual git editor, e.g. [GitHub Desktop](https://desktop.github.com/), there are many other good ones
+- Work in a new branch, especially if working with others
+  - Then merge into main/master when you're sure your changes are what you want
+- When coding, I recommend making your changes 
+  - Then select relevant changed lines 
+  - Use sensible commit messages, i.e., do not make one massive commit with commit message "Edits"!  
+```{r}
+knitr::include_graphics("img/github-desktop-select-lines.png")
+```  
 
 ### GitHub CLI
 
