@@ -36,6 +36,10 @@ The following is intended as a set of tips for people learning how to use Git an
   - Git cares about the contents of your files
   - This differs to OneDrive/SharePoint/Google Drive which are file synchronisation systems
 - Git was written to allow developers work on the source code of the Linux kernel
+  - It was designed to work with text files
+  - But it can be intimdating and we can get Git errors  
+<img src="https://imgs.xkcd.com/comics/git.png">
+
 - The `.git` folder
   - When you initialise a directory the `.git` folder is created
   - This contains all of Git's files it uses to track the contents of your files
