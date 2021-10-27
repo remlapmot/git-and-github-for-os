@@ -106,7 +106,7 @@ knitr::include_graphics("img/github-desktop-select-lines.png")
 - CLI stands for command line interface for operating GitHub
 - I don't recommend this
 
-### Workflow with an OS repo
+### Workflow with an OS GitHub repo
 
 
 
