@@ -39,9 +39,15 @@ The following is intended as a set of tips for people learning how to use Git an
 - The `.git` folder
   - When you initialise a directory the `.git` folder is created
   - This contains all of Git's files it uses to track the contents of your files
-  - Confuingly GitHub hides the `.git` folder from view
+  - Confuingly GitHub hides the `.git` folder from view - here it is on my computer
     ```{r}
-    knitr::include_graphics("img/")
+    knitr::include_graphics("img/windows-explorer-repo.png")
+    ```
+  - We see it's omitted from the GitHub web interface
+  
+  - Here are its contents - never edit these manually
+    ```{r}
+    knitr::include_graphics("img/dot-git-folder-contents.png")
     ```
 
 ### Git grammar
