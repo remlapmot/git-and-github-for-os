@@ -105,5 +105,12 @@ knitr::include_graphics("img/github-desktop-select-lines.png")
 ### Workflow with an OS repo
 
 
-### Workflow with another repo
 
+### Standard GitHub workflow
+
+- Only fork a public repo if you intend to send a pull request back to it
+- Fork the other person's repo
+- Clone it to your machine
+- Work in a new branch (not on `master`/`main`)
+- When your finished push branch upto GitHub (this is to your fork)
+- Create pull request (from your new branch) back to the `master`/`main` branch of the original repo
