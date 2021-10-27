@@ -58,7 +58,7 @@ The following is intended as a set of tips for people learning how to use Git an
 
 ### Git grammar
 
-- Follow the tidyverse recommendations about commit messages from [here](https://style.tidyverse.org/gitgithub.html)
+- Follow the tidyverse and standard recommendations about commit messages from [here](https://style.tidyverse.org/gitgithub.html) and [here](https://chris.beams.io/posts/git-commit/)
 
 ### Installing Git
 
