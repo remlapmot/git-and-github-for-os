@@ -31,8 +31,18 @@ The following is intended as a set of tips for people learning how to use Git an
 
 - Git is commonly referred to as version control software
 - It is better described as a content tracking software
+  - It takes the cryptographic hash of the contents of your files
+  - Git does not care about when your file was last saved
+  - Git cares about the contents of your files
+  - This differs to OneDrive/SharePoint/Google Drive which are file synchronisation systems
 - Git was written to allow developers work on the source code of the Linux kernel
-- `.git` folder
+- The `.git` folder
+  - When you initialise a directory the `.git` folder is created
+  - This contains all of Git's files it uses to track the contents of your files
+  - Confuingly GitHub hides the `.git` folder from view
+    ```{r}
+    knitr::include_graphics("img/")
+    ```
 
 ### Git grammar
 
@@ -76,6 +86,7 @@ create_github_token()
 
 
 ### Workflow
+### Workflow in an OpenSAFELY repo
 
 
 
