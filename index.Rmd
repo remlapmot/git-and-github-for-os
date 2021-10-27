@@ -91,10 +91,9 @@ knitr::include_graphics("img/github-desktop-select-lines.png")
 
 ### GitHub CLI
 
-- CLI stands for command line interface
+- CLI stands for command line interface for operating GitHub
+- I don't recommend this
 
-
-### Workflow
 ### Workflow in an OpenSAFELY repo
 
 
