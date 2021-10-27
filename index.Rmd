@@ -123,6 +123,21 @@ knitr::include_graphics("img/github-desktop-select-lines.png")
 
 ### Workflow with an OS GitHub repo
 
+- You skip the fork step from the standard GitHub workflow
+- Clone the repo to your local machine
+  - Click: `Code` | `Open with GitHub Desktop`  
+```{r}
+knitr::include_graphics("img/tp-test-org_test-code-button-owgd.png")
+```
+- Click `Clone` in the box which appears in GitHub Desktop  
+```{r}
+knitr::include_graphics("img/gd-clone-box.png")
+```
+- In GitHub Desktop (i.e. locally) make a new branch  
+```{r}
+knitr::include_graphics("img/gd-new-branch.png")
+```
+
 
 
 ### Standard GitHub workflow
