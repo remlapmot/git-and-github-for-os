@@ -32,6 +32,10 @@ Of course there are many excellent guides to Git and GitHub online, e.g.,
 - Hadley Wickham https://r-pkgs.org/git.html
 - Jenny Bryan - Git and GitHub with R https://happygitwithr.com/
 
+And most relevantly
+
+- OpenSafely documentation [here](https://docs.opensafely.org/getting-started/)
+
 These tips are meant to supplement them.
 
 ## Tips {.tabset .tabset-pills .tabset-fade}
