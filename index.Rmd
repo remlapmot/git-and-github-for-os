@@ -25,6 +25,15 @@ knitr::opts_chunk$set(echo = FALSE)
 
 The following is intended as a set of tips for people learning how to use Git and GitHub.
 
+Of course there are many excellent guides online, e.g.,
+
+-	Intro to GitHub https://guides.github.com/activities/hello-world/
+- GitHub videos https://www.youtube.com/githubguides
+- Hadley Wickham https://r-pkgs.org/git.html
+- Jenny Bryan - Git and GitHub with R https://happygitwithr.com/
+
+These tips are meant to supplement them.
+
 ## Tips {.tabset .tabset-pills .tabset-fade}
 
 ### Git intro
