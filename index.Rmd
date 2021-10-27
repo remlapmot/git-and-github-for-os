@@ -38,7 +38,9 @@ The following is intended as a set of tips for people learning how to use Git an
 - Git was written to allow developers work on the source code of the Linux kernel
   - It was designed to work with text files
   - But it can be intimdating and we can get Git errors  
-<img src="https://imgs.xkcd.com/comics/git.png">
+    ```{r}
+    knitr::include_graphics("https://imgs.xkcd.com/comics/git.png")
+    ```
 
 - The `.git` folder
   - When you initialise a directory the `.git` folder is created
