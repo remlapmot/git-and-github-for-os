@@ -27,12 +27,12 @@ The following is intended as a set of tips for people learning how to use Git an
 
 There are many excellent guides to Git and GitHub online, e.g.,
 
--	Intro to GitHub https://guides.github.com/activities/hello-world/
-- GitHub videos https://www.youtube.com/githubguides
-- Hadley Wickham https://r-pkgs.org/git.html
-- Jenny Bryan - Git and GitHub with R https://happygitwithr.com/
+-	Intro to GitHub [here](https://guides.github.com/activities/hello-world/)
+- GitHub Training & Guides YouTube channel [here](https://www.youtube.com/githubguides)
+- Hadley Wickham on Git [here](https://r-pkgs.org/git.html)
+- Jenny Bryan on Git and GitHub with R [here](https://happygitwithr.com/)
 
-And most relevantly the OpenSAFELY documentation [here](https://docs.opensafely.org/getting-started/)
+And most relevantly the OpenSAFELY documentation [here](https://docs.opensafely.org/getting-started/).
 
 These tips are meant to supplement them.
 
