@@ -159,7 +159,7 @@ create_github_token()
 - Push your new branch from your local machine upto GitHub
 - Make a pull request from your branch to the default branch
 
-### Final thoughts
+### Additional topics
 
 #### Good commit messages
 - Follow the **standard** recommendations about making commit messages, see
