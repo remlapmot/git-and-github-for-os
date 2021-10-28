@@ -100,13 +100,6 @@ knitr::include_graphics("img/dot-git-folder-contents.png")
 - For Windows and macOS download and install GitHub Desktop from [here](https://desktop.github.com/)
 - Linux version of GitHub Desktop available from [here](https://github.com/shiftkey/desktop/)
 
-### Files to ignore
-
-- You should not commit all files into your repo
-- The `.gitignore` file is a list of files and folders for Git to ignore
-- Common files to ignore are
-  - `.Rhistory`
-  - `.DS_Store`
 - I recommend not placing your Git repos in a location that is sync'd by either OneDrive or Google Drive - they are very different syncing technologies to Git
 
 ### Intro to GitHub
@@ -172,6 +165,14 @@ knitr::include_graphics("img/github-desktop-select-lines.png")
 - Follow the **standard** recommendations about making commit messages, see
   - [here](https://style.tidyverse.org/gitgithub.html) and
   - [here](https://chris.beams.io/posts/git-commit/)
+
+#### Files for Git to ignore
+
+- You should not commit all files in the folder on your computer into your repo
+- The `.gitignore` file is a list of files and folders in your repo for Git to ignore
+- Common files to ignore are
+  - `.Rhistory`
+  - `.DS_Store`
 
 #### GitHub repos contain more than just code
 - A repo for an R package will probably contain
