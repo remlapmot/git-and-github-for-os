@@ -165,17 +165,18 @@ knitr::include_graphics("img/github-desktop-select-lines.png")
 - Push your new branch upto GitHub
 - Make a pull request from your branch to the default branch
 
+### Final thoughts
 
-### Commit messages
-
+#### Good commit messages
 - Follow the **standard** recommendations about making commit messages, see
   - [here](https://style.tidyverse.org/gitgithub.html) and
   - [here](https://chris.beams.io/posts/git-commit/)
 
-### Final thoughts
-
-- GitHub repos contain more than just code
+#### GitHub repos contain more than just code
 - A repo for an R package will probably contain
   - The code for the R package
-  - The code for its website (often made with pkgdown and hosted with GitHub Pages or Netlify)
+  - The code for its website (often made with pkgdown and hosted with GitHub Pages or Netlify)  
+    ```{r}
+    knitr::include_graphics("img/bpbounds-with-explanation.png")
+    ```  
   - Scripts for controlling continuous integration services such as GitHub Actions
