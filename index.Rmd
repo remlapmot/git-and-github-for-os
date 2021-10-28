@@ -124,6 +124,16 @@ create_github_token()
 - CLI stands for command line interface for operating GitHub
 - Installation instructions are [here](https://github.com/cli/cli#readme) but I don't recommend using this
 
+### Standard GitHub workflow
+
+- Only fork a public repo if you intend to send a pull request back to it
+- Fork the other person's repo
+- Clone it to your machine
+- Create a new branch (do not work on `master`/`main`)
+- Make your changes and commit them
+- When finished push your new branch upto your GitHub (i.e., to your fork)
+- Create pull request (from your new branch) back to the default (`master`/`main`) branch of the original repo
+
 ### Workflow with an OS GitHub repo
 
 - You skip the fork step from the standard GitHub workflow
@@ -143,11 +153,4 @@ knitr::include_graphics("img/gd-new-branch.png")
 
 
 
-### Standard GitHub workflow
 
-- Only fork a public repo if you intend to send a pull request back to it
-- Fork the other person's repo
-- Clone it to your machine
-- Work in a new branch (not on `master`/`main`)
-- When your finished push branch upto GitHub (this is to your fork)
-- Create pull request (from your new branch) back to the `master`/`main` branch of the original repo
