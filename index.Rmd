@@ -139,7 +139,7 @@ create_github_token()
 - When finished push your new branch upto your GitHub (i.e., to your fork)
 - Create pull request (from your new branch) back to the default (`master`/`main`) branch of the original repo
 
-### Workflow with an OS GitHub repo
+#### Workflow with an OpenSAFELY GitHub repo
 
 - You skip the fork step from the standard GitHub workflow
 - Clone the repo to your local machine
