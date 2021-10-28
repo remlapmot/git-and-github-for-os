@@ -38,7 +38,7 @@ These tips are meant to supplement them.
 
 ## Tips {.tabset .tabset-pills .tabset-fade}
 
-### Git intro
+### Intro to Git
 
 - Git was written to allow developers work on the source code of the Linux kernel
   - One kernel release they got in a terrible mess emailing compressed archives of the source code to each other
