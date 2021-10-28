@@ -150,6 +150,16 @@ knitr::include_graphics("img/gd-clone-box.png")
 ```{r}
 knitr::include_graphics("img/gd-new-branch.png")
 ```
+- Do some work
+  - I recommend making your changes 
+  - In GitHub Desktop select relevant changed lines and make small-ish commits with sensible commit messages
+  - Do not commit changes to many files with a single commit message such as "Edits"!  
+```{r}
+knitr::include_graphics("img/github-desktop-select-lines.png")
+```  
+- Push your new branch upto GitHub
+- Make a pull request from your branch to the default branch
+
 
 
 
