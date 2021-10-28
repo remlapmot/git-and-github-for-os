@@ -88,6 +88,10 @@ knitr::include_graphics("img/dot-git-folder-contents.png")
     brew upgrade
     brew install git
     ```  
+  - Additionally on a mac it doesn't hurt to install Xcode command line tools (i.e., avoid installing the whole of Xcode)  
+    ```
+    xcode-select --install
+    ```  
 
 ### Installing GitHub Desktop
 
