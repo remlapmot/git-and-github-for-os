@@ -138,25 +138,25 @@ create_github_token()
 - Skip the forking step from the standard GitHub workflow
 - Clone the repo to your local machine
   - Click: `Code` | `Open with GitHub Desktop`  
-```{r}
-knitr::include_graphics("img/tp-test-org_test-code-button-owgd.png")
-```
-- Click `Clone` in the box which appears in GitHub Desktop  
-```{r}
-knitr::include_graphics("img/gd-clone-box.png")
-```
-- In GitHub Desktop (i.e. locally) make a new branch  
-```{r}
-knitr::include_graphics("img/gd-new-branch.png")
-```
+    ```{r}
+    knitr::include_graphics("img/tp-test-org_test-code-button-owgd.png")
+    ```  
+  - Click `Clone` in the box which appears in GitHub Desktop  
+    ```{r}
+    knitr::include_graphics("img/gd-clone-box.png")
+    ```  
+  - In GitHub Desktop (i.e. locally) make a new branch  
+    ```{r}
+    knitr::include_graphics("img/gd-new-branch.png")
+    ```
 - Do some work
-  - I recommend making your changes 
+  - Make some changes (to your `project.yaml`/`study_definition.py`/R scripts)
   - In GitHub Desktop select relevant changed lines and make small-ish commits with sensible commit messages
   - Do not commit changes to many files with a single commit message such as "Edits"!  
-```{r}
-knitr::include_graphics("img/github-desktop-select-lines.png")
-```  
-- Push your new branch upto GitHub
+    ```{r}
+    knitr::include_graphics("img/github-desktop-select-lines.png")
+    ```  
+- Push your new branch from your local machine upto GitHub
 - Make a pull request from your branch to the default branch
 
 ### Final thoughts
