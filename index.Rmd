@@ -43,6 +43,7 @@ These tips are meant to supplement them.
 - Git was written to allow developers work on the source code of the Linux kernel
   - One kernel release they got in a terrible mess emailing compressed archives of the source code to each other
   - This provoked Linus Torvalds into action
+  - For an excellent insight into his thinking watch this talk he gave at Google [here](https://youtu.be/4XpnKHJAok8)  
   - Git was designed to work with text files
   - (Especially if used at the command line) Git can be intimidating to use and we can get Git errors (which like LaTeX and R errors can be quite cryptic)  
     ```{r}
