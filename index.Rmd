@@ -161,6 +161,10 @@ knitr::include_graphics("img/github-desktop-select-lines.png")
 - Make a pull request from your branch to the default branch
 
 
+### Commit messages
 
+- Follow the **standard** recommendations about making commit messages, see
+  - [here](https://style.tidyverse.org/gitgithub.html) and
+  - [here](https://chris.beams.io/posts/git-commit/)
 
 
