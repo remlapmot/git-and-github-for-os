@@ -167,4 +167,10 @@ knitr::include_graphics("img/github-desktop-select-lines.png")
   - [here](https://style.tidyverse.org/gitgithub.html) and
   - [here](https://chris.beams.io/posts/git-commit/)
 
+### Final thoughts
 
+- GitHub repos contain more than just code
+- A repo for an R package will probably contain
+  - The code for the R package
+  - The code for its website (often made with pkgdown and hosted with GitHub Pages or Netlify)
+  - Scripts for controlling continuous integration services such as GitHub Actions
