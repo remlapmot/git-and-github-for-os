@@ -120,7 +120,7 @@ create_github_token()
 - CLI stands for command line interface for operating GitHub
 - Installation instructions are [here](https://github.com/cli/cli#readme) but I don't recommend using this
 
-### Workflow
+### Git and GitHub Workflow
 
 #### Standard GitHub workflow
 
