@@ -182,3 +182,26 @@ create_github_token()
     knitr::include_graphics("img/bpbounds-with-explanation.png")
     ```  
   - Scripts for controlling continuous integration services such as GitHub Actions
+
+### OS repos
+
+- If creating a new repo create from the OS template [here](https://github.com/opensafely/research-template)
+```{r}
+knitr::include_graphics("img/os-template.png")
+```  
+- OpenSAFELY is a system of Python packages which run various Docker containers
+- A Docker container is a like a virtual machine 
+- See OS page [here](https://docs.opensafely.org/getting-started/)
+
+#### Running jobs (on the dummy data) in your OS repo online
+
+- Use Gitpod
+
+#### Running jobs (on the dummy data) on your machine
+
+Install
+
+- Docker Desktop
+- Python
+- Git
+- GitHub Desktop
