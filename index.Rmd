@@ -25,7 +25,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 The following is intended as a set of tips for people learning how to use Git and GitHub.
 
-Of course there are many excellent guides to Git and GitHub online, e.g.,
+There are many excellent guides to Git and GitHub online, e.g.,
 
 -	Intro to GitHub https://guides.github.com/activities/hello-world/
 - GitHub videos https://www.youtube.com/githubguides
