@@ -107,31 +107,22 @@ These tips are meant to supplement them.
 
 ### GitHub intro
 
+- GitHub is a Git web server, there are others e.g., [GitLab](https://about.gitlab.com/)
+- You will sync your repositories between your local machine and GitHub
+
 ### GitHub PAT for R
 
-- To create a GitHub PAT to be allowed more downloads from GitHub per hour run in R  
+- To create a GitHub Personal Access Token (PAT) to be allowed more downloads from GitHub per hour run in R  
 ```{r, echo=TRUE, eval=FALSE}
 install.packages("usethis")
 library(usethis)
 create_github_token()
 ```
 
-### GitHub Desktop
-
-- Use a visual git editor, e.g. [GitHub Desktop](https://desktop.github.com/), there are many other good ones
-- Work in a new branch, especially if working with others
-  - Then merge into main/master when you're sure your changes are what you want
-- When coding, I recommend making your changes 
-  - Then select relevant changed lines 
-  - Use sensible commit messages, i.e., do not make one massive commit with commit message "Edits"!  
-```{r}
-knitr::include_graphics("img/github-desktop-select-lines.png")
-```  
-
 ### GitHub CLI
 
 - CLI stands for command line interface for operating GitHub
-- I don't recommend this
+- Installation instructions are [here](https://github.com/cli/cli#readme) but I don't recommend using this
 
 ### Workflow with an OS GitHub repo
 
