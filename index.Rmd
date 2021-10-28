@@ -135,7 +135,7 @@ create_github_token()
 
 #### Workflow with an OpenSAFELY GitHub repo
 
-- You skip the fork step from the standard GitHub workflow
+- Skip the forking step from the standard GitHub workflow
 - Clone the repo to your local machine
   - Click: `Code` | `Open with GitHub Desktop`  
 ```{r}
