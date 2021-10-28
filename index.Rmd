@@ -108,7 +108,7 @@ knitr::include_graphics("img/dot-git-folder-contents.png")
   - `.DS_Store`
 - I recommend not placing your Git repos in a location that is sync'd by either OneDrive or Google Drive - they are very different syncing technologies to Git
 
-### GitHub intro
+### Intro to GitHub
 
 - GitHub is a Git web server, there are others e.g., [GitLab](https://about.gitlab.com/)
 - You will sync your repositories between your local machine and GitHub
