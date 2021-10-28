@@ -94,6 +94,12 @@ knitr::include_graphics("img/dot-git-folder-contents.png")
     ```
     xcode-select --install
     ```  
+- Once Git is install its executable (called `git`) should be available at your command line
+  - Check which version you have with (you want something recent-ish)  
+    ```
+    git --version
+    git version 2.33.1.windows.1
+    ```  
 
 ### Installing GitHub Desktop
 
