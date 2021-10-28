@@ -124,7 +124,7 @@ create_github_token()
 
 #### Standard GitHub workflow
 
-- Only fork a public repo if you intend to send a pull request back to it
+- (Only fork a public repo if you intend to send a pull request to it)
 - Fork the other person's repo
 - Clone it to your machine
 - Create a new branch (do not work on `master`/`main`)
