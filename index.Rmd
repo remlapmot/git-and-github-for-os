@@ -126,11 +126,12 @@ create_github_token()
 
 - (Only fork a public repo if you intend to send a pull request to it)
 - Fork the other person's repo
-- Clone it to your machine
+- This creates a copy of their repo under your account (your fork)
+- Clone your fork (the copy under your account) to your machine
 - Create a new branch (do not work on `master`/`main`)
 - Make your changes and commit them
-- When finished push your new branch upto your GitHub (i.e., to your fork)
-- Create pull request (from your new branch) back to the default (`master`/`main`) branch of the original repo
+- Push your new branch upto your GitHub (i.e., to your fork)
+- Create a pull request (from your new branch) back to the default (`master`/`main`) branch of the original repo
 
 #### Workflow with an OpenSAFELY GitHub repo
 
