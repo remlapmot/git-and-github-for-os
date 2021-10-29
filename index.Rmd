@@ -76,12 +76,11 @@ These tips are meant to supplement them.
 
 - When you initialise a directory the `.git` folder is created
 - This contains all of the files Git uses to track the contents of your files
-- Confusingly GitHub hides the `.git` folder from view 
 - Here is the `.git` folder of a repo on my computer (I have selected to View hidden files in Windows Explorer)  
 ```{r}
 knitr::include_graphics("img/windows-explorer-repo.png")
 ```  
-- We see it's omitted from the GitHub web interface  
+- Confusingly GitHub hides the `.git` folder from view  
 ```{r}
 knitr::include_graphics("img/repo-github-view.png")
 ```  
@@ -102,10 +101,11 @@ knitr::include_graphics("img/dot-git-folder-contents.png")
     brew upgrade
     brew install git
     ```  
-  - Additionally on a mac it doesn't hurt to install Xcode command line tools (i.e., avoid installing the whole of Xcode)  
+  - Additionally on a Mac it doesn't hurt to install Xcode command line tools (i.e., avoid installing the whole of Xcode.)    
     ```
     xcode-select --install
     ```  
+    - Must reinstall these everytime upgrade operating system versions, e.g., from Big Sur to Monterey
 - Once Git is install its executable (called `git`) should be available at your command line
   - Check which version you have with (you want something recent-ish)  
     ```
@@ -117,12 +117,19 @@ knitr::include_graphics("img/dot-git-folder-contents.png")
 
 - You could use Git through its command syntax however I recommend you use a graphical git editor
 - For Windows and macOS download and install GitHub Desktop from [here](https://desktop.github.com/)
-- Linux version of GitHub Desktop available from [here](https://github.com/shiftkey/desktop/)
+- A Linux version of GitHub Desktop available from [here](https://github.com/shiftkey/desktop/)
 
 ### Intro to GitHub
 
 - GitHub is a Git web server, there are others e.g., [GitLab](https://about.gitlab.com/)
-- You will sync your repositories between your local machine and GitHub
+- Your repositories will be stored on GitHub, and you will clone them to your machine to work on them (or work on them in Gitpod)
+- Under your user account you see the repos you are owner of
+
+- On GitHub OpenSAFELY is an organization
+  - The repos are owned by the organization so they show up under the organisation [here](https://github.com/opensafely)
+    ```{r}
+    knitr::include_graphics("img/os-github-org.png")
+    ```  
 
 #### GitHub PAT for R
 
@@ -142,7 +149,7 @@ create_github_token()
 
 #### Standard GitHub workflow
 
-- (Only fork a public repo if you intend to send a pull request to it)
+- (I recommend to only fork a public repo if you intend to send a pull request to it)
 - Fork the other person's repo
 - This creates a copy of their repo under your account (your fork)
 - Clone your fork (the copy under your account) to your machine
