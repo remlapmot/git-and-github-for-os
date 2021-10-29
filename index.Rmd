@@ -52,9 +52,9 @@ These tips are meant to supplement them.
     ```  
 - A Git repository is a folder/directory on your computer which has been Git initialised
 - Git is commonly referred to as version control software
-- Git is better described as *content tracking software*
-  - Git takes the cryptographic hash of the contents of your files (when you tell it to)
-  - Git does not care about when your file was last saved
+- Git is better described as a *content addressable filesystem* which translates to Git tracks the contents of the files in your repo
+  - Git takes the hash of the contents of your files (when you tell it to)
+  - Git does not care about when your file was last saved/modified
   - Git cares about the contents of your files
   - Git does not care about empty directories/folders
     - If you add an empty folder/directory to your repo Git will detect no changes in your repo
