@@ -50,7 +50,17 @@ These tips are meant to supplement them.
     ```{r}
     knitr::include_graphics("https://imgs.xkcd.com/comics/git.png")
     ```  
-- A Git repository is a folder/directory on your computer which has been Git initialised
+- A Git repository is a folder/directory on your computer which has been Git initialised 
+  - Using either the command line  
+    ```
+    git init mynewfolder
+    ```  
+  - Or GitHub Desktop  
+    ```{r}
+    knitr::include_graphics("img/ghd-new-repo.png")
+    ```
+  - Repos on GitHub are already Git initialised 
+    - When you clone them down to your computer they work in GitHub Desktop
 - Git is commonly referred to as version control software
 - Git is better described as a *content addressable filesystem* which translates to Git tracks the contents of the files in your repo
   - Git takes the hash of the contents of your files (when you tell it to)
