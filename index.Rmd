@@ -50,7 +50,7 @@ These tips are meant to supplement them.
     ```{r}
     knitr::include_graphics("https://imgs.xkcd.com/comics/git.png")
     ```  
-- A Git repository is simply a folder/directory on your computer which has been Git initialised
+- A Git repository is a folder/directory on your computer which has been Git initialised
 - Git is commonly referred to as version control software
 - Git is better described as *content tracking software*
   - Git takes the cryptographic hash of the contents of your files (when you tell it to)
