@@ -56,7 +56,8 @@ These tips are meant to supplement them.
   - Git takes the hash of the contents of your files (when you tell it to)
   - Git does not care about when your file was last saved/modified
   - Git cares about the contents of your files
-  - Git does not care about empty directories/folders
+  - Git does not care about empty directories/folders 
+    - Because empty folders have no contents in a file
     - If you add an empty folder/directory to your repo Git will detect no changes in your repo
   - This differs to OneDrive/SharePoint/Google Drive which are file synchronisation systems
   - I recommend not placing your Git repos in a location that is sync'd by either OneDrive or Google Drive (they are very different syncing technologies to Git)
