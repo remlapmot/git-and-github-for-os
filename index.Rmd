@@ -29,6 +29,7 @@ There are many excellent guides to Git and GitHub online, e.g.,
 
 -	Intro to GitHub [here](https://guides.github.com/activities/hello-world/)
 - GitHub Training & Guides YouTube channel [here](https://www.youtube.com/githubguides)
+- Git documentation and training [here](https://git-scm.com/doc)
 - Hadley Wickham on Git [here](https://r-pkgs.org/git.html)
 - Jenny Bryan on Git and GitHub with R [here](https://happygitwithr.com/)
 
