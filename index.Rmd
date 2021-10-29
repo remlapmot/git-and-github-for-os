@@ -42,7 +42,7 @@ These tips are meant to supplement them.
 ### Intro to Git
 
 - Git was written to allow developers work on the source code of the Linux kernel
-  - One kernel release they got in a terrible mess emailing compressed archives of the source code to each other
+  - One kernel release they got in a terrible mess
   - This provoked Linus Torvalds into action
   - For an excellent insight into his thinking watch this talk he gave at Google [here](https://youtu.be/4XpnKHJAok8)  
   - Git was designed to work with text files
