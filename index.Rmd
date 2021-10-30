@@ -184,6 +184,10 @@ create_github_token()
 - Push your new branch from your local machine upto GitHub
 - Make a pull request from your branch to the default branch
 
+### Making a pull request
+
+- Amend/Edit pull request by modifying/adding commits on the branch from which you sent the PR
+
 ### Additional topics
 
 #### Good commit messages
