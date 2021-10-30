@@ -235,7 +235,7 @@ create_github_token()
 ```{r}
 knitr::include_graphics("img/os-template.png")
 ```  
-- Because created on GitHub this is already Git initialized
+- This is already Git initialized
 
 #### Running jobs (on the dummy data) in your OS repo online
 
