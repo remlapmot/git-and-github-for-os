@@ -188,6 +188,20 @@ create_github_token()
 
 - Amend/Edit pull request by modifying/adding commits on the branch from which you sent the PR
 
+### Common erros
+
+#### Forgetting to pull down the latest changes from GitHub
+
+* Easy to forget to pull down latest changes when reopening a project
+* Fix
+  - Move your changes to a new branch
+  - Pull down the changes on GitHub
+  - Merge your changes into the relevant branch
+
+#### Merge conflict
+
+- A merge conflict occurs in a pull request when ...
+
 ### Additional topics
 
 #### Good commit messages
