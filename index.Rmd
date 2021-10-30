@@ -243,7 +243,7 @@ knitr::include_graphics("img/os-template.png")
 
 #### Running jobs (on the dummy data) on your machine
 
-Install
+Install the following free software
 
 - (If on Windows - Windows Subsystem for Linux version 2)
 - Docker Desktop
