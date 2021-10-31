@@ -88,6 +88,10 @@ knitr::include_graphics("img/repo-github-view.png")
 ```{r}
 knitr::include_graphics("img/dot-git-folder-contents.png")
 ```  
+- Explanation of these is (from [here](https://www.tutorialspoint.com/what-is-git-folder-and-why-is-it-hidden))  
+```{r}
+knitr::include_graphics("img/dot-git-folder-explanation.png")
+```  
 
 ### Installing Git
 
