@@ -227,6 +227,7 @@ create_github_token()
 ### Making a pull request
 
 - Amend/Edit pull request by modifying/adding commits on the branch from which you sent the PR
+- Pull request reviews [here](https://docs.github.com/en/github/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/about-pull-request-reviews)
 
 ### Common errors
 
