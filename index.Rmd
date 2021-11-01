@@ -226,8 +226,48 @@ create_github_token()
 
 ### Making a pull request
 
-- Amend/Edit pull request by modifying/adding commits on the branch from which you sent the PR
-- Pull request reviews [here](https://docs.github.com/en/github/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/about-pull-request-reviews)
+- Let's start by creating a new branch  
+```{r}
+knitr::include_graphics("img/pr-new-branch.png")
+```  
+- We do some work and make a new commit which adds the new file to the repo  
+```{r}
+knitr::include_graphics("img/pr-commit-new-file.png")
+```  
+- Next publish the new branch to GitHub  
+```{r}
+knitr::include_graphics("img/pr-publish-branch.png")
+```  
+- Now initiate the creation of the PR by either clicking in GitHub Desktop "Create Pull Request" 
+```{r}
+knitr::include_graphics("img/pr-create-pr-01.png")
+```  
+- or clicking on the button on the repo webpage "Compare & pull request"  
+```{r}
+knitr::include_graphics("img/pr-create-pr-02.png")
+```  
+- Edit the title box, add some extra text in the comment box, select a reviewer, and then click "Create pull request"  
+```{r}
+knitr::include_graphics("img/pr-create-pr-and-reviewers.png")
+```  
+- You can amend/edit pull requests by modifying/adding commits to the branch from which you sent the PR
+- See more about pull request reviews [here](https://docs.github.com/en/github/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/about-pull-request-reviews)
+- Merge PR  
+```{r}
+knitr::include_graphics("img/pr-merge-pr.png")
+```  
+- Confirm the merge  
+```{r}
+knitr::include_graphics("img/pr-confirm-merge.png")
+```  
+- (Optional) Delete the branch the PR came from  
+```{r}
+knitr::include_graphics("img/pr-delete-branch.png")
+```  
+- The PR is now finished and we can see the merge commit in the default (`main`/`master`) branch
+```{r}
+knitr::include_graphics("img/pr-finished.png")
+```  
 
 ### Common errors
 
