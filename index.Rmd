@@ -115,6 +115,7 @@ git init
 git add <filename>
 git status
 git commit -m "Your commit message"
+git commit --amend -m "Your amended commit message"
 git push 
 git pull 
 git clone
