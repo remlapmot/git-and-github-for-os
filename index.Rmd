@@ -291,17 +291,14 @@ knitr::include_graphics("img/os-template.png")
 ```  
 - This is already Git initialized
 
-#### Running jobs (on the dummy data) in your OS repo online
+#### Running jobs (on the dummy data) 
 
-- Use Gitpod
-
-#### Running jobs (on the dummy data) on your machine
-
-Install the following free software
-
-- (If on Windows - Windows Subsystem for Linux version 2)
-- Docker Desktop
-- Python
-- Git
-- GitHub Desktop
-- A text editor - VSCode
+- In your OS repo online
+  - Use Gitpod
+- On your own machine - install the following free software
+  - (If on Windows - Windows Subsystem for Linux version 2)
+  - Docker Desktop
+  - Python
+  - Git
+  - GitHub Desktop
+  - VSCode text editor
