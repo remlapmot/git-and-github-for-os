@@ -249,7 +249,7 @@ create_github_token()
 
 ### Additional topics
 
-#### Good commit messages
+#### Writing good commit messages
 - Follow the **standard** recommendations about making commit messages, see
   - [here](https://style.tidyverse.org/gitgithub.html) and
   - [here](https://chris.beams.io/posts/git-commit/)
