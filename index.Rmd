@@ -295,30 +295,6 @@ See
 - About merge conflicts [here](https://docs.github.com/en/github/collaborating-with-pull-requests/addressing-merge-conflicts/about-merge-conflicts)
 - Resolving a merge conflict [here](https://docs.github.com/en/github/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github)
 
-### Additional topics
-
-#### Writing good commit messages
-- Follow the **standard** recommendations about making commit messages, see
-  - [here](https://style.tidyverse.org/gitgithub.html) and
-  - [here](https://chris.beams.io/posts/git-commit/)
-
-#### Files for Git to ignore
-
-- You should not commit all files in the folder on your computer into your repo
-- The `.gitignore` file is a list of files and folders in your repo for Git to ignore
-- Common files to ignore are
-  - `.Rhistory`
-  - `.DS_Store`
-
-#### GitHub repos contain more than just code
-- A repo for an R package will probably contain
-  - The code for the R package
-  - The code for its website (often made with pkgdown and hosted with GitHub Pages or Netlify)  
-    ```{r}
-    knitr::include_graphics("img/bpbounds-with-explanation.png")
-    ```  
-  - Scripts for controlling continuous integration services such as GitHub Actions
-
 ### OpenSAFELY repositories
 
 - OpenSAFELY is a system of Python packages which run various Docker containers
@@ -350,3 +326,27 @@ knitr::include_graphics("img/os-template.png")
   - Git
   - GitHub Desktop
   - VSCode text editor
+
+### Additional topics
+
+#### Writing good commit messages
+- Follow the **standard** recommendations about making commit messages, see
+  - [here](https://style.tidyverse.org/gitgithub.html) and
+  - [here](https://chris.beams.io/posts/git-commit/)
+
+#### Files for Git to ignore
+
+- You should not commit all files in the folder on your computer into your repo
+- The `.gitignore` file is a list of files and folders in your repo for Git to ignore
+- Common files to ignore are
+  - `.Rhistory`
+  - `.DS_Store`
+
+#### GitHub repos contain more than just code
+- A repo for an R package will probably contain
+  - The code for the R package
+  - The code for its website (often made with pkgdown and hosted with GitHub Pages or Netlify)  
+    ```{r}
+    knitr::include_graphics("img/bpbounds-with-explanation.png")
+    ```  
+  - Scripts for controlling continuous integration services such as GitHub Actions
