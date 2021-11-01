@@ -145,6 +145,9 @@ git fetch
   - Check which version you have with (you want something recent-ish)  
     ```
     git --version
+    ```  
+  - On my Windows machine I have  
+    ```
     git version 2.33.1.windows.1
     ```  
 
