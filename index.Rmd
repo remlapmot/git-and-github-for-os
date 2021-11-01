@@ -37,6 +37,18 @@ And most relevantly the OpenSAFELY documentation [here](https://docs.opensafely.
 
 These tips are meant to supplement them.
 
+## Session aims
+
+By the end of the session you should 
+
+- have a basic understanding of how Git works
+- be able to perform common Git operations using GitHub Desktop, including  
+  - clone a repo from GitHub
+  - make a new branch
+  - make commits
+  - push your branch to GitHub
+  - make a pull request
+
 ## Tips {.tabset .tabset-pills .tabset-fade}
 
 ### Intro to Git
