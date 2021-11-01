@@ -137,7 +137,7 @@ git fetch
     brew upgrade
     brew install git
     ```  
-  - Additionally on a Mac it doesn't hurt to install Xcode command line tools (i.e., avoid installing the whole of Xcode.)    
+  - Additionally on a Mac it is helpful to install Xcode command line tools (i.e., avoid installing the whole of Xcode.)    
     ```
     xcode-select --install
     ```  
