@@ -156,7 +156,7 @@ git fetch
 
 - You could use Git through its command syntax however I recommend you use a graphical git editor
 - For Windows and macOS download and install GitHub Desktop from [here](https://desktop.github.com/)
-- A Linux version of GitHub Desktop available from [here](https://github.com/shiftkey/desktop/)
+- A Linux version of GitHub Desktop is available from [here](https://github.com/shiftkey/desktop/)
 
 ### Intro to GitHub
 
