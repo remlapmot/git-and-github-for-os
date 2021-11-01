@@ -62,14 +62,26 @@ These tips are meant to supplement them.
   - Repos on GitHub are already Git initialised 
     - When you clone them down to your computer they work in GitHub Desktop
 - Git is commonly referred to as version control software
-- Git is better described as a *content addressable filesystem* which translates to Git tracks the contents of the files in your repo
-  - Git takes the SHA-1 hash of the contents of your files (when you tell it to)
-  - Git does not care about when your file was last saved/modified
-  - Git cares about the contents of your files
-  - Git does not care about empty directories/folders 
-    - Because empty folders have no contents in a file
+- Git is better described as a *content addressable filesystem* which translates to *Git tracks the contents of the files in your repo*
+  - Git takes snapshots of your files - when you tell it to - *commits*
+  - Commits are identified by the SHA-1 hash of the contents of your files at that time  
+    ```{r}
+    knitr::include_graphics("img/git-commit-hash-1.png")
+    ```  
+    
+    ```{r}
+    knitr::include_graphics("img/git-commit-hash-2.png")
+    ```  
+    
+    ```{r}
+    knitr::include_graphics("img/git-commit-hash-3.png")
+    ```  
+  - Git knows the state of your files at every commit
+    - Can easily restore files to a previous state
+  - For Git the state of your files only changes when their contents change
+    - If you reopen a file, make no changes, then resave it, Git will show no changes 
     - If you add an empty folder/directory to your repo Git will detect no changes in your repo
-  - This differs to OneDrive/SharePoint/Google Drive which are file synchronisation systems
+    - This differs to OneDrive/SharePoint/Google Drive which are file synchronisation systems
   - I recommend to not place your Git repos in a location that is sync'd by either OneDrive or Google Drive (they are very different syncing technologies to Git)
 
 #### The `.git` folder
