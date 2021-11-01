@@ -224,6 +224,10 @@ create_github_token()
     ```{r}
     knitr::include_graphics("img/github-desktop-select-lines.png")
     ```  
+  - Note that in a commit we can see the added lines - green highlight with `+` prefix - and deleted lines - red highligh with `-` prefix  
+    ```{r}
+    knitr::include_graphics("img/changes-in-a-commit.png")
+    ```  
 - Push your new branch from your local machine up to GitHub
 - Make a pull request from your branch to the default branch
 
