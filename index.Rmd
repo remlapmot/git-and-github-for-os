@@ -246,7 +246,10 @@ create_github_token()
 
 #### Merge conflict
 
-- A merge conflict occurs in a pull request when ...
+See
+
+- About merge conflicts [here](https://docs.github.com/en/github/collaborating-with-pull-requests/addressing-merge-conflicts/about-merge-conflicts)
+- Resolving a merge conflict [here](https://docs.github.com/en/github/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github)
 
 ### Additional topics
 
