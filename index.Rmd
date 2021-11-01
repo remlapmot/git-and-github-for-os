@@ -105,6 +105,25 @@ knitr::include_graphics("img/dot-git-folder-contents.png")
 knitr::include_graphics("img/dot-git-folder-explanation.png")
 ```  
 
+#### Common Git commands
+
+- I recommend you use GitHub Desktop instead of these commands
+- These commands are what GitHub Desktop is using behind the scenes
+- Git is the name of the program, `git` is the name of the executable available at your command line  
+```
+git init 
+git add <filename>
+git status
+git commit -m "Your commit message"
+git push 
+git pull 
+git clone
+git branch
+git checkout
+git merge
+git fetch 
+```  
+
 ### Installing Git
 
 - Windows
