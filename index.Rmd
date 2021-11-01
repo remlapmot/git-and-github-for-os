@@ -279,6 +279,8 @@ knitr::include_graphics("img/pr-finished.png")
     ```{r}
     knitr::include_graphics("img/pulling-from-github.png")
     ```  
+- But you forget to click "Pull origin"
+- If you make commits onto a branch on which there are not yet pulled commits on GitHub you'll get a merge error when you eventually click "Pull origin"
 * Fix
   - Move your changes to a new branch
   - Pull down the changes from GitHub
