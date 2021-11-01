@@ -125,7 +125,9 @@ git merge
 git fetch 
 ```  
 
-### Installing Git
+### Installing Git and GitHub Desktop
+
+#### Installing Git
 
 - Windows
   - Download and install from [here](https://git-scm.com/download/win)
@@ -152,7 +154,7 @@ git fetch
     git version 2.33.1.windows.1
     ```  
 
-### Installing GitHub Desktop
+#### Installing GitHub Desktop
 
 - You could use Git through its command syntax however I recommend you use a graphical git editor
 - For Windows and macOS download and install GitHub Desktop from [here](https://desktop.github.com/)
