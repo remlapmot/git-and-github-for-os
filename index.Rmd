@@ -228,7 +228,7 @@ create_github_token()
 
 - Amend/Edit pull request by modifying/adding commits on the branch from which you sent the PR
 
-### Common erros
+### Common errors
 
 #### Forgetting to pull down the latest changes from GitHub
 
