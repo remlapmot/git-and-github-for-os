@@ -232,10 +232,15 @@ create_github_token()
 
 #### Forgetting to pull down the latest changes from GitHub
 
-* Easy to forget to pull down latest changes when reopening a project
+* (Especially in the morning) It is very easy to forget to pull down latest changes when reopening a project
+* Let's say I or a colleague made changes and those are pushed to GitHub
+  - The next day I restart work on a different computer, GitHub Desktop will show for example  
+    ```{r}
+    knitr::include_graphics("img/pulling-from-github.png")
+    ```  
 * Fix
   - Move your changes to a new branch
-  - Pull down the changes on GitHub
+  - Pull down the changes from GitHub
   - Merge your changes into the relevant branch
 
 #### Merge conflict
