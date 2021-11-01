@@ -181,8 +181,9 @@ create_github_token()
 
 #### GitHub CLI
 
-- CLI stands for command line interface for operating GitHub
-- Installation instructions are [here](https://github.com/cli/cli#readme) but I don't recommend using this
+- GitHub CLI stands for command line interface for operating GitHub
+- Installation instructions are [here](https://github.com/cli/cli#readme)
+- But I don't recommend using this
 
 ### Git and GitHub Workflow
 
