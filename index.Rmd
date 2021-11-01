@@ -9,8 +9,8 @@ output:
     #   collapsed: false
     #   smooth_scroll: false
     # toc_depth: 2
-    code_download: true
-    code_folding: show
+    # code_download: true
+    # code_folding: show
     anchor_sections: true
 ---
 
