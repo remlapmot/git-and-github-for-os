@@ -192,7 +192,7 @@ create_github_token()
 #### Standard GitHub workflow
 
 - (I recommend to only fork a public repo if you intend to send a pull request to it)
-- Fork the other person's repo
+- Fork the other person's repo (this will be known as the `upstream` repo from your fork)
 - This creates a copy of their repo under your account (your fork)
 - Clone your fork (the copy under your account) to your machine
 - Create a new branch (do not work on `master`/`main`)
@@ -203,6 +203,7 @@ create_github_token()
 #### Workflow with an OpenSAFELY GitHub repo
 
 - Skip the forking step from the standard GitHub workflow
+- The repo on GitHub is known as `origin`
 - Clone the repo to your local machine
   - Click: `Code` | `Open with GitHub Desktop`  
     ```{r}
@@ -223,7 +224,7 @@ create_github_token()
     ```{r}
     knitr::include_graphics("img/github-desktop-select-lines.png")
     ```  
-- Push your new branch from your local machine upto GitHub
+- Push your new branch from your local machine up to GitHub
 - Make a pull request from your branch to the default branch
 
 ### Making a pull request
