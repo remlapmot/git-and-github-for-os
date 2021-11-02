@@ -438,7 +438,10 @@ knitr::include_graphics("img/tp-test-org-test.png")
 1. In GitHub Desktop: make a new branch and switch to it
 1. In any text editor: 
     a. Create a new markdown file called `firstname-lastname.md`
-    a. Add a sentence or two to the file about yourself
+    a. Add a sentence or two to the file about yourself, e.g.,  
+    ```{r}
+    knitr::include_graphics("img/tom-palmer-md.png")
+    ```  
     a. Save this file into the (top level of the) repo
 1. In GitHub Desktop: Commit this new file into your new branch
 1. In GitHub Desktop: Push your new branch upto GitHub
