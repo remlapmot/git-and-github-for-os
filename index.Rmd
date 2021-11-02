@@ -407,3 +407,24 @@ knitr::include_graphics("img/os-template.png")
     knitr::include_graphics("img/bpbounds-with-explanation.png")
     ```  
   - Scripts for controlling continuous integration services such as GitHub Actions
+
+### Short practical
+
+- Go to our test repo [here](https://github.com/tp-test-org/test)  
+```{r}
+knitr::include_graphics("img/tp-test-org-test.png")
+```  
+1. On GitHub: clone the repo to your local machine
+1. In GitHub Desktop: make a new branch and switch to it
+1. In any text editor: 
+    - create a new markdown file called `firstname-lastname.md`
+    - add a sentence or two to the file about yourself
+    - save this file into the (top level of the) repo
+1. In GitHub Desktop: Commit this new file into your new branch
+1. In GitHub Desktop: Push your new branch upto GitHub
+1. On GitHub: Open a pull request from your branch to the `main` branch  
+    - Select a reviewer (Tom/Venexia/Elsie)
+1. In your text editor and GitHub Desktop: Make any changes requested by the reviewer and add these to your PR  
+    - Hopefully your pull request will then be merged
+1. On GitHub: Delete the branch you made your pull request from
+1. In GitHub Desktop: Pull down the updated master branch to your machine ... in a real workflow you would then make another new branch ...
