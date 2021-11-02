@@ -49,6 +49,12 @@ By the end of the session you should
   - push your branch to GitHub
   - make a pull request
 
+## Session plan
+
+- Tips
+- Little practical on making a PR
+- Elsie - the OpenSAFELY codelist system
+
 ## Tips {.tabset .tabset-pills .tabset-fade}
 
 ### Intro to Git
