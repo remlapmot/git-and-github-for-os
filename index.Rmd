@@ -61,11 +61,10 @@ These tips are meant to supplement them.
 
 ### Intro to Git
 
-- Git was written to allow developers work on the source code of the Linux kernel
+- Git was written to allow developers work on the source code of the Linux kernel (text files)
   - One kernel release they got in a terrible mess
   - This provoked Linus Torvalds into action
   - For an excellent insight into his thinking watch this talk he gave at Google [here](https://youtu.be/4XpnKHJAok8)  
-  - Git was designed to work with text files
   - (Especially if used at the command line) Git can be intimidating to use and we can get Git errors (which like LaTeX and R errors can be quite cryptic)  
     ```{r}
     knitr::include_graphics("https://imgs.xkcd.com/comics/git.png")
@@ -83,11 +82,12 @@ These tips are meant to supplement them.
     - When you clone them down to your computer they work in GitHub Desktop
 - Git is commonly referred to as version control software
 - Git is better described as a *content addressable filesystem* which translates to *Git tracks the contents of the files in your repo*
+  - Git creates a little database of the contents of your files - snapshots (commits) are taken when you tell it to
   - Git looks for changes in your files when you save them, so when you have unsaved changes in a file/s Git shows no changes until you save  
     ```{r}
     knitr::include_graphics("img/no-local-changes.png")
     ```  
-  - Git takes snapshots of your files - when you tell it to - *commits* - saved my file from above, enter a commit message and click "Commit to master"
+  - Git takes snapshots of your files - when you tell it to - *commits* - I saved my file from above, enter a commit message and click "Commit to master"
     ```{r}
     knitr::include_graphics("img/stashed-changes.png")
     ```  
@@ -104,12 +104,12 @@ These tips are meant to supplement them.
     knitr::include_graphics("img/git-commit-hash-3.png")
     ```  
   - Git knows the state of your files at every commit
-    - Git can easily restore your files to a previous state
+    - You can easily restore your files to a previous state
   - For Git the state of your files only changes when their contents change
-    - If you reopen a file, make no changes, then resave it, Git will show no changes 
-    - If you add an empty folder/directory to your repo Git will detect no changes in your repo
+    - If you reopen a file, make no changes, then close it, Git will show no changes in your repo
+    - If you add an empty folder/directory to your repo Git will show no changes in your repo
     - This differs to OneDrive/SharePoint/Google Drive which are file synchronisation systems
-  - I recommend to not place your Git repos in a location that is sync'd by either OneDrive or Google Drive (they are very different syncing technologies to Git)
+  - I recommend not to place your Git repos in a location that is sync'd by either OneDrive or Google Drive
 
 #### The `.git` folder
 
