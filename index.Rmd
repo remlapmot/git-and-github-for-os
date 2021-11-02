@@ -81,7 +81,14 @@ By the end of the session you should
     - When you clone them down to your computer they work in GitHub Desktop
 - Git is commonly referred to as version control software
 - Git is better described as a *content addressable filesystem* which translates to *Git tracks the contents of the files in your repo*
-  - Git takes snapshots of your files - when you tell it to - *commits*
+  - Git looks for changes in your files when you save them, so when you have unsaved changes in a file/s Git shows no changes until you save  
+    ```{r}
+    knitr::include_graphics("img/no-local-changes.png")
+    ```  
+  - Git takes snapshots of your files - when you tell it to - *commits* - saved my file from above, enter a commit message and click "Commit to master"
+    ```{r}
+    knitr::include_graphics("img/stashed-changes.png")
+    ```  
   - Commits are identified by the SHA-1 hash of the contents of your files at that time  
     ```{r}
     knitr::include_graphics("img/git-commit-hash-1.png")
