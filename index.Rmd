@@ -102,7 +102,7 @@ By the end of the session you should
     knitr::include_graphics("img/git-commit-hash-3.png")
     ```  
   - Git knows the state of your files at every commit
-    - Can easily restore files to a previous state
+    - Git can easily restore your files to a previous state
   - For Git the state of your files only changes when their contents change
     - If you reopen a file, make no changes, then resave it, Git will show no changes 
     - If you add an empty folder/directory to your repo Git will detect no changes in your repo
