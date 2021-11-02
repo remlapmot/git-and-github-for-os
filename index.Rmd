@@ -368,6 +368,7 @@ See
   - It defines the operating system and programs running within it
   - On my Windows 10 machine I can run an Ubuntu docker container
   - Just because an R package is installed in the R installation on your machine does not mean that it is installed in the OpenSAFELY R Docker container
+    - See the list of packages in the R Docker container [here](https://github.com/opensafely-core/r-docker/blob/master/packages.txt)
 
 #### Getting started
 
