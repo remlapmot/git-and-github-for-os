@@ -302,6 +302,7 @@ knitr::include_graphics("img/pr-delete-branch.png")
 ```{r}
 knitr::include_graphics("img/pr-finished.png")
 ```  
+- In GitHub Desktop click "Fetch origin"/"Pull origin" to pull the updated `main`/`master` branch down to your local machine ... and the process begins again ...
 
 ### Common errors
 
