@@ -360,7 +360,7 @@ See
 
 ### OpenSAFELY repositories
 
-- OpenSAFELY is a system of Python packages which run various Docker containers
+- OpenSAFELY is a system of Python packages (opensafely and cohortextractor) which run various Docker containers
   - The main GitHub organisation page is [here](https://github.com/opensafely)
   - All the core code is published in their opensafely-core organisation on GitHub [here](https://github.com/opensafely-core)
   - And there is also their opensafely-actions organisation [here](https://github.com/opensafely-actions)
