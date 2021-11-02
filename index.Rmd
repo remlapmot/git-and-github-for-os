@@ -21,9 +21,29 @@ knitr::opts_chunk$set(echo = FALSE)
 
 <!-- `r Hmisc::hidingTOC(levels = 2)` -->
 
-## Introduction
+## Introduction {.tabset .tabset-pills .tabset-fade}
 
 The following is intended as a set of tips for people learning how to use Git and GitHub.
+
+### Session plan
+
+- Tips
+- Short practical on making a pull request
+- Elsie - the OpenSAFELY codelist system
+
+### Session aims
+
+By the end of the session you should 
+
+- have a basic understanding of how Git works
+- be able to perform common Git operations using GitHub Desktop, including  
+  - clone a repo from GitHub
+  - make a new branch
+  - make commits
+  - push your branch to GitHub
+  - make a pull request
+
+### Guides to Git and GitHub
 
 There are many excellent guides to Git and GitHub online, e.g.,
 
@@ -36,24 +56,6 @@ There are many excellent guides to Git and GitHub online, e.g.,
 And most relevantly the OpenSAFELY documentation [here](https://docs.opensafely.org/getting-started/).
 
 These tips are meant to supplement them.
-
-## Session aims
-
-By the end of the session you should 
-
-- have a basic understanding of how Git works
-- be able to perform common Git operations using GitHub Desktop, including  
-  - clone a repo from GitHub
-  - make a new branch
-  - make commits
-  - push your branch to GitHub
-  - make a pull request
-
-## Session plan
-
-- Tips
-- Little practical on making a PR
-- Elsie - the OpenSAFELY codelist system
 
 ## Tips {.tabset .tabset-pills .tabset-fade}
 
