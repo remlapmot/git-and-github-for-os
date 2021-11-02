@@ -370,6 +370,10 @@ See
   - Just because an R package is installed in the R installation on your machine does not mean that it is installed in the OpenSAFELY R Docker container
     - See the list of packages in the R Docker container [here](https://github.com/opensafely-core/r-docker/blob/master/packages.txt)
 
+#### Demo repo
+
+- Have a look at the demo repo [here](https://github.com/opensafely/os-demo-research)
+
 #### Getting started
 
 - See OS page [here](https://docs.opensafely.org/getting-started/)
