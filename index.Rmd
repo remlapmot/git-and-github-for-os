@@ -91,7 +91,7 @@ These tips are meant to supplement them.
     ```{r}
     knitr::include_graphics("img/stashed-changes.png")
     ```  
-  - Commits are identified by the SHA-1 hash of the contents of your files at that time  
+  - Commits are identified by the 40-character checksum SHA-1 hash of the contents of your files at that time  
     ```{r}
     knitr::include_graphics("img/git-commit-hash-1.png")
     ```  
