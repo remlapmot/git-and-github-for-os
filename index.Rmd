@@ -296,8 +296,9 @@ knitr::include_graphics("img/pr-finished.png")
 
 ### Common errors
 
-#### Forgetting to pull down the latest changes from GitHub
+#### Merge conflicts
 
+* Forgetting to pull down the latest changes from GitHub
 * (Especially in the morning) It is very easy to forget to pull down latest changes when reopening a project
 * Let's say I or a colleague made changes and those are pushed to GitHub
   - The next day I restart work on a different computer, GitHub Desktop will show for example  
