@@ -298,9 +298,13 @@ knitr::include_graphics("img/pr-finished.png")
 
 #### Merge conflicts
 
-* These can happen if e.g., you forget to pull down the latest changes from GitHub (I find easy to forget in the morning), or if you're working on a project and say Venexia makes a PR which is merged but you have changed a line/s of code which Venexia changed
-* It is very easy to forget to pull down latest changes when reopening a project
-* Let's say I or a colleague made changes and those are pushed to GitHub
+* These can happen if e.g., 
+  - you forget to pull down the latest changes from GitHub (I find easy to forget in the morning)
+  - if you're working on a project with mutiple people
+    - you both create new branches
+    - they send in their PR first and its merged
+    - then you send in your PR which edits some of the same lines
+* Let's say I made changes yesterday which I pushed to GitHub
   - The next day I restart work on a different computer, GitHub Desktop will show for example  
     ```{r}
     knitr::include_graphics("img/pulling-from-github.png")
