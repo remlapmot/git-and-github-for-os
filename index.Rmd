@@ -327,7 +327,7 @@ knitr::include_graphics("img/ghd-potential-conflict.png")
     ```{r}
     knitr::include_graphics("img/ghd-create-branch-from-commit.png")
     ```  
-  - Move back to `master`/`main` and undo the changes there, then edit the files so they show no changes  
+  - Move back to `master`/`main` and revert/undo the changes there, then edit the files so they show no changes  
     ```{r}
     knitr::include_graphics("img/ghd-revert-changes-in-commit.png")
     ```  
@@ -335,7 +335,7 @@ knitr::include_graphics("img/ghd-potential-conflict.png")
     ```{r}
     knitr::include_graphics("img/ghd-undo-commit.png")
     ```  
-  - Pull down the changes from GitHub  
+  - Pull down the changes from GitHub to the relevant branch  
     ```{r}
     knitr::include_graphics("img/ghd-all-is-well.png")
     ```  
