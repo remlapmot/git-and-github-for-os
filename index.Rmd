@@ -37,7 +37,7 @@ The following is intended as a set of tips for people learning how to use Git an
 By the end of the session you should 
 
 - have a basic understanding of how Git works
-- be able to perform common Git operations using GitHub Desktop, including  
+- be able to perform common Git operations using GitHub Desktop and the GitHub web interface, including  
   - clone a repo from GitHub
   - make a new branch
   - make commits
