@@ -67,7 +67,7 @@ These tips are meant to supplement them.
   - This provoked Linus Torvalds into action
   - For an excellent insight into his thinking watch this talk he gave at Google [here](https://youtu.be/4XpnKHJAok8)  
   - (Especially if used at the command line) Git can be intimidating to use and we can get Git errors (which like LaTeX and R errors can be quite cryptic)  
-    ```{r}
+    ```{r, out.width = "50%"}
     knitr::include_graphics("https://imgs.xkcd.com/comics/git.png")
     ```  
 - A Git repository is a folder/directory on your computer which has been Git initialised 
@@ -76,7 +76,7 @@ These tips are meant to supplement them.
     git init mynewfolder
     ```  
   - Or GitHub Desktop  
-    ```{r}
+    ```{r, out.width = "50%"}
     knitr::include_graphics("img/ghd-new-repo.png")
     ```
   - Repos on GitHub are already Git initialised 
@@ -117,15 +117,15 @@ These tips are meant to supplement them.
 - When you initialise a directory the `.git` folder is created
 - This contains all of the files Git uses to track the contents of your files
 - Here is the `.git` folder of a repo on my computer (I have selected to View hidden files in Windows Explorer)  
-```{r}
+```{r, out.width = "50%"}
 knitr::include_graphics("img/windows-explorer-repo.png")
 ```  
 - Confusingly GitHub hides the `.git` folder from view  
 ```{r}
 knitr::include_graphics("img/repo-github-view.png")
 ```  
-- Here are its contents - never edit these manually  
-```{r}
+- Here are its contents - don't edit these manually  
+```{r, out.width = "50%"}
 knitr::include_graphics("img/dot-git-folder-contents.png")
 ```  
 - Explanation of these is (from [here](https://www.tutorialspoint.com/what-is-git-folder-and-why-is-it-hidden))  
@@ -188,7 +188,7 @@ git fetch
 - For Windows and macOS download and install GitHub Desktop from [here](https://desktop.github.com/)
 - A Linux version of GitHub Desktop is available from [here](https://github.com/shiftkey/desktop/)
 - I recommend installing the free VSCode text editor, from [here](https://code.visualstudio.com/), and setting that as the "External editor" in GitHub Desktop options (Click: File | Options...)  
-```{r}
+```{r, out.width = "65%"}
 knitr::include_graphics("img/ghd-options-vscode.png")
 ```  
 - On Windows I also recommend installing Windows Terminal from [here](https://www.microsoft.com/store/productId/9N0DX20HK701)
@@ -243,7 +243,7 @@ create_github_token()
     knitr::include_graphics("img/tp-test-org_test-code-button-owgd.png")
     ```  
   - Click `Clone` in the box which appears in GitHub Desktop  
-    ```{r}
+    ```{r, out.width = "65%"}
     knitr::include_graphics("img/gd-clone-box.png")
     ```  
   - Go to making a pull request tab
@@ -418,7 +418,7 @@ knitr::include_graphics("img/changes-in-a-commit.png")
 - A repo for an R package will probably contain
   - The code for the R package
   - The code for its website (often made with pkgdown and hosted with GitHub Pages or Netlify)  
-    ```{r}
+    ```{r, out.width = "90%"}
     knitr::include_graphics("img/bpbounds-with-explanation.png")
     ```  
   - Scripts for controlling continuous integration services such as GitHub Actions
@@ -433,9 +433,9 @@ knitr::include_graphics("img/tp-test-org-test.png")
     a. Clone the repo to your local machine
 1. In GitHub Desktop: make a new branch and switch to it
 1. In any text editor: 
-    a. Create a new markdown file called `firstname-lastname.md`
+    a. Create a new markdown file called `yourfirstname-yourlastname.md`
     a. Add a sentence or two to the file about yourself, e.g.,  
-    ```{r}
+    ```{r, out.width = "65%"}
     knitr::include_graphics("img/tom-palmer-md.png")
     ```  
     a. Save this file into the (top level of the) repo
