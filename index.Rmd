@@ -298,8 +298,8 @@ knitr::include_graphics("img/pr-finished.png")
 
 #### Merge conflicts
 
-* Forgetting to pull down the latest changes from GitHub
-* (Especially in the morning) It is very easy to forget to pull down latest changes when reopening a project
+* These can happen if e.g., you forget to pull down the latest changes from GitHub (I find easy to forget in the morning), or if you're working on a project and say Venexia makes a PR which is merged but you have changed a line/s of code which Venexia changed
+* It is very easy to forget to pull down latest changes when reopening a project
 * Let's say I or a colleague made changes and those are pushed to GitHub
   - The next day I restart work on a different computer, GitHub Desktop will show for example  
     ```{r}
@@ -337,11 +337,9 @@ knitr::include_graphics("img/ghd-potential-conflict.png")
     ```  
   - Merge changes from your new branch into the `main`/`master`/relevant branch
 
-#### Merge conflict
+See the GitHub documentation for more information about merge conflicts
 
-See
-
-- About merge conflicts [here](https://docs.github.com/en/github/collaborating-with-pull-requests/addressing-merge-conflicts/about-merge-conflicts)
+- [here](https://docs.github.com/en/github/collaborating-with-pull-requests/addressing-merge-conflicts/about-merge-conflicts)
 - Resolving a merge conflict [here](https://docs.github.com/en/github/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github)
 
 ### OpenSAFELY repositories
