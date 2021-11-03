@@ -254,7 +254,7 @@ create_github_token()
 ```{r}
 knitr::include_graphics("img/pr-new-branch.png")
 ```  
-- We do some work and make a new commit which adds the new file to the repo  
+- We do some work (in VSCode/text editor/RStudio) which creates a markdown file with a title and some text. We then make a new commit which adds this new file to the repo  
 ```{r}
 knitr::include_graphics("img/pr-commit-new-file.png")
 ```  
