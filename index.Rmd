@@ -340,11 +340,9 @@ knitr::include_graphics("img/ghd-potential-conflict.png")
     knitr::include_graphics("img/ghd-all-is-well.png")
     ```  
   - Merge changes from your new branch into the `main`/`master`/relevant branch
-
-See the GitHub documentation for more information about merge conflicts
-
-- [here](https://docs.github.com/en/github/collaborating-with-pull-requests/addressing-merge-conflicts/about-merge-conflicts)
-- Resolving a merge conflict [here](https://docs.github.com/en/github/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github)
+- See the GitHub documentation for more information about merge conflicts
+  - [here](https://docs.github.com/en/github/collaborating-with-pull-requests/addressing-merge-conflicts/about-merge-conflicts)
+  - Resolving a merge conflict [here](https://docs.github.com/en/github/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github)
 
 ### OpenSAFELY repositories
 
