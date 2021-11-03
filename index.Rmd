@@ -391,6 +391,16 @@ knitr::include_graphics("img/os-template.png")
 
 ### Additional topics
 
+#### Avoid making commits with lots changes
+- Do not commit changes to many files with a single commit message such as "Edits"!  
+```{r}
+knitr::include_graphics("img/github-desktop-select-lines.png")
+```  
+- Note that in a commit we can see the added lines - green highlight with `+` prefix - and deleted lines - red highligh with `-` prefix  
+```{r}
+knitr::include_graphics("img/changes-in-a-commit.png")
+```  
+
 #### Writing good commit messages
 - Follow the **standard** recommendations about making commit messages, see
   - [here](https://style.tidyverse.org/gitgithub.html) and
