@@ -15,11 +15,8 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-# require("Hmisc")
 knitr::opts_chunk$set(echo = FALSE)
 ```
-
-<!-- `r Hmisc::hidingTOC(levels = 2)` -->
 
 ## Introduction {.tabset .tabset-pills .tabset-fade}
 
