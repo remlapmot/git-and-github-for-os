@@ -414,6 +414,11 @@ knitr::include_graphics("img/ghd-potential-conflict.png")
     ```{r}
     knitr::include_graphics("img/windows-cmd-where-python3.png")
     ``` 
+- If you installed Anaconda and you did not add its folders to `PATH` then you need to install and run opensafely using the Anaconda prompt - you find this as a program under the Start menu  
+```{r}
+knitr::include_graphics("img/anaconda-prompt-start-menu-win11.png")
+knitr::include_graphics("img/anaconda-prompt-cmd.png")
+```  
 
 #### Installing the opensafely package
 
