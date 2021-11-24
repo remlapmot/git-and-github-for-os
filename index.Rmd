@@ -414,7 +414,7 @@ knitr::include_graphics("img/ghd-potential-conflict.png")
     ```  
   - you can see the location of the Python executable in `cmd` with `where python`/`where python3`  
     ```{r}
-    knitr::include_graphics("./img/windows-cmd-path-where-python3.png")
+    knitr::include_graphics("./img/windows-cmd-where-python3.png")
     ``` 
 
 #### Installing the opensafely package
