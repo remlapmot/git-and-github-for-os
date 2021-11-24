@@ -397,7 +397,7 @@ knitr::include_graphics("img/ghd-potential-conflict.png")
     ```{r}
     knitr::include_graphics("img/anaconda-win-install-options.png")
     ```  
-  - And in the Python check the box adding Python to `PATH`  
+  - And in the Python installer check the box adding Python to `PATH`  
     ```{r}
     knitr::include_graphics("img/install-python-add-to-path.png")
     ```  
