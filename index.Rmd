@@ -135,20 +135,21 @@ knitr::include_graphics("img/dot-git-folder-explanation.png")
 - I recommend you use GitHub Desktop instead of these commands
 - These commands are what GitHub Desktop is using behind the scenes
 - Git is the name of the program, `git` is the name of the executable available at your command line  
-```
-git init 
-git add <filename>
-git status
-git commit -m "Your commit message"
-git commit --amend -m "Your amended commit message"
-git push 
-git pull 
-git clone
-git branch
-git checkout
-git merge
-git fetch 
-```  
+
+    ```
+    git init 
+    git add <filename>
+    git status
+    git commit -m "Your commit message"
+    git commit --amend -m "Your amended commit message"
+    git push 
+    git pull 
+    git clone
+    git branch
+    git checkout
+    git merge
+    git fetch 
+    ```  
 
 ### Installing Git and GitHub Desktop
 
