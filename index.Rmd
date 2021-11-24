@@ -384,7 +384,7 @@ knitr::include_graphics("img/ghd-potential-conflict.png")
   - See the contents of `PATH` with `echo $PATH` (note use `${PATH}` in shell scripts)
   - you should be able to find the `python`/`python3` exectables with the `which` command
     ```{r}
-    knitr::include_graphics("./img/mac-terminal-zsh-which-python.png")
+    knitr::include_graphics("img/mac-terminal-zsh-which-python.png")
     ```  
 
 #### Windows
@@ -395,24 +395,24 @@ knitr::include_graphics("img/ghd-potential-conflict.png")
   - Anaconda installer from [here](https://www.anaconda.com/products/individual)
 - Despite not being recommend - it is better for you to add Anaconda/Python to your `PATH` in the installer options, i.e., check the first box on this screen  
     ```{r}
-    knitr::include_graphics("./img/anaconda-win-install-options.png")
+    knitr::include_graphics("img/anaconda-win-install-options.png")
     ```  
   - And in the Python check the box adding Python to `PATH`  
     ```{r}
-    knitr::include_graphics("./img/install-python-add-to-path.png")
+    knitr::include_graphics("img/install-python-add-to-path.png")
     ```  
 - Open Windows Terminal
   - you can see the contents of `PATH` in Powershell with `$Env:Path`  
     ```{r}
-    knitr::include_graphics("./img/windows-powershell-path.png")
+    knitr::include_graphics("img/windows-powershell-path.png")
     ```  
   - and in `cmd` with `echo %PATH%`  
     ```{r}
-    knitr::include_graphics("./img/windows-cmd-path.png")
+    knitr::include_graphics("img/windows-cmd-path.png")
     ```  
   - you can see the location of the Python executable in `cmd` with `where python`/`where python3`  
     ```{r}
-    knitr::include_graphics("./img/windows-cmd-where-python3.png")
+    knitr::include_graphics("img/windows-cmd-where-python3.png")
     ``` 
 
 #### Installing the opensafely package
