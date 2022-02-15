@@ -325,7 +325,7 @@ knitr::include_graphics("img/confirm-delete-branch.png")
   - you forget to pull down the latest changes from GitHub (I find easy to forget in the morning)
   - if you're working on a project with multiple people
     - you both create new branches
-    - they send in their PR first and its merged
+    - they send in their PR first and it's merged
     - then you send in your PR which edits some of the same lines
 * Let's say I made changes yesterday which I pushed to GitHub
   - The next day I restart work on a different computer, GitHub Desktop will show for example  
