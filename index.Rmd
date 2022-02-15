@@ -323,7 +323,7 @@ knitr::include_graphics("img/confirm-delete-branch.png")
 
 * These can happen if e.g., 
   - you forget to pull down the latest changes from GitHub (I find easy to forget in the morning)
-  - if you're working on a project with mutiple people
+  - if you're working on a project with multiple people
     - you both create new branches
     - they send in their PR first and its merged
     - then you send in your PR which edits some of the same lines
