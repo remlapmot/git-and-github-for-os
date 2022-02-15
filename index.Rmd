@@ -500,6 +500,7 @@ knitr::include_graphics("img/changes-in-a-commit.png")
 - Common files to ignore are
   - `.Rhistory`
   - `.DS_Store`
+  - if using an RStudio project the `.Rproj.user` directory with syntax `.Rproj.user/`
 
 #### GitHub repos contain more than just code
 - A repo for an R package will probably contain
