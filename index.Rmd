@@ -367,6 +367,26 @@ knitr::include_graphics("img/ghd-potential-conflict.png")
   - [here](https://docs.github.com/en/github/collaborating-with-pull-requests/addressing-merge-conflicts/about-merge-conflicts)
   - Resolving a merge conflict [here](https://docs.github.com/en/github/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github)
 
+#### No content changes found
+
+- If you see the following message from Git that a file has changed but there are *No content changes found*  
+    ```{r}
+    knitr::include_graphics("img/no-content-changes-found.png")
+    ```
+
+- This is most likely caused by working with colleagues using different operating systems, because they save text files with different line ending characters (`CRLF` on Windows, `LF` on macOS/Linux/Unix)
+
+- You can usually simply right click on the offending file in GitHub Desktop and *Discard changes*  
+    ```{r}
+    knitr::include_graphics("img/no-content-changes-found-discard-changes.png")
+    ```  
+- Additionally you can set the following option at the top of your `.gitattributes` file
+
+    ```  
+    # Auto detect text files and perform LF normalization
+    * text=auto
+    ```  
+
 ### Installing Python and the opensafely python command line interface
 
 - Environment variables in computer operating systems contain important strings of text
