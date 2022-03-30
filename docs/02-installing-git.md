@@ -1,0 +1,39 @@
+# Installing Git and GitHub Desktop
+
+
+
+## Installing Git
+
+- Windows
+  - Download and install from [here](https://git-scm.com/download/win)
+- macOS comes with an out-dated version of Git
+  - I recommend installing the Homebrew version 
+  - First install Homebrew, see instructions [here](https://brew.sh/)
+  - Then run in your Terminal app  
+    ```
+    brew upgrade
+    brew install git
+    ```  
+  - Additionally on a Mac it is helpful to install Xcode command line tools (i.e., avoid installing the whole of Xcode.)    
+    ```
+    xcode-select --install
+    ```  
+    - Must reinstall these everytime upgrade operating system versions, e.g., from Big Sur to Monterey
+- Once Git is installed its executable (called `git`) should be available at your command line
+  - Check which version you have with (you want something recent-ish)  
+    ```
+    git --version
+    ```  
+  - On my Windows machine I have  
+    ```
+    git version 2.33.1.windows.1
+    ```  
+
+## Installing GitHub Desktop
+
+- You could use Git through its command syntax however I recommend you use a graphical Git program
+- For Windows and macOS download and install GitHub Desktop from [here](https://desktop.github.com/)
+- A Linux version of GitHub Desktop is available from [here](https://github.com/shiftkey/desktop/)
+- I recommend installing the free VSCode text editor, from [here](https://code.visualstudio.com/), and setting that as the "External editor" in GitHub Desktop options (Click: File | Options...)  
+<img src="img/ghd-options-vscode.png" width="65%" />
+- On Windows I also recommend installing Windows Terminal from [here](https://www.microsoft.com/store/productId/9N0DX20HK701)
