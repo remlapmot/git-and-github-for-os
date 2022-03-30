@@ -8,10 +8,10 @@ bookdown::gitbook:
     download: no
     sharing: no
     edit:
-      link: https://github.com/remlapmot/git-and-github-for-os/edit/main/%s
+      link: https://github.com/remlapmot/git-and-github-for-os/edit/master/%s
       text: "Edit"
     view:
-      link: https://github.com/remlapmot/git-and-github-for-os/blob/main/%s
+      link: https://github.com/remlapmot/git-and-github-for-os/blob/master/%s
     search:
       engine: fuse # lunr is the default
   number_sections: false
