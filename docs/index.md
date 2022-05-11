@@ -1,7 +1,7 @@
 ---
 title: "Tips for using Git and GitHub"
 author: "Tom Palmer"
-date: "30 March 2022"
+date: "11 May 2022"
 site: bookdown::bookdown_site
 ---
 

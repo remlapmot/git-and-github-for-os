@@ -22,4 +22,4 @@
     ![](img/tp-test-org_test-code-button-owgd.png)<!-- -->
   - Click `Clone` in the box which appears in GitHub Desktop  
     <img src="img/gd-clone-box.png" width="65%" />
-  - Go to making a pull request tab
+  - Go to [Making a pull request page](#making-a-pull-request)
