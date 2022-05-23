@@ -27,6 +27,12 @@ knitr::include_graphics("img/changes-in-a-commit.png")
   - `.Rhistory`
   - `.DS_Store`
   - if using an RStudio project ignore the `.Rproj.user` directory with syntax `.Rproj.user/`
+- It is helpful to setup a global `.gitignore` file to ignore certain operating system files from all of your repositories, e.g., `.DS_Store` on macOS or `Thumbs.db` on Windows. To do this on macOS, following the example [here](https://stackoverflow.com/a/52678499), we could run the following commands in a shell
+
+    ```bash
+    echo ".DS_Store" > ~/.gitignore_global
+    git config --global core.excludesfile ~/.gitignore_global
+    ```  
 
 ## GitHub repos contain more than just code
 - A repo for an R package will probably contain
