@@ -19,7 +19,7 @@
 - The repo on GitHub is known as `origin`
 - Clone the repo to your local machine
   - Click: `Code` | `Open with GitHub Desktop`  
-    ![](img/tp-test-org_test-code-button-owgd.png)<!-- -->
+    <img src="img/tp-test-org_test-code-button-owgd.png" width="740" />
   - Click `Clone` in the box which appears in GitHub Desktop  
     <img src="img/gd-clone-box.png" width="65%" />
   - Go to [Making a pull request page](#making-a-pull-request)

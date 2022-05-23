@@ -4,7 +4,7 @@
 
 1. On GitHub: 
     a. Go to our test repo (in our test organization) [here](https://github.com/tp-test-org/test)  
-    ![](img/tp-test-org-test.png)<!-- -->
+    <img src="img/tp-test-org-test.png" width="808" />
     a. Clone the repo to your local machine
 1. In GitHub Desktop: make a new branch and switch to it
 1. In any text editor: 

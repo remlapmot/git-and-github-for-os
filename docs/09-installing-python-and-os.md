@@ -16,7 +16,7 @@
 - When you open Terminal 
   - See the contents of `PATH` with `echo $PATH` (note use `${PATH}` in shell scripts)
   - you should be able to find the `python`/`python3` exectables with the `which` command
-    ![](img/mac-terminal-zsh-which-python.png)<!-- -->
+    <img src="img/mac-terminal-zsh-which-python.png" width="583" />
 
 ## Windows
 
@@ -25,18 +25,18 @@
   - Python installer from [here](https://www.python.org/downloads/)
   - Anaconda installer from [here](https://www.anaconda.com/products/individual)
 - Despite not being recommend - it is better for you to add Anaconda/Python to your `PATH` in the installer options, i.e., check the first box on this screen  
-    ![](img/anaconda-win-install-options.png)<!-- -->
+    <img src="img/anaconda-win-install-options.png" width="374" />
   - And in the Python installer check the box adding Python to `PATH`  
-    ![](img/install-python-add-to-path.png)<!-- -->
+    <img src="img/install-python-add-to-path.png" width="506" />
 - Open Windows Terminal
   - you can see the contents of `PATH` in Powershell with `$Env:Path`  
-    ![](img/windows-powershell-path.png)<!-- -->
+    <img src="img/windows-powershell-path.png" width="686" />
   - and in `cmd` with `echo %PATH%`  
-    ![](img/windows-cmd-path.png)<!-- -->
+    <img src="img/windows-cmd-path.png" width="686" />
   - you can see the location of the Python executable in `cmd` with `where python`/`where python3`  
-    ![](img/windows-cmd-where-python3.png)<!-- -->
+    <img src="img/windows-cmd-where-python3.png" width="747" />
 - If you installed Anaconda and you did not add its folders to `PATH` then you need to install and run opensafely using the Anaconda prompt - you find this as a program under the Start menu  
-![](img/anaconda-prompt-start-menu-win11.png)<!-- -->![](img/anaconda-prompt-cmd.png)<!-- -->
+<img src="img/anaconda-prompt-start-menu-win11.png" width="577" /><img src="img/anaconda-prompt-cmd.png" width="747" />
 
 ## Installing the opensafely package
 

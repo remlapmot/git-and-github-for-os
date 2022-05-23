@@ -11,8 +11,8 @@
   * We then went back to `branch-1` and made some different commits
   * We now need to rebase the commits on `branch-2` to be on top of `branch-1`
   * Starting on `branch-2`, select *Branch | Rebase current branch...*  
-    ![](img/rebase-01.png)<!-- -->
+    <img src="img/rebase-01.png" width="724" />
   * Or/then from the middle panel select the branch to rebase on top of - select `branch-1` (or select `main` if you are rebasing on top of main) and click *Rebase*  
-    ![](img/rebase-02.png)<!-- -->
+    <img src="img/rebase-02.png" width="722" />
   * Hopefully the rebase will be successful, if there are merge conflicts you will need to resolve those  
-    ![](img/rebase-03.png)<!-- -->
+    <img src="img/rebase-03.png" width="724" />

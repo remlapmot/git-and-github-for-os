@@ -1,7 +1,7 @@
 ---
 title: "Tips for using Git and GitHub"
 author: "Tom Palmer"
-date: "11 May 2022"
+date: "Last built on 23 May 2022"
 site: bookdown::bookdown_site
 ---
 

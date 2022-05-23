@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Intro to Git | Tips for using Git and GitHub</title>
-  <meta name="description" content="Intro to Git | Tips for using Git and GitHub" />
+  <title>Session information for reproducibility | Tips for using Git and GitHub</title>
+  <meta name="description" content="Session information for reproducibility | Tips for using Git and GitHub" />
   <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Intro to Git | Tips for using Git and GitHub" />
+  <meta property="og:title" content="Session information for reproducibility | Tips for using Git and GitHub" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Intro to Git | Tips for using Git and GitHub" />
+  <meta name="twitter:title" content="Session information for reproducibility | Tips for using Git and GitHub" />
   
   
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="index.html"/>
-<link rel="next" href="installing-git-and-github-desktop.html"/>
+<link rel="prev" href="short-practical.html"/>
+
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -210,101 +210,58 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="intro-to-git" class="section level1 hasAnchor">
-<h1>Intro to Git<a href="intro-to-git.html#intro-to-git" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<div id="background-info" class="section level2 hasAnchor">
-<h2>Background info<a href="intro-to-git.html#background-info" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<ul>
-<li>Git was written to allow developers work on the source code of the Linux kernel (text files)
-<ul>
-<li>One kernel release they got in a terrible mess</li>
-<li>This provoked Linus Torvalds into action</li>
-<li>For an excellent insight into his thinking watch this talk he gave at Google <a href="https://youtu.be/4XpnKHJAok8">here</a><br />
-</li>
-<li>(Especially if used at the command line) Git can be intimidating to use and we can get Git errors (which like LaTeX and R errors can be quite cryptic)<br />
-<img src="https://imgs.xkcd.com/comics/git.png" width="50%" /></li>
-</ul></li>
-<li>A Git repository is a folder/directory on your computer which has been Git initialised
-<ul>
-<li><p>Using either the command line</p>
-<pre><code>git init mynewfolder</code></pre></li>
-<li><p>Or GitHub Desktop<br />
-<img src="img/ghd-new-repo.png" width="50%" /></p></li>
-<li><p>Repos on GitHub are already Git initialised</p>
-<ul>
-<li>When you clone them down to your computer they work in GitHub Desktop</li>
-</ul></li>
-</ul></li>
-<li>Git is commonly referred to as version control software</li>
-<li>Git is better described as a <em>content addressable filesystem</em> which translates to <em>Git tracks the contents of the files in your repo</em>
-<ul>
-<li><p>Git creates a little database of the contents of your files - snapshots (commits) are taken when you tell it to</p></li>
-<li><p>Git looks for changes in your files when you save them, so when you have unsaved changes in a file/s Git shows no changes until you save<br />
-<img src="img/no-local-changes.png" width="1123" /></p></li>
-<li><p>Git takes snapshots of your files - when you tell it to - <em>commits</em> - I saved my file from above, enter a commit message and click “Commit to master”
-<img src="img/stashed-changes.png" width="1482" /></p></li>
-<li><p>Commits are identified by the 40-character checksum SHA-1 hash of the contents of your files at that time<br />
-<img src="img/git-commit-hash-1.png" width="714" /></p>
-<p><img src="img/git-commit-hash-2.png" width="1355" /></p>
-<p><img src="img/git-commit-hash-3.png" width="1401" /></p></li>
-<li><p>Git knows the state of your files at every commit</p>
-<ul>
-<li>You can easily restore your files to a previous state</li>
-</ul></li>
-<li><p>For Git the state of your files only changes when their contents change</p>
-<ul>
-<li>If you reopen a file, make no changes, then close it, Git will show no changes in your repo</li>
-<li>If you add an empty folder/directory to your repo Git will show no changes in your repo</li>
-<li>This differs to OneDrive/SharePoint/Google Drive which are file synchronisation systems</li>
-</ul></li>
-<li><p>I recommend not to place your Git repos in a location that is sync’d by either OneDrive or Google Drive</p></li>
-</ul></li>
-</ul>
-</div>
-<div id="the-.git-folder" class="section level2 hasAnchor">
-<h2>The <code>.git</code> folder<a href="intro-to-git.html#the-.git-folder" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<ul>
-<li>When you initialise a directory the <code>.git</code> folder is created</li>
-<li>This contains all of the files Git uses to track the contents of your files</li>
-<li>Here is the <code>.git</code> folder of a repo on my computer (I have selected to View hidden files in Windows Explorer)<br />
-<img src="img/windows-explorer-repo.png" width="50%" /></li>
-<li>Confusingly GitHub hides the <code>.git</code> folder from view<br />
-<img src="img/repo-github-view.png" width="730" /></li>
-<li>Here are its contents - don’t edit these manually<br />
-<img src="img/dot-git-folder-contents.png" width="50%" /></li>
-<li>Explanation of these is (from <a href="https://www.tutorialspoint.com/what-is-git-folder-and-why-is-it-hidden">here</a>)<br />
-<img src="img/dot-git-folder-explanation.png" width="734" /></li>
-</ul>
-</div>
-<div id="common-git-commands" class="section level2 hasAnchor">
-<h2>Common Git commands<a href="intro-to-git.html#common-git-commands" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<ul>
-<li><p>I recommend you use GitHub Desktop instead of these commands</p></li>
-<li><p>These commands are what GitHub Desktop is using behind the scenes</p></li>
-<li><p>Git is the name of the program, <code>git</code> is the name of the executable available at your command line</p>
-<pre><code>git init 
-git add &lt;filename&gt;
-git status
-git commit -m &quot;Your commit message&quot;
-git commit --amend -m &quot;Your amended commit message&quot;
-git push 
-git pull 
-git clone
-git branch
-git checkout
-git merge
-git fetch </code></pre></li>
-</ul>
+<div id="session-information-for-reproducibility" class="section level1 hasAnchor">
+<h1>Session information for reproducibility<a href="session-information-for-reproducibility.html#session-information-for-reproducibility" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="session-information-for-reproducibility.html#cb10-1" aria-hidden="true" tabindex="-1"></a>sessioninfo<span class="sc">::</span><span class="fu">session_info</span>()</span></code></pre></div>
+<pre><code>## ─ Session info ───────────────────────────────────────────────────────────────
+##  setting  value
+##  version  R version 4.2.0 (2022-04-22)
+##  os       macOS Monterey 12.4
+##  system   aarch64, darwin20
+##  ui       X11
+##  language (EN)
+##  collate  en_GB.UTF-8
+##  ctype    en_GB.UTF-8
+##  tz       Europe/London
+##  date     2022-05-23
+##  pandoc   2.18 @ /opt/homebrew/bin/ (via rmarkdown)
+## 
+## ─ Packages ───────────────────────────────────────────────────────────────────
+##  package     * version date (UTC) lib source
+##  bookdown      0.26    2022-04-15 [1] CRAN (R 4.2.0)
+##  bslib         0.3.1   2021-10-06 [1] CRAN (R 4.2.0)
+##  cli           3.3.0   2022-04-25 [1] CRAN (R 4.2.0)
+##  digest        0.6.29  2021-12-01 [1] CRAN (R 4.2.0)
+##  evaluate      0.15    2022-02-18 [1] CRAN (R 4.2.0)
+##  fastmap       1.1.0   2021-01-25 [1] CRAN (R 4.2.0)
+##  htmltools     0.5.2   2021-08-25 [1] CRAN (R 4.2.0)
+##  jquerylib     0.1.4   2021-04-26 [1] CRAN (R 4.2.0)
+##  jsonlite      1.8.0   2022-02-22 [1] CRAN (R 4.2.0)
+##  knitr         1.39    2022-04-26 [1] CRAN (R 4.2.0)
+##  magrittr      2.0.3   2022-03-30 [1] CRAN (R 4.2.0)
+##  R6            2.5.1   2021-08-19 [1] CRAN (R 4.2.0)
+##  rlang         1.0.2   2022-03-04 [1] CRAN (R 4.2.0)
+##  rmarkdown     2.14    2022-04-25 [1] CRAN (R 4.2.0)
+##  rstudioapi    0.13    2020-11-12 [1] CRAN (R 4.2.0)
+##  sass          0.4.1   2022-03-23 [1] CRAN (R 4.2.0)
+##  sessioninfo   1.2.2   2021-12-06 [1] CRAN (R 4.2.0)
+##  stringi       1.7.6   2021-11-29 [1] CRAN (R 4.2.0)
+##  stringr       1.4.0   2019-02-10 [1] CRAN (R 4.2.0)
+##  xfun          0.31    2022-05-10 [1] CRAN (R 4.2.0)
+##  yaml          2.3.5   2022-02-21 [1] CRAN (R 4.2.0)
+## 
+##  [1] /Library/Frameworks/R.framework/Versions/4.2-arm64/Resources/library
+## 
+## ──────────────────────────────────────────────────────────────────────────────</code></pre>
 
-</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="installing-git-and-github-desktop.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="short-practical.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -325,7 +282,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/remlapmot/git-and-github-for-os/edit/master/01-intro-git.Rmd",
+"link": "https://github.com/remlapmot/git-and-github-for-os/edit/master/13-session-info.Rmd",
 "text": "Edit"
 },
 "history": {
@@ -333,7 +290,7 @@ gitbook.start({
 "text": null
 },
 "view": {
-"link": "https://github.com/remlapmot/git-and-github-for-os/blob/master/01-intro-git.Rmd",
+"link": "https://github.com/remlapmot/git-and-github-for-os/blob/master/13-session-info.Rmd",
 "text": null
 },
 "download": null,

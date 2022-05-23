@@ -20,7 +20,7 @@
 
 - See OS page [here](https://docs.opensafely.org/getting-started/)
 - If creating a new repo create from the OS template [here](https://github.com/opensafely/research-template)
-![](img/os-template.png)<!-- -->
+<img src="img/os-template.png" width="730" />
 - This is already Git initialized
 - Important files
   - `project.yaml`

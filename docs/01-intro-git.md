@@ -23,15 +23,15 @@
 - Git is better described as a *content addressable filesystem* which translates to *Git tracks the contents of the files in your repo*
   - Git creates a little database of the contents of your files - snapshots (commits) are taken when you tell it to
   - Git looks for changes in your files when you save them, so when you have unsaved changes in a file/s Git shows no changes until you save  
-    ![](img/no-local-changes.png)<!-- -->
+    <img src="img/no-local-changes.png" width="1123" />
   - Git takes snapshots of your files - when you tell it to - *commits* - I saved my file from above, enter a commit message and click "Commit to master"
-    ![](img/stashed-changes.png)<!-- -->
+    <img src="img/stashed-changes.png" width="1482" />
   - Commits are identified by the 40-character checksum SHA-1 hash of the contents of your files at that time  
-    ![](img/git-commit-hash-1.png)<!-- -->
+    <img src="img/git-commit-hash-1.png" width="714" />
     
-    ![](img/git-commit-hash-2.png)<!-- -->
+    <img src="img/git-commit-hash-2.png" width="1355" />
     
-    ![](img/git-commit-hash-3.png)<!-- -->
+    <img src="img/git-commit-hash-3.png" width="1401" />
   - Git knows the state of your files at every commit
     - You can easily restore your files to a previous state
   - For Git the state of your files only changes when their contents change
@@ -47,11 +47,11 @@
 - Here is the `.git` folder of a repo on my computer (I have selected to View hidden files in Windows Explorer)  
 <img src="img/windows-explorer-repo.png" width="50%" />
 - Confusingly GitHub hides the `.git` folder from view  
-![](img/repo-github-view.png)<!-- -->
+<img src="img/repo-github-view.png" width="730" />
 - Here are its contents - don't edit these manually  
 <img src="img/dot-git-folder-contents.png" width="50%" />
 - Explanation of these is (from [here](https://www.tutorialspoint.com/what-is-git-folder-and-why-is-it-hidden))  
-![](img/dot-git-folder-explanation.png)<!-- -->
+<img src="img/dot-git-folder-explanation.png" width="734" />
 
 ## Common Git commands
 

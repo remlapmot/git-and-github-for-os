@@ -23,7 +23,6 @@
 <meta name="author" content="Tom Palmer" />
 
 
-<meta name="date" content="2022-05-11" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -190,6 +189,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="additional-topics.html"><a href="additional-topics.html#github-repos-contain-more-than-just-code"><i class="fa fa-check"></i>GitHub repos contain more than just code</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="short-practical.html"><a href="short-practical.html"><i class="fa fa-check"></i>Short practical</a></li>
+<li class="chapter" data-level="" data-path="session-information-for-reproducibility.html"><a href="session-information-for-reproducibility.html"><i class="fa fa-check"></i>Session information for reproducibility</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -228,24 +228,24 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>Let’s say I made changes yesterday which I pushed to GitHub
 <ul>
 <li>The next day I restart work on a different computer, GitHub Desktop will show for example<br />
-<img src="img/pulling-from-github.png" /><!-- --></li>
+<img src="img/pulling-from-github.png" width="740" /></li>
 </ul></li>
 <li>But you forget to click “Pull origin”</li>
 <li>If you make commits onto a branch on which there are not yet pulled commits on GitHub you’ll get a merge error when you eventually click “Pull origin”<br />
-<img src="img/ghd-resolve-conflicts-before-merge.png" /><!-- --></li>
+<img src="img/ghd-resolve-conflicts-before-merge.png" width="510" /></li>
 <li>You could resolve conflict e.g., in VSCode<br />
-<img src="img/vscode-git-merge-resolve.png" /><!-- --></li>
+<img src="img/vscode-git-merge-resolve.png" width="1120" /></li>
 <li>We can see this can happen when we see both up and down arrows in Pull origin box (but not always)<br />
-<img src="img/ghd-potential-conflict.png" /><!-- --></li>
+<img src="img/ghd-potential-conflict.png" width="1200" /></li>
 <li>Fix
 <ul>
 <li><p>Move your changes to a new branch<br />
-<img src="img/ghd-create-branch-from-commit.png" /><!-- --></p></li>
+<img src="img/ghd-create-branch-from-commit.png" width="1084" /></p></li>
 <li><p>Move back to <code>master</code>/<code>main</code> and revert/undo the changes there, then edit the files so they show no changes<br />
-<img src="img/ghd-revert-changes-in-commit.png" /><!-- --></p>
-<p><img src="img/ghd-undo-commit.png" /><!-- --></p></li>
+<img src="img/ghd-revert-changes-in-commit.png" width="1088" /></p>
+<p><img src="img/ghd-undo-commit.png" width="1086" /></p></li>
 <li><p>Pull down the changes from GitHub to the relevant branch<br />
-<img src="img/ghd-all-is-well.png" /><!-- --></p></li>
+<img src="img/ghd-all-is-well.png" width="1083" /></p></li>
 <li><p>Merge changes from your new branch into the <code>main</code>/<code>master</code>/relevant branch</p></li>
 </ul></li>
 <li>See the GitHub documentation for more information about merge conflicts
@@ -259,10 +259,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2>No content changes found<a href="common-errors.html#no-content-changes-found" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ul>
 <li><p>If you see the following message from Git that a file has changed but there are <em>No content changes found</em><br />
-<img src="img/no-content-changes-found.png" /><!-- --></p></li>
+<img src="img/no-content-changes-found.png" width="720" /></p></li>
 <li><p>This is most likely caused by working with colleagues using different operating systems, because they save text files with different line ending characters (<code>CRLF</code> on Windows, <code>LF</code> on macOS/Linux/Unix)</p></li>
 <li><p>You can usually simply right click on the offending file in GitHub Desktop and <em>Discard changes</em><br />
-<img src="img/no-content-changes-found-discard-changes.png" /><!-- --></p></li>
+<img src="img/no-content-changes-found-discard-changes.png" width="722" /></p></li>
 <li><p>Additionally you can set the following option at the top of your <code>.gitattributes</code> file</p>
 <pre><code># Auto detect text files and perform LF normalization
 * text=auto</code></pre></li>

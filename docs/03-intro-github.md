@@ -8,7 +8,7 @@
 
 - On GitHub OpenSAFELY is an organization
   - The repos are owned by the organization so they show up under the organisation [here](https://github.com/opensafely)
-    ![](img/os-github-org.png)<!-- -->
+    <img src="img/os-github-org.png" width="771" />
 
 ## GitHub PAT for R
 
