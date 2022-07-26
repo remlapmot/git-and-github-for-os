@@ -9,7 +9,7 @@ knitr::opts_chunk$set(echo = FALSE)
 - Under your user account you see the repos you are owner of
 
 - On GitHub OpenSAFELY is an organization
-  - The repos are owned by the organization so they show up under the organisation [here](https://github.com/opensafely)
+  - The repos are owned by the organization so they are under the organisation [here](https://github.com/opensafely)
     ```{r}
     knitr::include_graphics("img/os-github-org.png")
     ```  
