@@ -33,7 +33,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Installing GitHub Desktop
 
-- You could use Git through its command syntax however I recommend you use a graphical Git program
+- You could use Git through its command syntax however I recommend you use a graphical Git client
 - For Windows and macOS download and install GitHub Desktop from [here](https://desktop.github.com/)
 - A Linux version of GitHub Desktop is available from [here](https://github.com/shiftkey/desktop/)
 - I recommend installing the free VSCode text editor, from [here](https://code.visualstudio.com/), and setting that as the "External editor" in GitHub Desktop options (Click: File | Options...)  
