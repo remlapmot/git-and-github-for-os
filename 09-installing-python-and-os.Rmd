@@ -11,8 +11,9 @@ knitr::opts_chunk$set(echo = FALSE)
 ## macOS
 
 - If you have a Mac, the macOS operating system comes with an old-ish version of Python 2.7
-- I recommend installing Python 3 through [homebrew](https://brew.sh/)  
-    ```
+- I recommend installing Python 3 through [homebrew](https://brew.sh/)
+
+    ```bash
     brew install python
     ```  
 - When you open Terminal 
@@ -29,9 +30,10 @@ knitr::opts_chunk$set(echo = FALSE)
   - Python installer from [here](https://www.python.org/downloads/)
   - Anaconda installer from [here](https://www.anaconda.com/products/individual)
 - Despite not being recommend - it is better for you to add Anaconda/Python to your `PATH` in the installer options, i.e., check the first box on this screen  
-    ```{r}
-    knitr::include_graphics("img/anaconda-win-install-options.png")
-    ```  
+
+```{r, fig.align="center"}
+knitr::include_graphics("img/anaconda-win-install-options.png")
+```  
   - And in the Python installer check the box adding Python to `PATH`  
     ```{r}
     knitr::include_graphics("img/install-python-add-to-path.png")
@@ -57,11 +59,13 @@ knitr::include_graphics("img/anaconda-prompt-cmd.png")
 
 ## Installing the opensafely package
 
-- As long as the `python`/`python3` and `pip`/`pip3` executables are now on your `PATH` you can simply run in your shell program  
-    ```
+- As long as the `python`/`python3` and `pip`/`pip3` executables are now on your `PATH` you can simply run in your shell program
+
+    ```bash
     pip install opensafely   
     ```  
-- This will additionally install its dependency package the cohortextractor package into your Python installation and you should now be able to run opensafely commands such as  
-    ```
+- This will additionally install its dependency package the cohortextractor package into your Python installation and you should now be able to run opensafely commands such as
+
+    ```bash
     opensafely run run_all
     ```  
