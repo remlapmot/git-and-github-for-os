@@ -2,3 +2,4 @@
 * text=auto
 *.html linguist-vendored
 *.[Rr]md linguist-detectable
+*.[Qq]md linguist-detectable
