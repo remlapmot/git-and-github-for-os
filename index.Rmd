@@ -1,6 +1,6 @@
 ---
 author: "Tom Palmer"
-date: "Last built on `r format(Sys.time(), '%d %B %Y')`"
+date: "`r format(Sys.time(), '%d %B %Y')`"
 ---
 
 ```{r setup, include=FALSE}
