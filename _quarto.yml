@@ -1,0 +1,32 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: Tips for using Git and GitHub
+  chapters:
+    - index.Rmd
+    - 01-intro-git.Rmd
+    - 02-installing-git.Rmd
+    - 03-intro-github.Rmd
+    - 04-git-and-github-workflow.Rmd
+    - 05-making-pull-request.Rmd
+    - 06-merging-branch-locally.Rmd
+    - 07-rebasing-branch.Rmd
+    - 08-common-errors.Rmd
+    - 09-installing-python-and-os.Rmd
+    - 10-os-repos.Rmd
+    - 11-additional-topics.Rmd
+    - 12-short-practical.Rmd
+    - 13-session-info.Rmd
+  link-external-icon: true
+  repo-url: https://github.com/remlapmot/git-and-github-for-os
+  repo-actions: source
+  site-url: https://remlapmot.github.io/git-and-github-for-os/
+
+format:
+  html:
+    toc: true
+    link-external-icon: true
+    theme: cosmo
+    css: styles.css
