@@ -83,7 +83,7 @@ knitr::include_graphics("img/dot-git-folder-explanation.png")
 - These commands are what GitHub Desktop is using behind the scenes
 - Git is the name of the program, `git` is the name of the executable available at your command line  
 
-    ```
+    ```bash
     git init 
     git add <filename>
     git status
