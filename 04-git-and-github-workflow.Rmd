@@ -28,4 +28,4 @@ knitr::opts_chunk$set(echo = FALSE)
     ```{r, out.width = "65%"}
     knitr::include_graphics("img/gd-clone-box.png")
     ```  
-  - Go to [Making a pull request page](#making-a-pull-request)
+  - Go to the [Making a pull request page](#making-a-pull-request)
