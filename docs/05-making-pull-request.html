@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Tom Palmer">
-<meta name="dcterms.date" content="2022-07-26">
 
-<title>Tips for using Git and GitHub</title>
+<title>Tips for using Git and GitHub - 5&nbsp; Making a pull request</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -27,7 +25,8 @@ ul.task-list{list-style: none;}
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./01-intro-git.html" rel="next">
+<link href="./06-merging-branch-locally.html" rel="next">
+<link href="./04-git-and-github-workflow.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -67,7 +66,7 @@ ul.task-list{list-style: none;}
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Tips for using Git and GitHub</h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Making a pull request</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -95,7 +94,7 @@ ul.task-list{list-style: none;}
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">Introduction</a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link">Introduction</a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -120,7 +119,7 @@ ul.task-list{list-style: none;}
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./05-making-pull-request.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Making a pull request</span></a>
+  <a href="./05-making-pull-request.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Making a pull request</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -168,90 +167,114 @@ ul.task-list{list-style: none;}
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
-  <li><a href="#session-plan" id="toc-session-plan" class="nav-link" data-scroll-target="#session-plan">Session plan</a></li>
-  <li><a href="#session-aims" id="toc-session-aims" class="nav-link" data-scroll-target="#session-aims">Session aims</a></li>
-  <li><a href="#guides-to-git-and-github" id="toc-guides-to-git-and-github" class="nav-link" data-scroll-target="#guides-to-git-and-github">Guides to Git and GitHub</a></li>
-  </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/remlapmot/git-and-github-for-os/blob/main/index.Rmd" class="toc-action">View source</a></p></div></div></nav>
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Tips for using Git and GitHub</h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Making a pull request</span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Tom Palmer </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">July 26, 2022</p>
-    </div>
-  </div>
     
   </div>
   
 
 </header>
 
-<section id="introduction" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="introduction">Introduction</h2>
-<p>The following is intended as a set of tips for people learning how to use Git and GitHub.</p>
-</section>
-<section id="session-plan" class="level2">
-<h2 class="anchored" data-anchor-id="session-plan">Session plan</h2>
 <ul>
-<li>Introduction</li>
-<li>Tips</li>
-<li>Short practical on making a pull request</li>
-<li>Elsie - the OpenSAFELY codelist system</li>
+<li>Let’s start by creating a new branch</li>
 </ul>
-</section>
-<section id="session-aims" class="level2">
-<h2 class="anchored" data-anchor-id="session-aims">Session aims</h2>
-<p>By the end of the session you should</p>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="img/pr-new-branch.png" class="img-fluid" width="874"></p>
+</div>
+</div>
 <ul>
-<li>have a basic understanding of how Git works</li>
-<li>be able to perform common Git operations using GitHub Desktop and the GitHub web interface, including
-<ul>
-<li>clone a repo from GitHub</li>
-<li>make a new branch</li>
-<li>make commits</li>
-<li>push your branch to GitHub</li>
-<li>make a pull request</li>
-</ul></li>
+<li>We do some work (in VSCode/text editor/RStudio) which creates a markdown file with a title and some text. We then make a new commit which adds this new file to the repo</li>
 </ul>
-</section>
-<section id="guides-to-git-and-github" class="level2">
-<h2 class="anchored" data-anchor-id="guides-to-git-and-github">Guides to Git and GitHub</h2>
-<p>There are many excellent guides to Git and GitHub online, e.g.,</p>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="img/pr-commit-new-file.png" class="img-fluid" width="876"></p>
+</div>
+</div>
 <ul>
-<li>Intro to GitHub <a href="https://guides.github.com/activities/hello-world/">here</a></li>
-<li>GitHub Training &amp; Guides YouTube channel <a href="https://www.youtube.com/githubguides">here</a></li>
-<li>Git documentation and training <a href="https://git-scm.com/doc">here</a></li>
-<li>Hadley Wickham on Git <a href="https://r-pkgs.org/git.html">here</a></li>
-<li>Jenny Bryan on Git and GitHub with R <a href="https://happygitwithr.com/">here</a></li>
+<li>Next publish the new branch to GitHub</li>
 </ul>
-<p>And most relevantly the OpenSAFELY documentation <a href="https://docs.opensafely.org/getting-started/">here</a>.</p>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="img/pr-publish-branch.png" class="img-fluid" width="875"></p>
+</div>
+</div>
+<ul>
+<li>Now initiate the creation of the PR by either clicking in GitHub Desktop “Create Pull Request”</li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="img/pr-create-pr-01.png" class="img-fluid" width="878"></p>
+</div>
+</div>
+<ul>
+<li>or clicking on the button on the repo webpage “Compare &amp; pull request”</li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="img/pr-create-pr-02.png" class="img-fluid" width="742"></p>
+</div>
+</div>
+<ul>
+<li>Edit the title box, add some extra text in the comment box, select a reviewer, and then click “Create pull request”</li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="img/pr-create-pr-and-reviewers.png" class="img-fluid" width="976"></p>
+</div>
+</div>
+<ul>
+<li>You can amend/edit pull requests by modifying/adding commits to the branch from which you sent the PR</li>
+<li>See more about pull request reviews <a href="https://docs.github.com/en/github/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/about-pull-request-reviews">here</a></li>
+<li>(The reviewer) will then merge your PR</li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="img/pr-merge-pr.png" class="img-fluid" width="722"></p>
+</div>
+</div>
+<ul>
+<li>(The reviewer) will then confirm the merge</li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="img/pr-confirm-merge.png" class="img-fluid" width="724"></p>
+</div>
+</div>
+<ul>
+<li>(Optional) Delete the branch the PR came from</li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="img/pr-delete-branch.png" class="img-fluid" width="722"></p>
+</div>
+</div>
+<ul>
+<li>The PR is now finished and we can see the merge commit in the default (<code>main</code>/<code>master</code>) branch</li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="img/pr-finished.png" class="img-fluid" width="728"></p>
+</div>
+</div>
+<ul>
+<li>In GitHub Desktop click “Fetch origin”/“Pull origin” to pull the updated <code>main</code>/<code>master</code> branch down to your local machine … and the process begins again …</li>
+</ul>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -367,10 +390,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./04-git-and-github-workflow.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Git and GitHub Workflow</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./01-intro-git.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Intro to Git</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./06-merging-branch-locally.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Merging a branch locally</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Tom Palmer">
-<meta name="dcterms.date" content="2022-07-26">
 
-<title>Tips for using Git and GitHub</title>
+<title>Tips for using Git and GitHub - 8&nbsp; Common errors</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -27,7 +25,8 @@ ul.task-list{list-style: none;}
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./01-intro-git.html" rel="next">
+<link href="./09-installing-python-and-os.html" rel="next">
+<link href="./07-rebasing-branch.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -67,7 +66,7 @@ ul.task-list{list-style: none;}
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Tips for using Git and GitHub</h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Common errors</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -95,7 +94,7 @@ ul.task-list{list-style: none;}
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">Introduction</a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link">Introduction</a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -135,7 +134,7 @@ ul.task-list{list-style: none;}
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./08-common-errors.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Common errors</span></a>
+  <a href="./08-common-errors.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Common errors</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -172,83 +171,135 @@ ul.task-list{list-style: none;}
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
-  <li><a href="#session-plan" id="toc-session-plan" class="nav-link" data-scroll-target="#session-plan">Session plan</a></li>
-  <li><a href="#session-aims" id="toc-session-aims" class="nav-link" data-scroll-target="#session-aims">Session aims</a></li>
-  <li><a href="#guides-to-git-and-github" id="toc-guides-to-git-and-github" class="nav-link" data-scroll-target="#guides-to-git-and-github">Guides to Git and GitHub</a></li>
+  <li><a href="#merge-conflicts" id="toc-merge-conflicts" class="nav-link active" data-scroll-target="#merge-conflicts"> <span class="header-section-number">8.1</span> Merge conflicts</a></li>
+  <li><a href="#no-content-changes-found" id="toc-no-content-changes-found" class="nav-link" data-scroll-target="#no-content-changes-found"> <span class="header-section-number">8.2</span> No content changes found</a></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/remlapmot/git-and-github-for-os/blob/main/index.Rmd" class="toc-action">View source</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/remlapmot/git-and-github-for-os/blob/main/08-common-errors.Rmd" class="toc-action">View source</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Tips for using Git and GitHub</h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Common errors</span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Tom Palmer </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">July 26, 2022</p>
-    </div>
-  </div>
     
   </div>
   
 
 </header>
 
-<section id="introduction" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="introduction">Introduction</h2>
-<p>The following is intended as a set of tips for people learning how to use Git and GitHub.</p>
-</section>
-<section id="session-plan" class="level2">
-<h2 class="anchored" data-anchor-id="session-plan">Session plan</h2>
+<section id="merge-conflicts" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="merge-conflicts"><span class="header-section-number">8.1</span> Merge conflicts</h2>
 <ul>
-<li>Introduction</li>
-<li>Tips</li>
-<li>Short practical on making a pull request</li>
-<li>Elsie - the OpenSAFELY codelist system</li>
+<li>These can happen if e.g.,
+<ul>
+<li>you forget to pull down the latest changes from GitHub (I find easy to forget in the morning)</li>
+<li>if you’re working on a project with multiple people
+<ul>
+<li>you both create new branches</li>
+<li>they send in their PR first and it’s merged</li>
+<li>then you send in your PR which edits some of the same lines</li>
+</ul></li>
+</ul></li>
+<li>Let’s say I made changes yesterday which I pushed to GitHub
+<ul>
+<li><p>The next day I restart work on a different computer, GitHub Desktop will show for example</p>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="img/pulling-from-github.png" class="img-fluid" width="740"></p>
+</div>
+</div></li>
+</ul></li>
+<li>But you forget to click “Pull origin”</li>
+<li>If you make commits onto a branch on which there are not yet pulled commits on GitHub you’ll get a merge error when you eventually click “Pull origin”</li>
 </ul>
-</section>
-<section id="session-aims" class="level2">
-<h2 class="anchored" data-anchor-id="session-aims">Session aims</h2>
-<p>By the end of the session you should</p>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="img/ghd-resolve-conflicts-before-merge.png" class="img-fluid" width="510"></p>
+</div>
+</div>
 <ul>
-<li>have a basic understanding of how Git works</li>
-<li>be able to perform common Git operations using GitHub Desktop and the GitHub web interface, including
+<li>You could resolve conflict e.g., in VSCode</li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="img/vscode-git-merge-resolve.png" class="img-fluid" width="1120"></p>
+</div>
+</div>
 <ul>
-<li>clone a repo from GitHub</li>
-<li>make a new branch</li>
-<li>make commits</li>
-<li>push your branch to GitHub</li>
-<li>make a pull request</li>
+<li>We can see this can happen when we see both up and down arrows in Pull origin box (but not always)</li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="img/ghd-potential-conflict.png" class="img-fluid" width="1200"></p>
+</div>
+</div>
+<ul>
+<li>Fix
+<ul>
+<li><p>Move your changes to a new branch</p>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="img/ghd-create-branch-from-commit.png" class="img-fluid" width="1084"></p>
+</div>
+</div></li>
+<li><p>Move back to <code>master</code>/<code>main</code> and revert/undo the changes there, then edit the files so they show no changes</p>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="img/ghd-revert-changes-in-commit.png" class="img-fluid" width="1088"></p>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="img/ghd-undo-commit.png" class="img-fluid" width="1086"></p>
+</div>
+</div></li>
+<li><p>Pull down the changes from GitHub to the relevant branch</p>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="img/ghd-all-is-well.png" class="img-fluid" width="1083"></p>
+</div>
+</div></li>
+<li><p>Merge changes from your new branch into the <code>main</code>/<code>master</code>/relevant branch</p></li>
+</ul></li>
+<li>See the GitHub documentation for more information about merge conflicts
+<ul>
+<li><a href="https://docs.github.com/en/github/collaborating-with-pull-requests/addressing-merge-conflicts/about-merge-conflicts">here</a></li>
+<li>Resolving a merge conflict <a href="https://docs.github.com/en/github/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github">here</a></li>
 </ul></li>
 </ul>
 </section>
-<section id="guides-to-git-and-github" class="level2">
-<h2 class="anchored" data-anchor-id="guides-to-git-and-github">Guides to Git and GitHub</h2>
-<p>There are many excellent guides to Git and GitHub online, e.g.,</p>
+<section id="no-content-changes-found" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="no-content-changes-found"><span class="header-section-number">8.2</span> No content changes found</h2>
 <ul>
-<li>Intro to GitHub <a href="https://guides.github.com/activities/hello-world/">here</a></li>
-<li>GitHub Training &amp; Guides YouTube channel <a href="https://www.youtube.com/githubguides">here</a></li>
-<li>Git documentation and training <a href="https://git-scm.com/doc">here</a></li>
-<li>Hadley Wickham on Git <a href="https://r-pkgs.org/git.html">here</a></li>
-<li>Jenny Bryan on Git and GitHub with R <a href="https://happygitwithr.com/">here</a></li>
+<li>If you see the following message from Git that a file has changed but there are <em>No content changes found</em></li>
 </ul>
-<p>And most relevantly the OpenSAFELY documentation <a href="https://docs.opensafely.org/getting-started/">here</a>.</p>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="img/no-content-changes-found.png" class="img-fluid" width="720"></p>
+</div>
+</div>
+<ul>
+<li><p>This is most likely caused by working with colleagues using different operating systems, because they save text files with different line ending characters (<code>CRLF</code> on Windows, <code>LF</code> on macOS/Linux/Unix)</p></li>
+<li><p>You can usually simply right click on the offending file in GitHub Desktop and <em>Discard changes</em></p></li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="img/no-content-changes-found-discard-changes.png" class="img-fluid" width="722"></p>
+</div>
+</div>
+<ul>
+<li><p>Additionally you can set the following option at the top of your <code>.gitattributes</code> file</p>
+<pre><code># Auto detect text files and perform LF normalization
+* text=auto</code></pre></li>
+</ul>
 
 
 </section>
@@ -367,10 +418,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./07-rebasing-branch.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Rebasing a branch</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./01-intro-git.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Intro to Git</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./09-installing-python-and-os.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Installing Python and the opensafely command line interface</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Tom Palmer">
-<meta name="dcterms.date" content="2022-07-26">
 
-<title>Tips for using Git and GitHub</title>
+<title>Tips for using Git and GitHub - 10&nbsp; OpenSAFELY repositories</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -27,7 +25,8 @@ ul.task-list{list-style: none;}
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./01-intro-git.html" rel="next">
+<link href="./11-additional-topics.html" rel="next">
+<link href="./09-installing-python-and-os.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -67,7 +66,7 @@ ul.task-list{list-style: none;}
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Tips for using Git and GitHub</h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">OpenSAFELY repositories</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -95,7 +94,7 @@ ul.task-list{list-style: none;}
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">Introduction</a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link">Introduction</a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -145,7 +144,7 @@ ul.task-list{list-style: none;}
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./10-os-repos.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">OpenSAFELY repositories</span></a>
+  <a href="./10-os-repos.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">OpenSAFELY repositories</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -172,83 +171,102 @@ ul.task-list{list-style: none;}
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
-  <li><a href="#session-plan" id="toc-session-plan" class="nav-link" data-scroll-target="#session-plan">Session plan</a></li>
-  <li><a href="#session-aims" id="toc-session-aims" class="nav-link" data-scroll-target="#session-aims">Session aims</a></li>
-  <li><a href="#guides-to-git-and-github" id="toc-guides-to-git-and-github" class="nav-link" data-scroll-target="#guides-to-git-and-github">Guides to Git and GitHub</a></li>
+  <li><a href="#demo-repo" id="toc-demo-repo" class="nav-link active" data-scroll-target="#demo-repo"> <span class="header-section-number">10.1</span> Demo repo</a></li>
+  <li><a href="#getting-started" id="toc-getting-started" class="nav-link" data-scroll-target="#getting-started"> <span class="header-section-number">10.2</span> Getting started</a></li>
+  <li><a href="#running-jobs-on-the-dummy-data" id="toc-running-jobs-on-the-dummy-data" class="nav-link" data-scroll-target="#running-jobs-on-the-dummy-data"> <span class="header-section-number">10.3</span> Running jobs (on the dummy data)</a></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/remlapmot/git-and-github-for-os/blob/main/index.Rmd" class="toc-action">View source</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/remlapmot/git-and-github-for-os/blob/main/10-os-repos.Rmd" class="toc-action">View source</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Tips for using Git and GitHub</h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">OpenSAFELY repositories</span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Tom Palmer </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">July 26, 2022</p>
-    </div>
-  </div>
     
   </div>
   
 
 </header>
 
-<section id="introduction" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="introduction">Introduction</h2>
-<p>The following is intended as a set of tips for people learning how to use Git and GitHub.</p>
-</section>
-<section id="session-plan" class="level2">
-<h2 class="anchored" data-anchor-id="session-plan">Session plan</h2>
 <ul>
-<li>Introduction</li>
-<li>Tips</li>
-<li>Short practical on making a pull request</li>
-<li>Elsie - the OpenSAFELY codelist system</li>
+<li>OpenSAFELY is a system of Python packages (opensafely and cohortextractor) which run various Docker containers
+<ul>
+<li>The main GitHub organisation page is <a href="https://github.com/opensafely">here</a></li>
+<li>All the core code is published in their opensafely-core organisation on GitHub <a href="https://github.com/opensafely-core">here</a></li>
+<li>And there is also their opensafely-actions organisation <a href="https://github.com/opensafely-actions">here</a></li>
+</ul></li>
+<li>A Docker container is a like a virtual machine
+<ul>
+<li>It defines the operating system and programs running within it</li>
+<li>On my Windows 10 machine I can run an Ubuntu docker container</li>
+<li>Just because an R package is installed in the R installation on your machine does not mean that it is installed in the OpenSAFELY R Docker container
+<ul>
+<li>See the list of packages in the R Docker container <a href="https://github.com/opensafely-core/r-docker/blob/master/packages.txt">here</a></li>
+</ul></li>
+</ul></li>
+</ul>
+<section id="demo-repo" class="level2" data-number="10.1">
+<h2 data-number="10.1" class="anchored" data-anchor-id="demo-repo"><span class="header-section-number">10.1</span> Demo repo</h2>
+<ul>
+<li>Have a look at the demo repo <a href="https://github.com/opensafely/os-demo-research">here</a></li>
 </ul>
 </section>
-<section id="session-aims" class="level2">
-<h2 class="anchored" data-anchor-id="session-aims">Session aims</h2>
-<p>By the end of the session you should</p>
+<section id="getting-started" class="level2" data-number="10.2">
+<h2 data-number="10.2" class="anchored" data-anchor-id="getting-started"><span class="header-section-number">10.2</span> Getting started</h2>
 <ul>
-<li>have a basic understanding of how Git works</li>
-<li>be able to perform common Git operations using GitHub Desktop and the GitHub web interface, including
+<li>See OS page <a href="https://docs.opensafely.org/getting-started/">here</a></li>
+<li>If creating a new repo create from the OS template <a href="https://github.com/opensafely/research-template">here</a></li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="img/os-template.png" class="img-fluid" width="730"></p>
+</div>
+</div>
 <ul>
-<li>clone a repo from GitHub</li>
-<li>make a new branch</li>
-<li>make commits</li>
-<li>push your branch to GitHub</li>
-<li>make a pull request</li>
+<li>This is already Git initialized</li>
+<li>Important files
+<ul>
+<li><code>project.yaml</code>
+<ul>
+<li>Defines the jobs and the order in which they run</li>
+</ul></li>
+<li><code>/analysis/study_defintion.py</code>
+<ul>
+<li>Defines the study population extracted from the OpenSAFELY database</li>
+<li>This should return <code>.csv</code> file/s of data to read into R</li>
+</ul></li>
+<li><code>/analysis/##_R-scripts.R</code>
+<ul>
+<li>Your analysis scripts</li>
+</ul></li>
 </ul></li>
 </ul>
 </section>
-<section id="guides-to-git-and-github" class="level2">
-<h2 class="anchored" data-anchor-id="guides-to-git-and-github">Guides to Git and GitHub</h2>
-<p>There are many excellent guides to Git and GitHub online, e.g.,</p>
+<section id="running-jobs-on-the-dummy-data" class="level2" data-number="10.3">
+<h2 data-number="10.3" class="anchored" data-anchor-id="running-jobs-on-the-dummy-data"><span class="header-section-number">10.3</span> Running jobs (on the dummy data)</h2>
 <ul>
-<li>Intro to GitHub <a href="https://guides.github.com/activities/hello-world/">here</a></li>
-<li>GitHub Training &amp; Guides YouTube channel <a href="https://www.youtube.com/githubguides">here</a></li>
-<li>Git documentation and training <a href="https://git-scm.com/doc">here</a></li>
-<li>Hadley Wickham on Git <a href="https://r-pkgs.org/git.html">here</a></li>
-<li>Jenny Bryan on Git and GitHub with R <a href="https://happygitwithr.com/">here</a></li>
+<li>In your OS repo online
+<ul>
+<li>Use Gitpod</li>
+</ul></li>
+<li>On your own machine - install the following free software
+<ul>
+<li>(If on Windows - Windows Subsystem for Linux version 2)</li>
+<li>Docker Desktop</li>
+<li>Python</li>
+<li>Git</li>
+<li>GitHub Desktop</li>
+<li>VSCode text editor</li>
+</ul></li>
 </ul>
-<p>And most relevantly the OpenSAFELY documentation <a href="https://docs.opensafely.org/getting-started/">here</a>.</p>
 
 
 </section>
@@ -367,10 +385,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./09-installing-python-and-os.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Installing Python and the opensafely command line interface</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./01-intro-git.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Intro to Git</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./11-additional-topics.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Additional topics</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

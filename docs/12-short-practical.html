@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Tom Palmer">
-<meta name="dcterms.date" content="2022-07-26">
 
-<title>Tips for using Git and GitHub</title>
+<title>Tips for using Git and GitHub - 12&nbsp; Short practical</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -27,7 +25,8 @@ ul.task-list{list-style: none;}
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./01-intro-git.html" rel="next">
+<link href="./13-session-info.html" rel="next">
+<link href="./11-additional-topics.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -67,7 +66,7 @@ ul.task-list{list-style: none;}
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Tips for using Git and GitHub</h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Short practical</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -95,7 +94,7 @@ ul.task-list{list-style: none;}
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">Introduction</a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link">Introduction</a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -155,7 +154,7 @@ ul.task-list{list-style: none;}
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./12-short-practical.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Short practical</span></a>
+  <a href="./12-short-practical.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Short practical</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -168,90 +167,73 @@ ul.task-list{list-style: none;}
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
-  <li><a href="#session-plan" id="toc-session-plan" class="nav-link" data-scroll-target="#session-plan">Session plan</a></li>
-  <li><a href="#session-aims" id="toc-session-aims" class="nav-link" data-scroll-target="#session-aims">Session aims</a></li>
-  <li><a href="#guides-to-git-and-github" id="toc-guides-to-git-and-github" class="nav-link" data-scroll-target="#guides-to-git-and-github">Guides to Git and GitHub</a></li>
-  </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/remlapmot/git-and-github-for-os/blob/main/index.Rmd" class="toc-action">View source</a></p></div></div></nav>
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Tips for using Git and GitHub</h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Short practical</span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Tom Palmer </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">July 26, 2022</p>
-    </div>
-  </div>
     
   </div>
   
 
 </header>
 
-<section id="introduction" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="introduction">Introduction</h2>
-<p>The following is intended as a set of tips for people learning how to use Git and GitHub.</p>
-</section>
-<section id="session-plan" class="level2">
-<h2 class="anchored" data-anchor-id="session-plan">Session plan</h2>
-<ul>
-<li>Introduction</li>
-<li>Tips</li>
-<li>Short practical on making a pull request</li>
-<li>Elsie - the OpenSAFELY codelist system</li>
-</ul>
-</section>
-<section id="session-aims" class="level2">
-<h2 class="anchored" data-anchor-id="session-aims">Session aims</h2>
-<p>By the end of the session you should</p>
-<ul>
-<li>have a basic understanding of how Git works</li>
-<li>be able to perform common Git operations using GitHub Desktop and the GitHub web interface, including
-<ul>
-<li>clone a repo from GitHub</li>
-<li>make a new branch</li>
-<li>make commits</li>
-<li>push your branch to GitHub</li>
-<li>make a pull request</li>
-</ul></li>
-</ul>
-</section>
-<section id="guides-to-git-and-github" class="level2">
-<h2 class="anchored" data-anchor-id="guides-to-git-and-github">Guides to Git and GitHub</h2>
-<p>There are many excellent guides to Git and GitHub online, e.g.,</p>
-<ul>
-<li>Intro to GitHub <a href="https://guides.github.com/activities/hello-world/">here</a></li>
-<li>GitHub Training &amp; Guides YouTube channel <a href="https://www.youtube.com/githubguides">here</a></li>
-<li>Git documentation and training <a href="https://git-scm.com/doc">here</a></li>
-<li>Hadley Wickham on Git <a href="https://r-pkgs.org/git.html">here</a></li>
-<li>Jenny Bryan on Git and GitHub with R <a href="https://happygitwithr.com/">here</a></li>
-</ul>
-<p>And most relevantly the OpenSAFELY documentation <a href="https://docs.opensafely.org/getting-started/">here</a>.</p>
+<ol type="1">
+<li>On GitHub:
+<ol type="a">
+<li>Go to our test repo (in our test organization) <a href="https://github.com/tp-test-org/test">here</a></li>
+</ol></li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/tp-test-org-test.png" class="img-fluid figure-img" width="808"></p>
+</figure>
+</div>
+</div>
+</div>
+<pre><code>a. Clone the repo to your local machine</code></pre>
+<ol type="1">
+<li>In GitHub Desktop: make a new branch and switch to it</li>
+<li>In any text editor:
+<ol type="a">
+<li>Create a new markdown file called <code>yourfirstname-yourlastname.md</code></li>
+<li>Add a sentence or two to the file about yourself, e.g.,</li>
+</ol></li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/tom-palmer-md.png" class="img-fluid figure-img" style="width:65.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="3" type="a">
+<li>Save this file into the (top level of the) repo</li>
+</ol>
+<ol type="1">
+<li>In GitHub Desktop: Commit this new file into your new branch</li>
+<li>In GitHub Desktop: Push your new branch upto GitHub</li>
+<li>On GitHub: Open a pull request from your branch to the <code>main</code> branch in which you select a reviewer (Tom/Venexia/Elsie)</li>
+<li>In your text editor and GitHub Desktop: Make any changes requested by the reviewer and add these to your PR - hopefully your pull request will then be merged by the reviewer!</li>
+<li>On GitHub: Delete the branch you made your pull request from</li>
+<li>In GitHub Desktop: Pull down the updated master branch to your machine … in a real workflow you would then make another new branch and do more work…</li>
+</ol>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -367,10 +349,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./11-additional-topics.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Additional topics</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./01-intro-git.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Intro to Git</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./13-session-info.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Session information for reproducibility</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
