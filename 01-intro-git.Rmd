@@ -61,39 +61,38 @@ knitr::opts_chunk$set(echo = FALSE, fig.align = "center")
 - When you initialise a directory the `.git` folder is created
 - This contains all of the files Git uses to track the contents of your files
 - Here is the `.git` folder of a repo on my computer (I have selected to View hidden files in Windows Explorer)  
-```{r, out.width = "50%"}
-knitr::include_graphics("img/windows-explorer-repo.png")
-```  
+  ```{r, out.width = "50%"}
+  knitr::include_graphics("img/windows-explorer-repo.png")
+  ```  
 - Confusingly GitHub hides the `.git` folder from view  
-```{r}
-knitr::include_graphics("img/repo-github-view.png")
-```  
+  ```{r}
+  knitr::include_graphics("img/repo-github-view.png")
+  ```  
 - Here are its contents - don't edit these manually  
-```{r, out.width = "50%"}
-knitr::include_graphics("img/dot-git-folder-contents.png")
-```  
+  ```{r, out.width = "50%"}
+  knitr::include_graphics("img/dot-git-folder-contents.png")
+  ```  
 - Explanation of these is (from [here](https://www.tutorialspoint.com/what-is-git-folder-and-why-is-it-hidden))  
-```{r}
-knitr::include_graphics("img/dot-git-folder-explanation.png")
-```  
+  ```{r}
+  knitr::include_graphics("img/dot-git-folder-explanation.png")
+  ```  
 
 ## Common Git commands
 
 - I recommend you use GitHub Desktop instead of these commands
 - These commands are what GitHub Desktop is using behind the scenes
 - Git is the name of the program, `git` is the name of the executable available at your command line  
-
-    ```bash
-    git init 
-    git add <filename>
-    git status
-    git commit -m "Your commit message"
-    git commit --amend -m "Your amended commit message"
-    git push 
-    git pull 
-    git clone
-    git branch
-    git checkout
-    git merge
-    git fetch 
-    ```  
+  ```bash
+  git init 
+  git add <filename>
+  git status
+  git commit -m "Your commit message"
+  git commit --amend -m "Your amended commit message"
+  git push 
+  git pull 
+  git clone
+  git branch
+  git checkout
+  git merge
+  git fetch 
+  ```  
