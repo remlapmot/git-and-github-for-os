@@ -1,7 +1,7 @@
 # OpenSAFELY repositories
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(echo = FALSE, fig.align = "center")
 ```
 
 - OpenSAFELY is a system of Python packages (opensafely and cohortextractor) which run various Docker containers
@@ -22,9 +22,9 @@ knitr::opts_chunk$set(echo = FALSE)
 
 - See OS page [here](https://docs.opensafely.org/getting-started/)
 - If creating a new repo create from the OS template [here](https://github.com/opensafely/research-template)
-```{r}
-knitr::include_graphics("img/os-template.png")
-```  
+  ```{r}
+  knitr::include_graphics("img/os-template.png")
+  ```  
 - This is already Git initialized
 - Important files
   - `project.yaml`
