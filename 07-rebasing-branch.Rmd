@@ -1,7 +1,7 @@
 # Rebasing a branch
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(echo = FALSE, fig.align = "center")
 ```
 
 * Performing a rebase puts the commits you have on your branch on top of the commits from another branch
