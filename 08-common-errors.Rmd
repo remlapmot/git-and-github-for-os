@@ -1,7 +1,7 @@
 # Common errors
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(echo = FALSE, fig.align = "center")
 ```
 
 ## Merge conflicts
@@ -19,17 +19,17 @@ knitr::opts_chunk$set(echo = FALSE)
     ```  
 - But you forget to click "Pull origin"
 - If you make commits onto a branch on which there are not yet pulled commits on GitHub you'll get a merge error when you eventually click "Pull origin"  
-```{r}
-knitr::include_graphics("img/ghd-resolve-conflicts-before-merge.png")
-```  
+  ```{r}
+  knitr::include_graphics("img/ghd-resolve-conflicts-before-merge.png")
+  ```  
 - You could resolve conflict e.g., in VSCode  
-```{r}
-knitr::include_graphics("img/vscode-git-merge-resolve.png")
-```  
+  ```{r}
+  knitr::include_graphics("img/vscode-git-merge-resolve.png")
+  ```  
 - We can see this can happen when we see both up and down arrows in Pull origin box (but not always)  
-```{r}
-knitr::include_graphics("img/ghd-potential-conflict.png")
-```  
+  ```{r}
+  knitr::include_graphics("img/ghd-potential-conflict.png")
+  ```  
 * Fix
   - Move your changes to a new branch  
     ```{r}
@@ -55,19 +55,18 @@ knitr::include_graphics("img/ghd-potential-conflict.png")
 ## No content changes found
 
 - If you see the following message from Git that a file has changed but there are *No content changes found*  
-```{r}
-knitr::include_graphics("img/no-content-changes-found.png")
-```  
+  ```{r}
+  knitr::include_graphics("img/no-content-changes-found.png")
+  ```  
 
 - This is most likely caused by working with colleagues using different operating systems, because they save text files with different line ending characters (`CRLF` on Windows, `LF` on macOS/Linux/Unix)
 
 - You can usually simply right click on the offending file in GitHub Desktop and *Discard changes*  
-```{r}
-knitr::include_graphics("img/no-content-changes-found-discard-changes.png")
-```  
+  ```{r}
+  knitr::include_graphics("img/no-content-changes-found-discard-changes.png")
+  ```  
 - Additionally you can set the following option at the top of your `.gitattributes` file
-
-    ```  
-    # Auto detect text files and perform LF normalization
-    * text=auto
-    ```  
+  ```  
+  # Auto detect text files and perform LF normalization
+  * text=auto
+  ```  
