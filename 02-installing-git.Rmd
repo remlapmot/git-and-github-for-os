@@ -37,7 +37,7 @@ knitr::opts_chunk$set(echo = FALSE, fig.align = "center")
 - For Windows and macOS download and install GitHub Desktop from [here](https://desktop.github.com/)
 - A Linux version of GitHub Desktop is available from [here](https://github.com/shiftkey/desktop/)
 - I recommend installing the free VSCode text editor, from [here](https://code.visualstudio.com/), and setting that as the "External editor" in GitHub Desktop options (Click: File | Options...)  
-```{r, out.width = "65%"}
-knitr::include_graphics("img/ghd-options-vscode.png")
-```  
+  ```{r, out.width = "65%"}
+  knitr::include_graphics("img/ghd-options-vscode.png")
+  ```  
 - On Windows I also recommend installing Windows Terminal from [here](https://www.microsoft.com/store/productId/9N0DX20HK701)
