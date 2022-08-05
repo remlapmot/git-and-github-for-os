@@ -5,20 +5,20 @@ knitr::opts_chunk$set(echo = FALSE, fig.align = "center")
 ```
 
 1. On GitHub: 
-    a. Go to our test repo (in our test organization) [here](https://github.com/tp-test-org/test)  
-    
-```{r}
-knitr::include_graphics("img/tp-test-org-test.png")
-```  
- b. Clone the repo to your local machine
+    a. Go to our test repo (in our test organization) [here](https://github.com/tp-test-org/test)
+       ```{r}
+       knitr::include_graphics("img/tp-test-org-test.png")
+       ```  
+    a. Clone the repo to your local machine
 2. In GitHub Desktop: make a new branch and switch to it
 3. In any text editor: 
     a. Create a new markdown file called `yourfirstname-yourlastname.md`
     a. Add a sentence or two to the file about yourself, e.g.,
-```{r, out.width = "65%"}
-knitr::include_graphics("img/tom-palmer-md.png")
-```  
- c. Save this file into the (top level of the) repo
+       ```{r, out.width = "65%"}
+       knitr::include_graphics("img/tom-palmer-md.png")
+       ```  
+       
+    a. Save this file into the (top level of the) repo
 4. In GitHub Desktop: Commit this new file into your new branch
 5. In GitHub Desktop: Push your new branch upto GitHub
 6. On GitHub: Open a pull request from your branch to the `main` branch in which you select a reviewer (Tom/Venexia/Elsie) 
