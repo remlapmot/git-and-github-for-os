@@ -32,14 +32,14 @@
     "href": "01-intro-git.html",
     "title": "1  Intro to Git",
     "section": "",
-    "text": "Git was written to allow developers work on the source code of the Linux kernel (text files)\n\nOne kernel release they got in a terrible mess\nThis provoked Linus Torvalds into action\nFor an excellent insight into his thinking watch this talk he gave at Google here\n\n(Especially if used at the command line) Git can be intimidating to use and we can get Git errors (which like LaTeX and R errors can be quite cryptic)\n\n\n\n\n\n\nA Git repository is a folder/directory on your computer which has been Git initialised\n\nUsing either the command line\ngit init mynewfolder\nOr GitHub Desktop\n\n\n\n\n\nRepos on GitHub are already Git initialised\n\nWhen you clone them down to your computer they work in GitHub Desktop\n\n\nGit is commonly referred to as version control software\nGit is better described as a content addressable filesystem which translates to Git tracks the contents of the files in your repo\n\nGit creates a little database of the contents of your files - snapshots (commits) are taken when you tell it to\nGit looks for changes in your files when you save them, so when you have unsaved changes in a file/s Git shows no changes until you save\n\n\n\n\n\nGit takes snapshots of your files - when you tell it to - commits - I saved my file from above, enter a commit message and click “Commit to master”\n\n\n\n\n\nCommits are identified by the 40-character checksum SHA-1 hash of the contents of your files at that time\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGit knows the state of your files at every commit\n\nYou can easily restore your files to a previous state\n\nFor Git the state of your files only changes when their contents change\n\nIf you reopen a file, make no changes, then close it, Git will show no changes in your repo\nIf you add an empty folder/directory to your repo Git will show no changes in your repo\nThis differs to OneDrive/SharePoint/Google Drive which are file synchronisation systems\n\nI recommend not to place your Git repos in a location that is sync’d by either OneDrive or Google Drive"
+    "text": "Git was written to allow developers work on the source code of the Linux kernel (text files)\n\nOne kernel release they got in a terrible mess\nThis provoked Linus Torvalds into action\nFor an excellent insight into his thinking watch this talk he gave at Google here\n\n(Especially if used at the command line) Git can be intimidating to use and we can get Git errors (which like LaTeX and R errors can be quite cryptic)\n\n\n\n\n\n\n\n\n\n\nA Git repository is a folder/directory on your computer which has been Git initialised\n\nUsing either the command line\ngit init mynewfolder\nOr GitHub Desktop\n\n\n\n\n\n\n\n\n\nRepos on GitHub are already Git initialised\n\nWhen you clone them down to your computer they work in GitHub Desktop\n\n\nGit is commonly referred to as version control software\nGit is better described as a content addressable filesystem which translates to Git tracks the contents of the files in your repo\n\nGit creates a little database of the contents of your files - snapshots (commits) are taken when you tell it to\nGit looks for changes in your files when you save them, so when you have unsaved changes in a file/s Git shows no changes until you save\n\n\n\n\n\n\n\n\n\nGit takes snapshots of your files - when you tell it to - commits - I saved my file from above, enter a commit message and click “Commit to master”\n\n\n\n\n\n\n\n\n\nCommits are identified by the 40-character checksum SHA-1 hash of the contents of your files at that time\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGit knows the state of your files at every commit\n\nYou can easily restore your files to a previous state\n\nFor Git the state of your files only changes when their contents change\n\nIf you reopen a file, make no changes, then close it, Git will show no changes in your repo\nIf you add an empty folder/directory to your repo Git will show no changes in your repo\nThis differs to OneDrive/SharePoint/Google Drive which are file synchronisation systems\n\nI recommend not to place your Git repos in a location that is sync’d by either OneDrive or Google Drive"
   },
   {
     "objectID": "01-intro-git.html#the-.git-folder",
     "href": "01-intro-git.html#the-.git-folder",
     "title": "1  Intro to Git",
     "section": "1.2 The .git folder",
-    "text": "1.2 The .git folder\n\nWhen you initialise a directory the .git folder is created\nThis contains all of the files Git uses to track the contents of your files\nHere is the .git folder of a repo on my computer (I have selected to View hidden files in Windows Explorer)\n\n\n\n\n\n\n\nConfusingly GitHub hides the .git folder from view\n\n\n\n\n\n\n\nHere are its contents - don’t edit these manually\n\n\n\n\n\n\n\nExplanation of these is (from here)"
+    "text": "1.2 The .git folder\n\nWhen you initialise a directory the .git folder is created\nThis contains all of the files Git uses to track the contents of your files\nHere is the .git folder of a repo on my computer (I have selected to View hidden files in Windows Explorer)\n\n\n\n\n\n\n\n\n\nConfusingly GitHub hides the .git folder from view\n\n\n\n\n\n\n\n\n\nHere are its contents - don’t edit these manually\n\n\n\n\n\n\n\n\n\nExplanation of these is (from here)"
   },
   {
     "objectID": "01-intro-git.html#common-git-commands",
@@ -60,7 +60,7 @@
     "href": "02-installing-git.html#installing-github-desktop",
     "title": "2  Installing Git and GitHub Desktop",
     "section": "2.2 Installing GitHub Desktop",
-    "text": "2.2 Installing GitHub Desktop\n\nYou could use Git through its command syntax however I recommend you use a graphical Git client\nFor Windows and macOS download and install GitHub Desktop from here\nA Linux version of GitHub Desktop is available from here\nI recommend installing the free VSCode text editor, from here, and setting that as the “External editor” in GitHub Desktop options (Click: File | Options…)\n\n\n\n\n\n\n\nOn Windows I also recommend installing Windows Terminal from here"
+    "text": "2.2 Installing GitHub Desktop\n\nYou could use Git through its command syntax however I recommend you use a graphical Git client\nFor Windows and macOS download and install GitHub Desktop from here\nA Linux version of GitHub Desktop is available from here\nI recommend installing the free VSCode text editor, from here, and setting that as the “External editor” in GitHub Desktop options (Click: File | Options…)\n\n\n\n\n\n\n\n\n\nOn Windows I also recommend installing Windows Terminal from here"
   },
   {
     "objectID": "03-intro-github.html",
@@ -74,7 +74,7 @@
     "href": "03-intro-github.html#github-pat-for-r",
     "title": "3  Intro to GitHub",
     "section": "3.1 GitHub PAT for R",
-    "text": "3.1 GitHub PAT for R\n\nTo create a GitHub Personal Access Token (PAT) to be allowed more downloads from GitHub per hour run in R\n\n\ninstall.packages(\"usethis\")\nlibrary(usethis)\ncreate_github_token()"
+    "text": "3.1 GitHub PAT for R\n\nTo create a GitHub Personal Access Token (PAT) to be allowed more downloads from GitHub per hour run in R\n\ninstall.packages(\"usethis\")\nlibrary(usethis)\ncreate_github_token()"
   },
   {
     "objectID": "03-intro-github.html#github-cli",
@@ -95,42 +95,42 @@
     "href": "04-git-and-github-workflow.html#workflow-with-an-opensafely-github-repo",
     "title": "4  Git and GitHub Workflow",
     "section": "4.2 Workflow with an OpenSAFELY GitHub repo",
-    "text": "4.2 Workflow with an OpenSAFELY GitHub repo\n\nSkip the forking step from the standard GitHub workflow\nThe repo on GitHub is known as origin\nClone the repo to your local machine\n\nClick: Code | Open with GitHub Desktop\n\n\n\n\n\nClick Clone in the box which appears in GitHub Desktop\n\n\n\n\n\nGo to the Making a pull request page"
+    "text": "4.2 Workflow with an OpenSAFELY GitHub repo\n\nSkip the forking step from the standard GitHub workflow\nThe repo on GitHub is known as origin\nClone the repo to your local machine\n\nClick: Code | Open with GitHub Desktop\n\n\n\n\n\n\n\n\n\nClick Clone in the box which appears in GitHub Desktop\n\n\n\n\n\n\n\n\n\nGo to the Making a pull request page"
   },
   {
     "objectID": "05-making-pull-request.html",
     "href": "05-making-pull-request.html",
     "title": "5  Making a pull request",
     "section": "",
-    "text": "We do some work (in VSCode/text editor/RStudio) which creates a markdown file with a title and some text. We then make a new commit which adds this new file to the repo\n\n\n\n\n\n\n\nNext publish the new branch to GitHub\n\n\n\n\n\n\n\nNow initiate the creation of the PR by either clicking in GitHub Desktop “Create Pull Request”\n\n\n\n\n\n\n\nor clicking on the button on the repo webpage “Compare & pull request”\n\n\n\n\n\n\n\nEdit the title box, add some extra text in the comment box, select a reviewer, and then click “Create pull request”\n\n\n\n\n\n\n\nYou can amend/edit pull requests by modifying/adding commits to the branch from which you sent the PR\nSee more about pull request reviews here\n(The reviewer) will then merge your PR\n\n\n\n\n\n\n\n(The reviewer) will then confirm the merge\n\n\n\n\n\n\n\n(Optional) Delete the branch the PR came from\n\n\n\n\n\n\n\nThe PR is now finished and we can see the merge commit in the default (main/master) branch\n\n\n\n\n\n\n\nIn GitHub Desktop click “Fetch origin”/“Pull origin” to pull the updated main/master branch down to your local machine … and the process begins again …"
+    "text": "Let’s start by creating a new branch\n\n\n\n\n\n\n\n\n\nWe do some work (in VSCode/text editor/RStudio) which creates a markdown file with a title and some text. We then make a new commit which adds this new file to the repo\n\n\n\n\n\n\n\n\n\nNext publish the new branch to GitHub\n\n\n\n\n\n\n\n\n\nNow initiate the creation of the PR by either clicking in GitHub Desktop “Create Pull Request”\n\n\n\n\n\n\n\n\n\nor clicking on the button on the repo webpage “Compare & pull request”\n\n\n\n\n\n\n\n\n\nEdit the title box, add some extra text in the comment box, select a reviewer, and then click “Create pull request”\n\n\n\n\n\n\n\n\n\nYou can amend/edit pull requests by modifying/adding commits to the branch from which you sent the PR\nSee more about pull request reviews here\n(The reviewer) will then merge your PR\n\n\n\n\n\n\n\n\n\n(The reviewer) will then confirm the merge\n\n\n\n\n\n\n\n\n\n(Optional) Delete the branch the PR came from\n\n\n\n\n\n\n\n\n\nThe PR is now finished and we can see the merge commit in the default (main/master) branch\n\n\n\n\n\n\n\n\n\nIn GitHub Desktop click “Fetch origin”/“Pull origin” to pull the updated main/master branch down to your local machine … and the process begins again …"
   },
   {
     "objectID": "06-merging-branch-locally.html",
     "href": "06-merging-branch-locally.html",
     "title": "6  Merging a branch locally",
     "section": "",
-    "text": "Select edit-readme and click “Create a merge commit”\n\n\n\n\n\n\n\nThen push the new commits onto main upto GitHub (when appropriate)\n\n\n\n\n\n\n\nThen you can delete the edit-readme branch\n\n\n\n\n\n\n\nConfirm the deletion"
+    "text": "A PR is essentially doing a merge on GitHub, you can merge branches locally as well\nSay we created a new branch edit-readme and made a commit on it\nTo merge edit-readme into main switch to main\n\n\n\n\n\n\n\n\n\nSelect edit-readme and click “Create a merge commit”\n\n\n\n\n\n\n\n\n\nThen push the new commits onto main upto GitHub (when appropriate)\n\n\n\n\n\n\n\n\n\nThen you can delete the edit-readme branch\n\n\n\n\n\n\n\n\n\nConfirm the deletion"
   },
   {
     "objectID": "07-rebasing-branch.html",
     "href": "07-rebasing-branch.html",
     "title": "7  Rebasing a branch",
     "section": "",
-    "text": "Performing a rebase puts the commits you have on your branch on top of the commits from another branch\nWe commonly do this when our colleagues have merged PRs into say the main branch\nWe would then rebase our branch on top of main\nA rebase can be performed in GitHub Desktop as follows\n\nIn these screenshots we assume we started working on branch-1\nWe then made branch-2 from branch-1 and made some commits on it\nWe then went back to branch-1 and made some different commits\nWe now need to rebase the commits on branch-2 to be on top of branch-1\nStarting on branch-2, select Branch | Rebase current branch…\n\n\n\n\n\nOr/then from the middle panel select the branch to rebase on top of - select branch-1 (or select main if you are rebasing on top of main) and click Rebase\n\n\n\n\n\nHopefully the rebase will be successful, if there are merge conflicts you will need to resolve those"
+    "text": "Performing a rebase puts the commits you have on your branch on top of the commits from another branch\nWe commonly do this when our colleagues have merged PRs into say the main branch\nWe would then rebase our branch on top of main\nA rebase can be performed in GitHub Desktop as follows\n\nIn these screenshots we assume we started working on branch-1\nWe then made branch-2 from branch-1 and made some commits on it\nWe then went back to branch-1 and made some different commits\nWe now need to rebase the commits on branch-2 to be on top of branch-1\nStarting on branch-2, select Branch | Rebase current branch…\n\n\n\n\n\n\n\n\n\nOr/then from the middle panel select the branch to rebase on top of - select branch-1 (or select main if you are rebasing on top of main) and click Rebase\n\n\n\n\n\n\n\n\n\nHopefully the rebase will be successful, if there are merge conflicts you will need to resolve those"
   },
   {
     "objectID": "08-common-errors.html",
     "href": "08-common-errors.html",
     "title": "8  Common errors",
     "section": "",
-    "text": "These can happen if e.g.,\n\nyou forget to pull down the latest changes from GitHub (I find easy to forget in the morning)\nif you’re working on a project with multiple people\n\nyou both create new branches\nthey send in their PR first and it’s merged\nthen you send in your PR which edits some of the same lines\n\n\nLet’s say I made changes yesterday which I pushed to GitHub\n\nThe next day I restart work on a different computer, GitHub Desktop will show for example\n\n\n\n\n\n\nBut you forget to click “Pull origin”\nIf you make commits onto a branch on which there are not yet pulled commits on GitHub you’ll get a merge error when you eventually click “Pull origin”\n\n\n\n\n\n\n\nYou could resolve conflict e.g., in VSCode\n\n\n\n\n\n\n\nWe can see this can happen when we see both up and down arrows in Pull origin box (but not always)\n\n\n\n\n\n\n\nFix\n\nMove your changes to a new branch\n\n\n\n\n\nMove back to master/main and revert/undo the changes there, then edit the files so they show no changes\n\n\n\n\n\n\n\n\n\n\nPull down the changes from GitHub to the relevant branch\n\n\n\n\n\nMerge changes from your new branch into the main/master/relevant branch\n\nSee the GitHub documentation for more information about merge conflicts\n\nhere\nResolving a merge conflict here"
+    "text": "These can happen if e.g.,\n\nyou forget to pull down the latest changes from GitHub (I find easy to forget in the morning)\nif you’re working on a project with multiple people\n\nyou both create new branches\nthey send in their PR first and it’s merged\nthen you send in your PR which edits some of the same lines\n\n\nLet’s say I made changes yesterday which I pushed to GitHub\n\nThe next day I restart work on a different computer, GitHub Desktop will show for example\n\n\n\n\n\n\n\n\n\n\nBut you forget to click “Pull origin”\nIf you make commits onto a branch on which there are not yet pulled commits on GitHub you’ll get a merge error when you eventually click “Pull origin”\n\n\n\n\n\n\n\n\n\nYou could resolve conflict e.g., in VSCode\n\n\n\n\n\n\n\n\n\nWe can see this can happen when we see both up and down arrows in Pull origin box (but not always)\n\n\n\n\n\n\n\n\n\nFix\n\nMove your changes to a new branch\n\n\n\n\n\n\n\n\n\nMove back to master/main and revert/undo the changes there, then edit the files so they show no changes\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPull down the changes from GitHub to the relevant branch\n\n\n\n\n\n\n\n\n\nMerge changes from your new branch into the main/master/relevant branch\n\nSee the GitHub documentation for more information about merge conflicts\n\nhere\nResolving a merge conflict here"
   },
   {
     "objectID": "08-common-errors.html#no-content-changes-found",
     "href": "08-common-errors.html#no-content-changes-found",
     "title": "8  Common errors",
     "section": "8.2 No content changes found",
-    "text": "8.2 No content changes found\n\nIf you see the following message from Git that a file has changed but there are No content changes found\n\n\n\n\n\n\n\nThis is most likely caused by working with colleagues using different operating systems, because they save text files with different line ending characters (CRLF on Windows, LF on macOS/Linux/Unix)\nYou can usually simply right click on the offending file in GitHub Desktop and Discard changes\n\n\n\n\n\n\n\nAdditionally you can set the following option at the top of your .gitattributes file\n# Auto detect text files and perform LF normalization\n* text=auto"
+    "text": "8.2 No content changes found\n\nIf you see the following message from Git that a file has changed but there are No content changes found\n\n\n\n\n\n\n\n\n\nThis is most likely caused by working with colleagues using different operating systems, because they save text files with different line ending characters (CRLF on Windows, LF on macOS/Linux/Unix)\nYou can usually simply right click on the offending file in GitHub Desktop and Discard changes\n\n\n\n\n\n\n\n\n\nAdditionally you can set the following option at the top of your .gitattributes file\n# Auto detect text files and perform LF normalization\n* text=auto"
   },
   {
     "objectID": "09-installing-python-and-os.html",
@@ -151,7 +151,7 @@
     "href": "09-installing-python-and-os.html#windows",
     "title": "9  Installing Python and the opensafely command line interface",
     "section": "9.2 Windows",
-    "text": "9.2 Windows\n\nYou have a number of choices where to install Python from\n\nMicrosoft store, .e.g. Python 3.10 from here\nPython installer from here\nAnaconda installer from here\n\nDespite not being recommend - it is better for you to add Anaconda/Python to your PATH in the installer options, i.e., check the first box on this screen\n\n\n\n\n\n\n\n\n\n\n\nAnd in the Python installer check the box adding Python to PATH\n\n\n\n\n\nOpen Windows Terminal\n\nyou can see the contents of PATH in Powershell with $Env:Path\n\n\n\n\n\nand in cmd with echo %PATH%\n\n\n\n\n\nyou can see the location of the Python executable in cmd with where python/where python3\n\n\n\n\n\n\nIf you installed Anaconda and you did not add its folders to PATH then you need to install and run opensafely using the Anaconda prompt - you find this as a program under the Start menu"
+    "text": "9.2 Windows\n\nYou have a number of choices where to install Python from\n\nMicrosoft store, .e.g. Python 3.10 from here\nPython installer from here\nAnaconda installer from here\n\nDespite not being recommend - it is better for you to add Anaconda/Python to your PATH in the installer options, i.e., check the first box on this screen\n\n\n\n\n\n\n\n\n\n\nAnd in the Python installer check the box adding Python to PATH\n\n\n\n\n\n\n\n\n\n\nOpen Windows Terminal\n\nyou can see the contents of PATH in Powershell with $Env:Path\n\n\n\n\n\n\n\n\n\nand in cmd with echo %PATH%\n\n\n\n\n\n\n\n\n\nyou can see the location of the Python executable in cmd with where python/where python3\n\n\n\n\n\n\n\n\n\n\nIf you installed Anaconda and you did not add its folders to PATH then you need to install and run opensafely using the Anaconda prompt - you find this as a program under the Start menu"
   },
   {
     "objectID": "09-installing-python-and-os.html#installing-the-opensafely-package",
@@ -179,7 +179,7 @@
     "href": "10-os-repos.html#getting-started",
     "title": "10  OpenSAFELY repositories",
     "section": "10.2 Getting started",
-    "text": "10.2 Getting started\n\nSee OS page here\nIf creating a new repo create from the OS template here\n\n\n\n\n\n\n\nThis is already Git initialized\nImportant files\n\nproject.yaml\n\nDefines the jobs and the order in which they run\n\n/analysis/study_defintion.py\n\nDefines the study population extracted from the OpenSAFELY database\nThis should return .csv file/s of data to read into R\n\n/analysis/##_R-scripts.R\n\nYour analysis scripts"
+    "text": "10.2 Getting started\n\nSee OS page here\nIf creating a new repo create from the OS template here\n\n\n\n\n\n\n\n\n\nThis is already Git initialized\nImportant files\n\nproject.yaml\n\nDefines the jobs and the order in which they run\n\n/analysis/study_defintion.py\n\nDefines the study population extracted from the OpenSAFELY database\nThis should return .csv file/s of data to read into R\n\n/analysis/##_R-scripts.R\n\nYour analysis scripts"
   },
   {
     "objectID": "10-os-repos.html#running-jobs-on-the-dummy-data",
@@ -193,7 +193,7 @@
     "href": "11-additional-topics.html",
     "title": "11  Additional topics",
     "section": "",
-    "text": "Do not commit changes to many files with a single commit message such as “Edits”!\n\n\n\n\n\n\n\nNote that in a commit we can see the added lines - green highlight with + prefix - and deleted lines - red highligh with - prefix"
+    "text": "Do not commit changes to many files with a single commit message such as “Edits”!\n\n\n\n\n\n\n\n\n\nNote that in a commit we can see the added lines - green highlight with + prefix - and deleted lines - red highligh with - prefix"
   },
   {
     "objectID": "11-additional-topics.html#writing-good-commit-messages",
@@ -214,7 +214,7 @@
     "href": "11-additional-topics.html#github-repos-contain-more-than-just-code",
     "title": "11  Additional topics",
     "section": "11.4 GitHub repos contain more than just code",
-    "text": "11.4 GitHub repos contain more than just code\n\nA repo for an R package will probably contain\n\nThe code for the R package\nThe code for its website (often made with pkgdown and hosted with GitHub Pages or Netlify)\n\n\n\n\n\nScripts for controlling continuous integration services such as GitHub Actions"
+    "text": "11.4 GitHub repos contain more than just code\n\nA repo for an R package will probably contain\n\nThe code for the R package\nThe code for its website (often made with pkgdown and hosted with GitHub Pages or Netlify)\n\n\n\n\n\n\n\n\n\nScripts for controlling continuous integration services such as GitHub Actions"
   },
   {
     "objectID": "12-short-practical.html",

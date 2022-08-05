@@ -198,7 +198,7 @@ ul.task-list{list-style: none;}
 <section id="merge-conflicts" class="level2" data-number="8.1">
 <h2 data-number="8.1" class="anchored" data-anchor-id="merge-conflicts"><span class="header-section-number">8.1</span> Merge conflicts</h2>
 <ul>
-<li>These can happen if e.g.,
+<li><p>These can happen if e.g.,</p>
 <ul>
 <li>you forget to pull down the latest changes from GitHub (I find easy to forget in the morning)</li>
 <li>if you’re working on a project with multiple people
@@ -208,68 +208,94 @@ ul.task-list{list-style: none;}
 <li>then you send in your PR which edits some of the same lines</li>
 </ul></li>
 </ul></li>
-<li>Let’s say I made changes yesterday which I pushed to GitHub
+<li><p>Let’s say I made changes yesterday which I pushed to GitHub</p>
 <ul>
 <li><p>The next day I restart work on a different computer, GitHub Desktop will show for example</p>
-<div class="cell">
+<div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<p><img src="img/pulling-from-github.png" class="img-fluid" width="740"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/pulling-from-github.png" class="img-fluid figure-img" width="740"></p>
+</figure>
+</div>
 </div>
 </div></li>
 </ul></li>
-<li>But you forget to click “Pull origin”</li>
-<li>If you make commits onto a branch on which there are not yet pulled commits on GitHub you’ll get a merge error when you eventually click “Pull origin”</li>
-</ul>
-<div class="cell">
+<li><p>But you forget to click “Pull origin”</p></li>
+<li><p>If you make commits onto a branch on which there are not yet pulled commits on GitHub you’ll get a merge error when you eventually click “Pull origin”</p>
+<div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<p><img src="img/ghd-resolve-conflicts-before-merge.png" class="img-fluid" width="510"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/ghd-resolve-conflicts-before-merge.png" class="img-fluid figure-img" width="510"></p>
+</figure>
 </div>
 </div>
-<ul>
-<li>You could resolve conflict e.g., in VSCode</li>
-</ul>
-<div class="cell">
+</div></li>
+<li><p>You could resolve conflict e.g., in VSCode</p>
+<div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<p><img src="img/vscode-git-merge-resolve.png" class="img-fluid" width="1120"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/vscode-git-merge-resolve.png" class="img-fluid figure-img" width="1120"></p>
+</figure>
 </div>
 </div>
-<ul>
-<li>We can see this can happen when we see both up and down arrows in Pull origin box (but not always)</li>
-</ul>
-<div class="cell">
+</div></li>
+<li><p>We can see this can happen when we see both up and down arrows in Pull origin box (but not always)</p>
+<div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<p><img src="img/ghd-potential-conflict.png" class="img-fluid" width="1200"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/ghd-potential-conflict.png" class="img-fluid figure-img" width="1200"></p>
+</figure>
 </div>
 </div>
-<ul>
-<li>Fix
+</div></li>
+<li><p>Fix</p>
 <ul>
 <li><p>Move your changes to a new branch</p>
-<div class="cell">
+<div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<p><img src="img/ghd-create-branch-from-commit.png" class="img-fluid" width="1084"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/ghd-create-branch-from-commit.png" class="img-fluid figure-img" width="1084"></p>
+</figure>
+</div>
 </div>
 </div></li>
 <li><p>Move back to <code>master</code>/<code>main</code> and revert/undo the changes there, then edit the files so they show no changes</p>
-<div class="cell">
+<div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<p><img src="img/ghd-revert-changes-in-commit.png" class="img-fluid" width="1088"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/ghd-revert-changes-in-commit.png" class="img-fluid figure-img" width="1088"></p>
+</figure>
 </div>
 </div>
-<div class="cell">
+</div>
+<div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<p><img src="img/ghd-undo-commit.png" class="img-fluid" width="1086"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/ghd-undo-commit.png" class="img-fluid figure-img" width="1086"></p>
+</figure>
+</div>
 </div>
 </div></li>
 <li><p>Pull down the changes from GitHub to the relevant branch</p>
-<div class="cell">
+<div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<p><img src="img/ghd-all-is-well.png" class="img-fluid" width="1083"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/ghd-all-is-well.png" class="img-fluid figure-img" width="1083"></p>
+</figure>
+</div>
 </div>
 </div></li>
 <li><p>Merge changes from your new branch into the <code>main</code>/<code>master</code>/relevant branch</p></li>
 </ul></li>
-<li>See the GitHub documentation for more information about merge conflicts
+<li><p>See the GitHub documentation for more information about merge conflicts</p>
 <ul>
 <li><a href="https://docs.github.com/en/github/collaborating-with-pull-requests/addressing-merge-conflicts/about-merge-conflicts">here</a></li>
 <li>Resolving a merge conflict <a href="https://docs.github.com/en/github/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github">here</a></li>
@@ -279,23 +305,27 @@ ul.task-list{list-style: none;}
 <section id="no-content-changes-found" class="level2" data-number="8.2">
 <h2 data-number="8.2" class="anchored" data-anchor-id="no-content-changes-found"><span class="header-section-number">8.2</span> No content changes found</h2>
 <ul>
-<li>If you see the following message from Git that a file has changed but there are <em>No content changes found</em></li>
-</ul>
-<div class="cell">
+<li><p>If you see the following message from Git that a file has changed but there are <em>No content changes found</em></p>
+<div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<p><img src="img/no-content-changes-found.png" class="img-fluid" width="720"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/no-content-changes-found.png" class="img-fluid figure-img" width="720"></p>
+</figure>
 </div>
 </div>
-<ul>
+</div></li>
 <li><p>This is most likely caused by working with colleagues using different operating systems, because they save text files with different line ending characters (<code>CRLF</code> on Windows, <code>LF</code> on macOS/Linux/Unix)</p></li>
-<li><p>You can usually simply right click on the offending file in GitHub Desktop and <em>Discard changes</em></p></li>
-</ul>
-<div class="cell">
+<li><p>You can usually simply right click on the offending file in GitHub Desktop and <em>Discard changes</em></p>
+<div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<p><img src="img/no-content-changes-found-discard-changes.png" class="img-fluid" width="722"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/no-content-changes-found-discard-changes.png" class="img-fluid figure-img" width="722"></p>
+</figure>
 </div>
 </div>
-<ul>
+</div></li>
 <li><p>Additionally you can set the following option at the top of your <code>.gitattributes</code> file</p>
 <pre><code># Auto detect text files and perform LF normalization
 * text=auto</code></pre></li>

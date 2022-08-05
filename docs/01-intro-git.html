@@ -269,9 +269,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><p>For an excellent insight into his thinking watch this talk he gave at Google <a href="https://youtu.be/4XpnKHJAok8">here</a><br>
 </p></li>
 <li><p>(Especially if used at the command line) Git can be intimidating to use and we can get Git errors (which like LaTeX and R errors can be quite cryptic)</p>
-<div class="cell">
+<div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<p><img src="https://imgs.xkcd.com/comics/git.png" class="img-fluid" style="width:50.0%"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://imgs.xkcd.com/comics/git.png" class="img-fluid figure-img" style="width:50.0%"></p>
+</figure>
+</div>
 </div>
 </div></li>
 </ul></li>
@@ -280,9 +284,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><p>Using either the command line</p>
 <pre><code>git init mynewfolder</code></pre></li>
 <li><p>Or GitHub Desktop</p>
-<div class="cell">
+<div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<p><img src="img/ghd-new-repo.png" class="img-fluid" style="width:50.0%"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/ghd-new-repo.png" class="img-fluid figure-img" style="width:50.0%"></p>
+</figure>
+</div>
 </div>
 </div></li>
 <li><p>Repos on GitHub are already Git initialised</p>
@@ -295,31 +303,51 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li><p>Git creates a little database of the contents of your files - snapshots (commits) are taken when you tell it to</p></li>
 <li><p>Git looks for changes in your files when you save them, so when you have unsaved changes in a file/s Git shows no changes until you save</p>
-<div class="cell">
+<div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<p><img src="img/no-local-changes.png" class="img-fluid" width="1123"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/no-local-changes.png" class="img-fluid figure-img" width="1123"></p>
+</figure>
+</div>
 </div>
 </div></li>
 <li><p>Git takes snapshots of your files - when you tell it to - <em>commits</em> - I saved my file from above, enter a commit message and click “Commit to master”</p>
-<div class="cell">
+<div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<p><img src="img/stashed-changes.png" class="img-fluid" width="1482"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/stashed-changes.png" class="img-fluid figure-img" width="1482"></p>
+</figure>
+</div>
 </div>
 </div></li>
 <li><p>Commits are identified by the 40-character checksum SHA-1 hash of the contents of your files at that time</p>
-<div class="cell">
+<div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<p><img src="img/git-commit-hash-1.png" class="img-fluid" width="714"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/git-commit-hash-1.png" class="img-fluid figure-img" width="714"></p>
+</figure>
 </div>
 </div>
-<div class="cell">
+</div>
+<div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<p><img src="img/git-commit-hash-2.png" class="img-fluid" width="1355"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/git-commit-hash-2.png" class="img-fluid figure-img" width="1355"></p>
+</figure>
 </div>
 </div>
-<div class="cell">
+</div>
+<div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<p><img src="img/git-commit-hash-3.png" class="img-fluid" width="1401"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/git-commit-hash-3.png" class="img-fluid figure-img" width="1401"></p>
+</figure>
+</div>
 </div>
 </div></li>
 <li><p>Git knows the state of your files at every commit</p>
@@ -339,39 +367,49 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <section id="the-.git-folder" class="level2" data-number="1.2">
 <h2 data-number="1.2" class="anchored" data-anchor-id="the-.git-folder"><span class="header-section-number">1.2</span> The <code>.git</code> folder</h2>
 <ul>
-<li>When you initialise a directory the <code>.git</code> folder is created</li>
-<li>This contains all of the files Git uses to track the contents of your files</li>
-<li>Here is the <code>.git</code> folder of a repo on my computer (I have selected to View hidden files in Windows Explorer)</li>
-</ul>
-<div class="cell">
+<li><p>When you initialise a directory the <code>.git</code> folder is created</p></li>
+<li><p>This contains all of the files Git uses to track the contents of your files</p></li>
+<li><p>Here is the <code>.git</code> folder of a repo on my computer (I have selected to View hidden files in Windows Explorer)</p>
+<div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<p><img src="img/windows-explorer-repo.png" class="img-fluid" style="width:50.0%"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/windows-explorer-repo.png" class="img-fluid figure-img" style="width:50.0%"></p>
+</figure>
 </div>
 </div>
-<ul>
-<li>Confusingly GitHub hides the <code>.git</code> folder from view</li>
-</ul>
-<div class="cell">
+</div></li>
+<li><p>Confusingly GitHub hides the <code>.git</code> folder from view</p>
+<div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<p><img src="img/repo-github-view.png" class="img-fluid" width="730"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/repo-github-view.png" class="img-fluid figure-img" width="730"></p>
+</figure>
 </div>
 </div>
-<ul>
-<li>Here are its contents - don’t edit these manually</li>
-</ul>
-<div class="cell">
+</div></li>
+<li><p>Here are its contents - don’t edit these manually</p>
+<div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<p><img src="img/dot-git-folder-contents.png" class="img-fluid" style="width:50.0%"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/dot-git-folder-contents.png" class="img-fluid figure-img" style="width:50.0%"></p>
+</figure>
 </div>
 </div>
-<ul>
-<li>Explanation of these is (from <a href="https://www.tutorialspoint.com/what-is-git-folder-and-why-is-it-hidden">here</a>)</li>
-</ul>
-<div class="cell">
+</div></li>
+<li><p>Explanation of these is (from <a href="https://www.tutorialspoint.com/what-is-git-folder-and-why-is-it-hidden">here</a>)</p>
+<div class="cell" data-layout-align="center">
 <div class="cell-output-display">
-<p><img src="img/dot-git-folder-explanation.png" class="img-fluid" width="734"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/dot-git-folder-explanation.png" class="img-fluid figure-img" width="734"></p>
+</figure>
 </div>
 </div>
+</div></li>
+</ul>
 </section>
 <section id="common-git-commands" class="level2" data-number="1.3">
 <h2 data-number="1.3" class="anchored" data-anchor-id="common-git-commands"><span class="header-section-number">1.3</span> Common Git commands</h2>
