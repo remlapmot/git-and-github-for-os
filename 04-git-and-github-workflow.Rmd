@@ -1,7 +1,7 @@
 # Git and GitHub Workflow
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(echo = FALSE, fig.align = "center")
 ```
 
 ## Standard GitHub workflow
