@@ -30,3 +30,4 @@ format:
     link-external-icon: true
     theme: cosmo
     css: styles.css
+    code-overflow: wrap
