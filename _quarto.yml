@@ -19,7 +19,6 @@ book:
     - 11-additional-topics.Rmd
     - 12-short-practical.Rmd
     - 13-session-info.Rmd
-  link-external-icon: true
   repo-url: https://github.com/remlapmot/git-and-github-for-os
   repo-actions: source
   site-url: https://remlapmot.github.io/git-and-github-for-os/
