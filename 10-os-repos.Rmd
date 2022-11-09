@@ -37,12 +37,14 @@ knitr::opts_chunk$set(echo = FALSE, fig.align = "center")
 
 ## Running jobs (on the dummy data) 
 
-- In your OS repo online
+There are a couple of ways to run jobs on the dummy data system.
+
+- In your OpenSAFELY repo online
   - Use Gitpod
-- On your own machine - install the following free software
-  - (If on Windows - Windows Subsystem for Linux version 2)
-  - Docker Desktop
-  - Python
-  - Git
-  - GitHub Desktop
-  - VSCode text editor
+- On your own machine, in which case please install the following free software
+  - If on Windows - Windows Subsystem for Linux version 2, using the instructions [here](https://learn.microsoft.com/en-us/windows/wsl/install)
+  - Docker Desktop, from [here](https://www.docker.com/products/docker-desktop/)
+  - Python (described on a previous page [here](09-installing-python-and-os.html))
+  - Git (described on previous page [here](02-installing-git.html))
+  - GitHub Desktop, from [here](https://desktop.github.com/)
+  - VSCode text editor, from [here](https://code.visualstudio.com/)
