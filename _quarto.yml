@@ -21,6 +21,7 @@ book:
     - 13-session-info.Rmd
   repo-url: https://github.com/remlapmot/git-and-github-for-os
   repo-actions: source
+  repo-branch: master
   site-url: https://remlapmot.github.io/git-and-github-for-os/
 
 format:
