@@ -1,5 +1,7 @@
 # Making a pull request
 
+## Making a pull request
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, fig.align = "center")
 ```

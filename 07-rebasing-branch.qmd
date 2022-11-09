@@ -1,5 +1,7 @@
 # Rebasing a branch
 
+## Rebasing a branch
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, fig.align = "center")
 ```

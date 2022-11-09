@@ -1,5 +1,7 @@
 # Merging a branch locally
 
+## Merging a branch locally
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, fig.align = "center")
 ```
