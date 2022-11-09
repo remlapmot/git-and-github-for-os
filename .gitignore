@@ -6,3 +6,7 @@ README.html
 _main.rds
 
 /.quarto/
+
+# knitr and R markdown default cache directories
+/*_cache/
+/cache/
