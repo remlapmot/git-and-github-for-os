@@ -2,4 +2,5 @@
 
 ```{r}
 sessioninfo::session_info()
+quarto::quarto_version()
 ```
