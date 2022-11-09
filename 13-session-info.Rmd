@@ -1,6 +1,9 @@
 # Session information for reproducibility
 
+<details>
+<summary>Click here for session information</summary>
 ```{r}
 sessioninfo::session_info()
 quarto::quarto_version()
 ```
+</details>
