@@ -20,15 +20,15 @@ knitr::opts_chunk$set(echo = FALSE, fig.align = "center")
     ```bash
     xcode-select --install
     ```  
-    - Must reinstall these everytime upgrade operating system versions, e.g., from Big Sur to Monterey
-- Once Git is installed its executable (called `git`) should be available at your command line
+    - You must reinstall these tools everytime you upgrade macOS major versions, e.g., when you've upgraded from Big Sur to Monterey etc.
+- Once Git is installed its executable (called `git` on macOS and Linux and `git.exe` on Windows) should be available at your command line
   - Check which version you have with (you want something recent-ish)  
     ```bash
     git --version
     ```  
-  - On my Windows machine I have  
+  - On my Mac currently I have  
     ```
-    git version 2.33.1.windows.1
+    git version 2.38.1
     ```  
 
 ## Installing GitHub Desktop
