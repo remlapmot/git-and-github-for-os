@@ -1,10 +1,10 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
+    "objectID": "index.html#introduction",
+    "href": "index.html#introduction",
     "title": "Tips for using Git and GitHub",
-    "section": "",
-    "text": "The following is intended as a set of tips for people learning how to use Git and GitHub."
+    "section": "Introduction",
+    "text": "Introduction\nThe following is intended as a set of tips for people learning how to use Git and GitHub."
   },
   {
     "objectID": "index.html#session-plan",
@@ -28,11 +28,11 @@
     "text": "Guides to Git and GitHub\nThere are many excellent guides to Git and GitHub online, e.g.,\n\nIntro to GitHub here\nGitHub Training & Guides YouTube channel here\nGit documentation and training here\nHadley Wickham on Git here\nJenny Bryan on Git and GitHub with R here\n\nAnd most relevantly the OpenSAFELY documentation here."
   },
   {
-    "objectID": "01-intro-git.html",
-    "href": "01-intro-git.html",
+    "objectID": "01-intro-git.html#background-info",
+    "href": "01-intro-git.html#background-info",
     "title": "1  Intro to Git",
-    "section": "",
-    "text": "Git was written to allow developers work on the source code of the Linux kernel (text files)\n\nOne kernel release they got in a terrible mess\nThis provoked Linus Torvalds into action\nFor an excellent insight into his thinking watch this talk he gave at Google here\n\n(Especially if used at the command line) Git can be intimidating to use and we can get Git errors (which like LaTeX and R errors can be quite cryptic)\n\n\n\n\n\n\n\n\n\n\nA Git repository is a folder/directory on your computer which has been Git initialised\n\nUsing either the command line\ngit init mynewfolder\nOr GitHub Desktop\n\n\n\n\n\n\n\n\n\nRepos on GitHub are already Git initialised\n\nWhen you clone them down to your computer they work in GitHub Desktop\n\n\nGit is commonly referred to as version control software\nGit is better described as a content addressable filesystem which translates to Git tracks the contents of the files in your repo\n\nGit creates a little database of the contents of your files - snapshots (commits) are taken when you tell it to\nGit looks for changes in your files when you save them, so when you have unsaved changes in a file/s Git shows no changes until you save\n\n\n\n\n\n\n\n\n\nGit takes snapshots of your files - when you tell it to - commits - I saved my file from above, enter a commit message and click “Commit to master”\n\n\n\n\n\n\n\n\n\nCommits are identified by the 40-character checksum SHA-1 hash of the contents of your files at that time\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGit knows the state of your files at every commit\n\nYou can easily restore your files to a previous state\n\nFor Git the state of your files only changes when their contents change\n\nIf you reopen a file, make no changes, then close it, Git will show no changes in your repo\nIf you add an empty folder/directory to your repo Git will show no changes in your repo\nThis differs to OneDrive/SharePoint/Google Drive which are file synchronisation systems\n\nI recommend not to place your Git repos in a location that is sync’d by either OneDrive or Google Drive"
+    "section": "1.1 Background info",
+    "text": "1.1 Background info\n\nGit was written to allow developers work on the source code of the Linux kernel (text files)\n\nOne kernel release they got in a terrible mess\nThis provoked Linus Torvalds into action\nFor an excellent insight into his thinking watch this talk he gave at Google here\n\n(Especially if used at the command line) Git can be intimidating to use and we can get Git errors (which like LaTeX and R errors can be quite cryptic)\n\n\n\n\n\n\n\n\n\n\nA Git repository is a folder/directory on your computer which has been Git initialised\n\nUsing either the command line\ngit init mynewfolder\nOr GitHub Desktop\n\n\n\n\n\n\n\n\n\nRepos on GitHub are already Git initialised\n\nWhen you clone them down to your computer they work in GitHub Desktop\n\n\nGit is commonly referred to as version control software\nGit is better described as a content addressable filesystem which translates to Git tracks the contents of the files in your repo\n\nGit creates a little database of the contents of your files - snapshots (commits) are taken when you tell it to\nGit looks for changes in your files when you save them, so when you have unsaved changes in a file/s Git shows no changes until you save\n\n\n\n\n\n\n\n\n\nGit takes snapshots of your files - when you tell it to - commits - I saved my file from above, enter a commit message and click “Commit to master”\n\n\n\n\n\n\n\n\n\nCommits are identified by the 40-character checksum SHA-1 hash of the contents of your files at that time\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGit knows the state of your files at every commit\n\nYou can easily restore your files to a previous state\n\nFor Git the state of your files only changes when their contents change\n\nIf you reopen a file, make no changes, then close it, Git will show no changes in your repo\nIf you add an empty folder/directory to your repo Git will show no changes in your repo\nThis differs to OneDrive/SharePoint/Google Drive which are file synchronisation systems\n\nI recommend not to place your Git repos in a location that is sync’d by either OneDrive or Google Drive"
   },
   {
     "objectID": "01-intro-git.html#the-.git-folder",
@@ -49,11 +49,11 @@
     "text": "1.3 Common Git commands\n\nI recommend you use GitHub Desktop instead of these commands\nThese commands are what GitHub Desktop is using behind the scenes\nGit is the name of the program, git is the name of the executable available at your command line\ngit init \ngit add <filename>\ngit status\ngit commit -m \"Your commit message\"\ngit commit --amend -m \"Your amended commit message\"\ngit push \ngit pull \ngit clone\ngit branch\ngit checkout\ngit merge\ngit fetch"
   },
   {
-    "objectID": "02-installing-git.html",
-    "href": "02-installing-git.html",
+    "objectID": "02-installing-git.html#installing-git",
+    "href": "02-installing-git.html#installing-git",
     "title": "2  Installing Git and GitHub Desktop",
-    "section": "",
-    "text": "Windows\n\nDownload and install from here\n\nmacOS comes with an out-dated version of Git\n\nI recommend installing the Homebrew version\nFirst install Homebrew, see instructions here\nThen run in your Terminal app\nbrew upgrade\nbrew install git\nAdditionally on a Mac it is helpful to install Xcode command line tools (i.e., avoid installing the whole of Xcode.)\nxcode-select --install\n\nMust reinstall these everytime upgrade operating system versions, e.g., from Big Sur to Monterey\n\n\nOnce Git is installed its executable (called git) should be available at your command line\n\nCheck which version you have with (you want something recent-ish)\ngit --version\nOn my Windows machine I have\ngit version 2.33.1.windows.1"
+    "section": "2.1 Installing Git",
+    "text": "2.1 Installing Git\n\nWindows\n\nDownload and install from here\n\nmacOS comes with an out-dated version of Git\n\nI recommend installing the Homebrew version\nFirst install Homebrew, see instructions here\nThen run in your Terminal app\nbrew upgrade\nbrew install git\nAdditionally on a Mac it is helpful to install Xcode command line tools (i.e., avoid installing the whole of Xcode.)\nxcode-select --install\n\nMust reinstall these everytime upgrade operating system versions, e.g., from Big Sur to Monterey\n\n\nOnce Git is installed its executable (called git) should be available at your command line\n\nCheck which version you have with (you want something recent-ish)\ngit --version\nOn my Windows machine I have\ngit version 2.33.1.windows.1"
   },
   {
     "objectID": "02-installing-git.html#installing-github-desktop",
@@ -61,13 +61,6 @@
     "title": "2  Installing Git and GitHub Desktop",
     "section": "2.2 Installing GitHub Desktop",
     "text": "2.2 Installing GitHub Desktop\n\nYou could use Git through its command syntax however I recommend you use a graphical Git client\nFor Windows and macOS download and install GitHub Desktop from here\nA Linux version of GitHub Desktop is available from here\nI recommend installing the free VSCode text editor, from here, and setting that as the “External editor” in GitHub Desktop options (Click: File | Options…)\n\n\n\n\n\n\n\n\n\nOn Windows I also recommend installing Windows Terminal from here"
-  },
-  {
-    "objectID": "03-intro-github.html",
-    "href": "03-intro-github.html",
-    "title": "3  Intro to GitHub",
-    "section": "",
-    "text": "GitHub is a Git web server, there are others e.g., GitLab\nYour repositories will be stored on GitHub, and you will clone them to your machine to work on them (or work on them in Gitpod)\nUnder your user account you see the repos you are owner of\nOn GitHub OpenSAFELY is an organization\n\nThe repos are owned by the organization so they are under the organisation here"
   },
   {
     "objectID": "03-intro-github.html#github-pat-for-r",
@@ -84,18 +77,18 @@
     "text": "3.2 GitHub CLI\n\nGitHub CLI stands for command line interface for operating GitHub\nInstallation instructions are here\nBut I don’t recommend using this"
   },
   {
-    "objectID": "04-git-and-github-workflow.html",
-    "href": "04-git-and-github-workflow.html",
+    "objectID": "04-git-and-github-workflow.html#standard-github-workflow",
+    "href": "04-git-and-github-workflow.html#standard-github-workflow",
     "title": "4  Git and GitHub Workflow",
-    "section": "",
-    "text": "(I recommend to only fork a public repo if you intend to send a pull request to it)\nFork the other person’s repo (this will be known as the upstream repo from your fork, your copy of a repo on GitHub is known as origin)\nThis creates a copy of their repo under your account (your fork)\nClone your fork (the copy under your account) to your machine\nCreate a new branch (do not work on master/main)\nMake your changes and commit them\nPush your new branch upto your GitHub (i.e., to your fork)\nCreate a pull request (from your new branch) back to the default (master/main) branch of the original repo"
+    "section": "4.1 Standard GitHub workflow",
+    "text": "4.1 Standard GitHub workflow\n\n(I recommend to only fork a public repo if you intend to send a pull request to it)\nFork the other person’s repo (this will be known as the upstream repo from your fork, your copy of a repo on GitHub is known as origin)\nThis creates a copy of their repo under your account (your fork)\nClone your fork (the copy under your account) to your machine\nCreate a new branch (do not work on master/main)\nMake your changes and commit them\nPush your new branch upto your GitHub (i.e., to your fork)\nCreate a pull request (from your new branch) back to the default (master/main) branch of the original repo"
   },
   {
     "objectID": "04-git-and-github-workflow.html#workflow-with-an-opensafely-github-repo",
     "href": "04-git-and-github-workflow.html#workflow-with-an-opensafely-github-repo",
     "title": "4  Git and GitHub Workflow",
     "section": "4.2 Workflow with an OpenSAFELY GitHub repo",
-    "text": "4.2 Workflow with an OpenSAFELY GitHub repo\n\nSkip the forking step from the standard GitHub workflow\nThe repo on GitHub is known as origin\nClone the repo to your local machine\n\nClick: Code | Open with GitHub Desktop\n\n\n\n\n\n\n\n\n\nClick Clone in the box which appears in GitHub Desktop\n\n\n\n\n\n\n\n\n\nGo to the Making a pull request page"
+    "text": "4.2 Workflow with an OpenSAFELY GitHub repo\n\nSkip the forking step from the standard GitHub workflow\nThe repo on GitHub is known as origin\nClone the repo to your local machine\n\nClick: Code | Open with GitHub Desktop\n\n\n\n\n\n\n\n\n\nClick Clone in the box which appears in GitHub Desktop\n\n\n\n\n\n\n\n\n\nGo to the Making a pull request page here"
   },
   {
     "objectID": "05-making-pull-request.html",
@@ -119,11 +112,11 @@
     "text": "Performing a rebase puts the commits you have on your branch on top of the commits from another branch\nWe commonly do this when our colleagues have merged PRs into say the main branch\nWe would then rebase our branch on top of main\nA rebase can be performed in GitHub Desktop as follows\n\nIn these screenshots we assume we started working on branch-1\nWe then made branch-2 from branch-1 and made some commits on it\nWe then went back to branch-1 and made some different commits\nWe now need to rebase the commits on branch-2 to be on top of branch-1\nStarting on branch-2, select Branch | Rebase current branch…\n\n\n\n\n\n\n\n\n\nOr/then from the middle panel select the branch to rebase on top of - select branch-1 (or select main if you are rebasing on top of main) and click Rebase\n\n\n\n\n\n\n\n\n\nHopefully the rebase will be successful, if there are merge conflicts you will need to resolve those"
   },
   {
-    "objectID": "08-common-errors.html",
-    "href": "08-common-errors.html",
+    "objectID": "08-common-errors.html#merge-conflicts",
+    "href": "08-common-errors.html#merge-conflicts",
     "title": "8  Common errors",
-    "section": "",
-    "text": "These can happen if e.g.,\n\nyou forget to pull down the latest changes from GitHub (I find easy to forget in the morning)\nif you’re working on a project with multiple people\n\nyou both create new branches\nthey send in their PR first and it’s merged\nthen you send in your PR which edits some of the same lines\n\n\nLet’s say I made changes yesterday which I pushed to GitHub\n\nThe next day I restart work on a different computer, GitHub Desktop will show for example\n\n\n\n\n\n\n\n\n\n\nBut you forget to click “Pull origin”\nIf you make commits onto a branch on which there are not yet pulled commits on GitHub you’ll get a merge error when you eventually click “Pull origin”\n\n\n\n\n\n\n\n\n\nYou could resolve conflict e.g., in VSCode\n\n\n\n\n\n\n\n\n\nWe can see this can happen when we see both up and down arrows in Pull origin box (but not always)\n\n\n\n\n\n\n\n\n\nFix\n\nMove your changes to a new branch\n\n\n\n\n\n\n\n\n\nMove back to master/main and revert/undo the changes there, then edit the files so they show no changes\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPull down the changes from GitHub to the relevant branch\n\n\n\n\n\n\n\n\n\nMerge changes from your new branch into the main/master/relevant branch\n\nSee the GitHub documentation for more information about merge conflicts\n\nhere\nResolving a merge conflict here"
+    "section": "8.1 Merge conflicts",
+    "text": "8.1 Merge conflicts\n\nThese can happen if e.g.,\n\nyou forget to pull down the latest changes from GitHub (I find easy to forget in the morning)\nif you’re working on a project with multiple people\n\nyou both create new branches\nthey send in their PR first and it’s merged\nthen you send in your PR which edits some of the same lines\n\n\nLet’s say I made changes yesterday which I pushed to GitHub\n\nThe next day I restart work on a different computer, GitHub Desktop will show for example\n\n\n\n\n\n\n\n\n\n\nBut you forget to click “Pull origin”\nIf you make commits onto a branch on which there are not yet pulled commits on GitHub you’ll get a merge error when you eventually click “Pull origin”\n\n\n\n\n\n\n\n\n\nYou could resolve conflict e.g., in VSCode\n\n\n\n\n\n\n\n\n\nWe can see this can happen when we see both up and down arrows in Pull origin box (but not always)\n\n\n\n\n\n\n\n\n\nFix\n\nMove your changes to a new branch\n\n\n\n\n\n\n\n\n\nMove back to master/main and revert/undo the changes there, then edit the files so they show no changes\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPull down the changes from GitHub to the relevant branch\n\n\n\n\n\n\n\n\n\nMerge changes from your new branch into the main/master/relevant branch\n\nSee the GitHub documentation for more information about merge conflicts\n\nhere\nResolving a merge conflict here"
   },
   {
     "objectID": "08-common-errors.html#no-content-changes-found",
@@ -131,13 +124,6 @@
     "title": "8  Common errors",
     "section": "8.2 No content changes found",
     "text": "8.2 No content changes found\n\nIf you see the following message from Git that a file has changed but there are No content changes found\n\n\n\n\n\n\n\n\n\nThis is most likely caused by working with colleagues using different operating systems, because they save text files with different line ending characters (CRLF on Windows, LF on macOS/Linux/Unix)\nYou can usually simply right click on the offending file in GitHub Desktop and Discard changes\n\n\n\n\n\n\n\n\n\nAdditionally you can set the following option at the top of your .gitattributes file\n# Auto detect text files and perform LF normalization\n* text=auto"
-  },
-  {
-    "objectID": "09-installing-python-and-os.html",
-    "href": "09-installing-python-and-os.html",
-    "title": "9  Installing Python and the opensafely command line interface",
-    "section": "",
-    "text": "Environment variables in computer operating systems contain important strings of text\nThe PATH environment variable is a list of folders which the computer searches in when you type the name of an executable into the command line shell program (usually zsh on macOS, bash on Ubuntu, cmd or Powershell on Windows)\nTo use the python/python3 and pip/pip3 commands at the shell command line we need to install Python and make sure the folder containing its executable is in our PATH environment variable (unless you already know all of this and are going to run Python in Anaconda through the Anaconda Prompt)"
   },
   {
     "objectID": "09-installing-python-and-os.html#macos",
@@ -161,13 +147,6 @@
     "text": "9.3 Installing the opensafely package\n\nAs long as the python/python3 and pip/pip3 executables are now on your PATH you can simply run in your shell program\npip install opensafely   \nThis will additionally install its dependency package the cohortextractor package into your Python installation and you should now be able to run opensafely commands such as\nopensafely run run_all"
   },
   {
-    "objectID": "10-os-repos.html",
-    "href": "10-os-repos.html",
-    "title": "10  OpenSAFELY repositories",
-    "section": "",
-    "text": "OpenSAFELY is a system of Python packages (opensafely and cohortextractor) which run various Docker containers\n\nThe main GitHub organisation page is here\nAll the core code is published in their opensafely-core organisation on GitHub here\nAnd there is also their opensafely-actions organisation here\n\nA Docker container is a like a virtual machine\n\nIt defines the operating system and programs running within it\nOn my Windows 10 machine I can run an Ubuntu docker container\nJust because an R package is installed in the R installation on your machine does not mean that it is installed in the OpenSAFELY R Docker container\n\nSee the list of packages in the R Docker container here"
-  },
-  {
     "objectID": "10-os-repos.html#demo-repo",
     "href": "10-os-repos.html#demo-repo",
     "title": "10  OpenSAFELY repositories",
@@ -186,14 +165,14 @@
     "href": "10-os-repos.html#running-jobs-on-the-dummy-data",
     "title": "10  OpenSAFELY repositories",
     "section": "10.3 Running jobs (on the dummy data)",
-    "text": "10.3 Running jobs (on the dummy data)\n\nIn your OS repo online\n\nUse Gitpod\n\nOn your own machine - install the following free software\n\n(If on Windows - Windows Subsystem for Linux version 2)\nDocker Desktop\nPython\nGit\nGitHub Desktop\nVSCode text editor"
+    "text": "10.3 Running jobs (on the dummy data)\nThere are a couple of ways to run jobs on the dummy data system.\n\nIn your OpenSAFELY repo online\n\nUse Gitpod\n\nOn your own machine, in which case please install the following free software\n\nIf on Windows - Windows Subsystem for Linux version 2, using the instructions here\nDocker Desktop, from here\nPython (described on a previous page here)\nGit (described on previous page here)\nGitHub Desktop, from here\nVSCode text editor, from here"
   },
   {
-    "objectID": "11-additional-topics.html",
-    "href": "11-additional-topics.html",
+    "objectID": "11-additional-topics.html#avoid-making-commits-with-lots-changes",
+    "href": "11-additional-topics.html#avoid-making-commits-with-lots-changes",
     "title": "11  Additional topics",
-    "section": "",
-    "text": "Do not commit changes to many files with a single commit message such as “Edits”!\n\n\n\n\n\n\n\n\n\nNote that in a commit we can see the added lines - green highlight with + prefix - and deleted lines - red highligh with - prefix"
+    "section": "11.1 Avoid making commits with lots changes",
+    "text": "11.1 Avoid making commits with lots changes\n\nDo not commit changes to many files with a single commit message such as “Edits”!\n\n\n\n\n\n\n\n\n\nNote that in a commit we can see the added lines - green highlight with + prefix - and deleted lines - red highligh with - prefix"
   },
   {
     "objectID": "11-additional-topics.html#writing-good-commit-messages",
@@ -228,6 +207,6 @@
     "href": "13-session-info.html",
     "title": "13  Session information for reproducibility",
     "section": "",
-    "text": "sessioninfo::session_info()\n\n─ Session info ───────────────────────────────────────────────────────────────\n setting  value\n version  R version 4.2.1 (2022-06-23)\n os       macOS Monterey 12.5\n system   aarch64, darwin20\n ui       X11\n language (EN)\n collate  en_GB.UTF-8\n ctype    en_GB.UTF-8\n tz       Europe/London\n date     2022-08-11\n pandoc   2.19 @ /opt/homebrew/bin/ (via rmarkdown)\n\n─ Packages ───────────────────────────────────────────────────────────────────\n package     * version date (UTC) lib source\n cli           3.3.0   2022-04-25 [1] CRAN (R 4.2.0)\n digest        0.6.29  2021-12-01 [1] CRAN (R 4.2.0)\n evaluate      0.16    2022-08-09 [1] CRAN (R 4.2.1)\n fastmap       1.1.0   2021-01-25 [1] CRAN (R 4.2.0)\n htmltools     0.5.3   2022-07-18 [1] CRAN (R 4.2.1)\n htmlwidgets   1.5.4   2021-09-08 [1] CRAN (R 4.2.0)\n jsonlite      1.8.0   2022-02-22 [1] CRAN (R 4.2.0)\n knitr         1.39    2022-04-26 [1] CRAN (R 4.2.0)\n magrittr      2.0.3   2022-03-30 [1] CRAN (R 4.2.0)\n rlang         1.0.4   2022-07-12 [1] CRAN (R 4.2.1)\n rmarkdown     2.14    2022-04-25 [1] CRAN (R 4.2.0)\n sessioninfo   1.2.2   2021-12-06 [1] CRAN (R 4.2.0)\n stringi       1.7.8   2022-07-11 [1] CRAN (R 4.2.1)\n stringr       1.4.0   2019-02-10 [1] CRAN (R 4.2.0)\n xfun          0.32    2022-08-10 [1] CRAN (R 4.2.1)\n\n [1] /Library/Frameworks/R.framework/Versions/4.2-arm64/Resources/library\n\n──────────────────────────────────────────────────────────────────────────────"
+    "text": "Click here for session information\n\n\nsessioninfo::session_info()\n\n─ Session info ───────────────────────────────────────────────────────────────\n setting  value\n version  R version 4.2.2 (2022-10-31)\n os       macOS Ventura 13.0\n system   aarch64, darwin20\n ui       X11\n language (EN)\n collate  en_GB.UTF-8\n ctype    en_GB.UTF-8\n tz       Europe/London\n date     2022-11-09\n pandoc   2.19.2 @ /Applications/RStudio.app/Contents/Resources/app/quarto/bin/tools/ (via rmarkdown)\n\n─ Packages ───────────────────────────────────────────────────────────────────\n package     * version date (UTC) lib source\n cli           3.4.1   2022-09-23 [1] CRAN (R 4.2.1)\n digest        0.6.30  2022-10-18 [3] CRAN (R 4.2.1)\n evaluate      0.18    2022-11-07 [3] CRAN (R 4.2.2)\n fastmap       1.1.0   2021-01-25 [3] CRAN (R 4.2.0)\n htmltools     0.5.3   2022-07-18 [3] CRAN (R 4.2.1)\n htmlwidgets   1.5.4   2021-09-08 [3] CRAN (R 4.2.0)\n jsonlite      1.8.3   2022-10-21 [3] CRAN (R 4.2.0)\n knitr         1.40    2022-08-24 [3] CRAN (R 4.2.1)\n magrittr      2.0.3   2022-03-30 [3] CRAN (R 4.2.0)\n rlang         1.0.6   2022-09-24 [3] CRAN (R 4.2.0)\n rmarkdown     2.17    2022-10-07 [3] CRAN (R 4.2.0)\n rstudioapi    0.14    2022-08-22 [3] CRAN (R 4.2.1)\n sessioninfo   1.2.2   2021-12-06 [3] CRAN (R 4.2.0)\n stringi       1.7.8   2022-07-11 [3] CRAN (R 4.2.1)\n stringr       1.4.1   2022-08-20 [3] CRAN (R 4.2.0)\n xfun          0.34    2022-10-18 [3] CRAN (R 4.2.1)\n\n [1] /Users/tom/Library/R/arm64/4.2/library\n [2] /Library/Frameworks/R.framework/Versions/4.2-arm64/Resources/site-library\n [3] /Library/Frameworks/R.framework/Versions/4.2-arm64/Resources/library\n\n──────────────────────────────────────────────────────────────────────────────\n\nquarto::quarto_version()\n\n[1] '1.2.267'"
   }
 ]
