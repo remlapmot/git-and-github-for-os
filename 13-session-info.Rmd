@@ -1,5 +1,11 @@
 # Session information for reproducibility
 
+```{r include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+## Session information
+
 <details>
 <summary>Click here for session information</summary>
 ```{r}
