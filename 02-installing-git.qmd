@@ -6,6 +6,8 @@ knitr::opts_chunk$set(echo = FALSE, fig.align = "center")
 
 ## Installing Git
 
+(It turns out that GitHub Desktop has a version of Git within it. If you only ever intend to use Git through GitHub Desktop you don't need to install Git and can skip to the GitHub Desktop section.)
+
 - Windows
   - Download and install from [here](https://git-scm.com/download/win)
 - macOS comes with an out-dated version of Git
