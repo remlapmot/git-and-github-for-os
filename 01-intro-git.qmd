@@ -64,7 +64,7 @@ knitr::opts_chunk$set(echo = FALSE, fig.align = "center")
   ```{r, out.width = "50%"}
   knitr::include_graphics("img/windows-explorer-repo.png")
   ```  
-- Confusingly GitHub hides the `.git` folder from view  
+- GitHub (and Git servers in general) store repositories as bare repositories. This means that they only contain the `.git` directory which is on your local machine. Hence perhaps a little confusingly when you view your repository on GitHub you cannot see the `.git` directory listed in the repo contents (as you see in a File Explorer on your local machine).
   ```{r}
   knitr::include_graphics("img/repo-github-view.png")
   ```  
