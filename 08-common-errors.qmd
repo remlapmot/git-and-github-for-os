@@ -7,7 +7,7 @@ knitr::opts_chunk$set(echo = FALSE, fig.align = "center")
 ## Merge conflicts
 
 * These can happen if e.g., 
-  - you forget to pull down the latest changes from GitHub (I find easy to forget in the morning)
+  - you forget to pull down the latest changes from GitHub (I find it's easy to forget to do this in the morning)
   - if you're working on a project with multiple people
     - you both create new branches
     - they send in their PR first and it's merged
