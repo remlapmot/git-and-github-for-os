@@ -30,7 +30,7 @@ knitr::opts_chunk$set(echo = FALSE, fig.align = "center")
     ```  
   - On my Mac currently I have  
     ```
-    git version 2.38.1
+    git version 2.39.1
     ```  
 
 ## Installing GitHub Desktop
